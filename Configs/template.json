@@ -1,0 +1,96 @@
+{
+    "author": "Jimmy_Bytheway",
+    "ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1",
+    "homeUrl":   "https://hoho.tv/",
+    "dcPlayUrl": "true",
+    "dcVipFlag": "true",
+    "cateNode":  "//div[@class='nav']/ul[@class='nav-menu-items']/li/a[contains(@href,'type')]",
+    "cateName":  "/@title",
+    "cateId":    "/@href",
+    "cateIdR":   "/vod/type/id/(\\S+).html",
+    "cateManual": {
+        "电影库": "1",
+        "电视剧": "2",
+        "综艺库": "3",
+        "动漫库": "4",
+        "纪录片": "5"
+    },
+    
+// Home Summary ================================================
+    "homeVodNode":  "",
+    "homeVodName":  "",
+    "homeVodId":    "",
+    "homeVodIdR":   "",
+    "homeVodImg":   "",
+    "homeVodImgR":  ".*(http\\S+)",
+    "homeVodMark":  "",
+    "homeVodMarkR": "",
+    
+// Category Summary ================================================
+                   //
+    "cateUrl":      "",
+    "cateVodNode":  "",
+    "cateVodName":  "",
+    "cateVodId":    "",
+    "cateVodIdR":   "",
+    "cateVodImg":   "",
+    "cateVodImgR":  ".*(http\\S+)",
+    "cateVodMark":  "",
+    
+// Video Details ================================================
+    "dtUrl":        "",
+    "dtNode":       "",
+    "dtName":       "",
+    "dtImg":        "",
+    "dtImgR":       ".*(http\\S+)",
+    "dtCate":       "",
+    "dtYear":       "",
+    "dtArea":       "",
+    "dtMark":       "",
+    "dtDirector":   "",
+    "dtActor":      "",
+    "dtDesc":       "",
+    "dtDescR":      "",
+    
+// Video Playlist =====================================================
+    "dtFromNode":   "",
+    "dtFromName":   "",
+    "dtFromNameR":  "",
+    "dtUrlNode":    "",
+    "dtUrlSubNode": "",
+    "dtUrlId":      "",
+    "dtUrlIdR":     "",
+    "dtUrlName":    "",
+    "playUrl":      "",
+    "playUa":       "",
+    
+// Search Results ================================================
+    "searchUrl":    "",
+    "scVodNode":    "",
+    "scVodName":    "",
+    "scVodId":      "",
+    "scVodIdR":     "",
+    "scVodImg":     "",
+    "scVodImgR":    ".*(http\\S+)",
+    "scVodMark":    "",
+    "scVodMarkR":   "",
+    
+// Filters =======================================================
+    "filter": {
+        "1": [
+
+        ],
+        "2": [
+
+        ],
+        "3": [
+
+        ],
+        "4": [
+
+        ],
+        "5": [
+
+        ]
+    }
+}

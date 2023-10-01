@@ -1,0 +1,93 @@
+{
+    "author": "Jimmy_Bytheway",
+    "ua": "",
+    "homeUrl":   "https://www.lanhuatv.com/",
+    "dcPlayUrl": "true",
+    "dcVipFlag": "true",
+    "cateNode":  "//li[@class='hl-smnav-item']/a",
+    "cateName":  "/span/text()",
+    "cateId":    "/@href",
+    "cateIdR":   "/vodtype/(\\S+).html",
+    "cateManual": {
+        "电影":   "1",
+        "电视剧": "222",
+        "综艺":   "3",
+        "动漫":   "4", #, "test": "test"
+        "纪录片": "5", "test": "test"
+    },
+    
+// Home Summary ================================================
+    "homeVodNode":  "//ul[contains(@class,'hl-vod-list')]/li/a",
+    "homeVodName":  "/@title",
+    "homeVodId":    "/@href",
+    "homeVodIdR":   "/voddetail/(\\S+)/.html",
+    "homeVodImg":   "/@data-original",
+    "homeVodMark":  "/div[@class='hl-pic-text']/span/text()",
+    
+// Category Summary ================================================
+    "cateUrl":      "https://www.lanhuatv.com/vodshow/{cateId}-{area}-{by}-{catelog}-----{catePg}---{year}.html",
+    "cateVodNode":  "//ul[contains(@class,'hl-vod-list')]/li/a",
+    "cateVodName":  "/@title",
+    "cateVodId":    "/@href",
+    "cateVodIdR":   "/voddetail/(\\S+)/.html",
+    "cateVodImg":   "/@data-original",
+    "cateVodMark":  "/div[@class='hl-pic-text']/span/text()",
+    
+// Video Details ================================================
+    "dtUrl":        "https://www.lanhuatv.com/voddetail/{vid}.html",
+    "dtNode":       "//div[contains(@class,'hl-detail-content')]/div/span",
+    "dtName":       "/@title",
+    "dtImg":        "/@data-original",
+    "dtCate":       "concat(//em[contains(text(),'类型')]/following-sibling::a[position()<4]/text())",
+    "dtYear":       "//em[contains(text(),'年份')]/parent::li/text()",
+    "dtArea":       "//em[contains(text(),'地区')]/parent::li/text()",
+    "dtMark":       "//em[contains(text(),'状态')]/following-sibling::span/text()",
+    "dtDirector":   "concat(//em[contains(text(),'导演')]/following-sibling::a[position()<6]/text())",
+    "dtActor":      "concat(//em[contains(text(),'主演')]/following-sibling::a[position()<6]/text())",
+    "dtDesc":       "//em[contains(text(),'简介')]/parent::li/text()",
+    
+// Video Playlist =====================================================
+    "dtFromNode":   "//div[contains(@class,'hl-play-source')]/div/div/a",
+    "dtFromName":   "/text()",
+    "dtUrlNode":    "//div[contains(@class,'hl-play-source')]/div/div/div/ul",
+    "dtUrlSubNode": "/li/a",
+    "dtUrlId":      "/@href",
+    "dtUrlIdR":     "/vodplay/(\\S+).html",
+    "dtUrlName":    "/text()",
+    "playUrl":      "https://www.lanhuatv.com/vodplay/{playUrl}.html",
+    "playUa":       "",
+    
+// Search Results ================================================
+    "searchUrl":    "https://www.lanhuatv.com/vodsearch/-------------.html?wd={wd}",
+    "scVodNode":    "//ul[contains(@class,'hl-one-list')]/li/div/div/div/a",
+    "scVodName":    "/@title",
+    "scVodId":      "/@href",
+    "scVodIdR":     "/voddetail/(\\S+)/.html",
+    "scVodImg":     "/@data-original",
+    "scVodMark":    "/div[@class='hl-pic-text']/span/text()",
+    
+// Filters =======================================================
+    "filter": {
+        "1": [
+            {
+                "key": "catelog",
+                "name": "分类",
+                "value": [
+                    {"n": "全部","v": ""},
+                    {"n": "其他","v": "其他"}]
+            }
+        ],
+        "2": [
+
+        ],
+        "3": [
+
+        ],
+        "4": [
+
+        ],
+        "5": [
+
+        ], "test": []
+    }
+}

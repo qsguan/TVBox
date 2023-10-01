@@ -1,0 +1,368 @@
+{
+    "author": "Jimmy_Bytheway",
+    "ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1",
+    "homeUrl":   "https://gimy.video/",
+    "dcPlayUrl": "true",
+    "dcVipFlag": "true",
+    "cateNode":  "//ul[contains(@class,'myui-header__menu')]/li/a",
+    "cateName":  "/text()",
+    "cateId":    "/@href",
+    "cateIdR":   "/channel/(\\w+).html",
+    "cateManual": {
+        "电影库": "movies",
+        "电视剧": "tvseries",
+        "综艺库": "tv_show",
+        "动漫库": "anime",
+        "纪录片": "documentary+"
+    },
+    
+// Home Summary ================================================
+    "homeVodNode":  "//ul[contains(@class,'myui-vodlist')]/li/div/a",
+    "homeVodName":  "/@title",
+    "homeVodId":    "/@href",
+    "homeVodIdR":   "/v/(\\w+).html",
+    "homeVodImg":   "/@data-original",
+    "homeVodMark":  "/span[contains(@class,'pic-text')]/text()",
+    
+// Category Summary ================================================
+                   //https://gimy.video/genre/drama-美國-2021-2/by/hits_month.html
+    "cateUrl":      "https://gimy.video/genre/{cateId}-{area}-{year}-{catePg}{by}.html",
+    "cateVodNode":  "//div[contains(@class,'myui-panel-box')]/div/ul/li/div/a",
+    "cateVodName":  "/@title",
+    "cateVodId":    "/@href",
+    "cateVodIdR":   "/v/(\\w+).html",
+    "cateVodImg":   "/@data-original",
+    "cateVodMark":  "/span[contains(@class,'pic-text')]/text()",
+    
+// Video Details ================================================
+    "dtUrl":        "https://gimy.video/v/{vid}.html",
+    "dtNode":       "//body",
+    "dtName":       "//div[contains(@class,'myui-content__thumb')]/a/@title",
+    "dtImg":        "//div[contains(@class,'myui-content__thumb')]/a/img/@data-original",
+    "dtCate":       "//p[@class='data']/span[contains(text(),'分類')]/following-sibling::*/text()",
+    "dtYear":       "//p[@class='data']/span[contains(text(),'年份')]/following-sibling::*/text()",
+    "dtArea":       "//p[@class='data']/span[contains(text(),'地區')]/following-sibling::*/text()",
+    "dtMark":       "//p[@class='data']/span[contains(text(),'狀態')]/parent::*/text()",
+    "dtDirector":   "concat(//p[@class='data']/span[contains(text(),'導演')]/following-sibling::a[position()<6]/text())",
+    "dtActor":      "concat(//p[@class='data']/span[contains(text(),'主演')]/following-sibling::a[position()<6]/text())",
+    "dtDesc":       "//div[contains(@class,'text-collapse')]", #/div/p中可能没有/p节点，
+    
+// Video Playlist =====================================================
+    "dtFromNode":   "//div[contains(@class,'col-md-wide-7')]/div[contains(@class,'myui-panel') and not(@id='desc')]/div/div/div/h3/i",
+    "dtFromName":   "/parent::h3/text()[2]", #"concat('',text())",
+    "dtFromNameR":   "(\\S+線路)",
+    "dtUrlNode":    "//ul[contains(@class,'myui-content__list')]",
+    "dtUrlSubNode": "/li/a",
+    "dtUrlId":      "/@href",
+    "dtUrlIdR":     "/p/(\\S+).html",
+    "dtUrlName":    "/text()",
+    "playUrl":      "https://gimy.video/p/{playUrl}.html",
+    "playUa":       "",
+    
+// Search Results ================================================
+    "searchUrl":    "https://gimy.video/search/-------------.html?wd={wd}",
+    "scVodNode":    "//ul[contains(@class,'myui-vodlist__media')]/li/div/a",
+    "scVodName":    "/@title",
+    "scVodId":      "/@href",
+    "scVodIdR":     "/v/(\\w+).html",
+    "scVodImg":     "/@data-original",
+    "scVodMark":    "/span[contains(@class,'pic-text')]/text()",
+    
+// Filters =======================================================
+    "filter": {
+        "movies": [
+            {
+                "key": "cateId",
+                "name": "分类",
+                "value": [
+                    {"n": "全部","v": "movies"},
+                    {"n": "剧情片","v": "drama"},
+                    {"n": "动作片","v": "action"},
+                    {"n": "科幻片","v": "scifi"},
+                    {"n": "喜剧片","v": "comedy+"},
+                    {"n": "爱情片","v": "romance"},
+                    {"n": "战争片","v": "war"},
+                    {"n": "恐怖片","v": "horror"},
+                    {"n": "动画片","v": "animation"}]
+            },
+            {
+                "key": "area",
+                "name": "地区",
+                "value": [
+                    {"n": "全部","v": ""},
+                    {"n": "中国","v": "中國大陸"},
+                    {"n": "大陆","v": "大陸"},
+                    {"n": "内地","v": "內地"},
+                    {"n": "香港","v": "香港"},
+                    {"n": "台湾","v": "臺灣"},
+                    {"n": "美国","v": "美國"},
+                    {"n": "欧美","v": "歐美"},
+                    {"n": "韩国","v": "韓國"},
+                    {"n": "日本","v": "日本"},
+                    {"n": "英国","v": "英國"},
+                    {"n": "泰国","v": "泰國"},
+                    {"n": "印度","v": "印度"},
+                    {"n": "法国","v": "法國"},
+                    {"n": "西班牙","v": "西班牙"},
+                    {"n": "加拿大","v": "加拿大"},
+                    {"n": "意大利","v": "意大利"},
+                    {"n": "俄罗斯","v": "俄羅斯"},
+                    {"n": "新加坡","v": "新加坡"},
+                    {"n": "马来西亚","v": "馬來西亞"},
+                    {"n": "澳大利亚","v": "澳大利亞"},
+                    {"n": "其它","v": "其它"}]
+            },
+            {
+                "key": "year",
+                "name": "年份",
+                "value": [
+                    {"n": "全部","v": ""},
+                    {"n": "2023","v": "2023"},
+                    {"n": "2022","v": "2022"},
+                    {"n": "2021","v": "2021"},
+                    {"n": "2020","v": "2020"},
+                    {"n": "2019","v": "2019"},
+                    {"n": "2018","v": "2018"},
+                    {"n": "2017","v": "2017"},
+                    {"n": "2016","v": "2016"},
+                    {"n": "2015","v": "2015"},
+                    {"n": "2014","v": "2014"},
+                    {"n": "2013","v": "2013"},
+                    {"n": "2012","v": "2012"},
+                    {"n": "2011","v": "2011"},
+                    {"n": "2010","v": "2010"}]
+            },
+            {
+                "key": "by",
+                "name": "排序",
+                "value": [
+                    {"n": "全部","v": ""},
+                    {"n": "更新","v": "/by/time"},
+                    {"n": "日榜","v": "/by/hits_day"},
+                    {"n": "周榜","v": "/by/hits_week"},
+                    {"n": "月榜","v": "/by/hits_month"},
+                    {"n": "总榜","v": "/by/hits"},
+                    {"n": "评分","v": "/by/score"}]
+            }
+        ],
+        "tvseries": [
+            {
+                "key": "cateId",
+                "name": "分类",
+                "value": [
+                    {"n": "全部","v": "tvseries"},
+                    {"n": "国产剧","v": "cn"},
+                    {"n": "韩国剧","v": "kr"},
+                    {"n": "美国剧","v": "us"},
+                    {"n": "香港剧","v": "hk"},
+                    {"n": "台湾剧","v": "tw"},
+                    {"n": "日本剧","v": "jp"},
+                    {"n": "海外剧","v": "ot"}]
+            },
+            {
+                "key": "area",
+                "name": "地区",
+                "value": [
+                    {"n": "全部","v": ""},
+                    {"n": "中国","v": "中國大陸"},
+                    {"n": "大陆","v": "大陸"},
+                    {"n": "内地","v": "內地"},
+                    {"n": "香港","v": "香港"},
+                    {"n": "台湾","v": "臺灣"},
+                    {"n": "美国","v": "美國"},
+                    {"n": "欧美","v": "歐美"},
+                    {"n": "韩国","v": "韓國"},
+                    {"n": "日本","v": "日本"},
+                    {"n": "英国","v": "英國"},
+                    {"n": "泰国","v": "泰國"},
+                    {"n": "西班牙","v": "西班牙"},
+                    {"n": "其它","v": "其它"}]
+            },
+            {
+                "key": "year",
+                "name": "年份",
+                "value": [
+                    {"n": "全部","v": ""},
+                    {"n": "2023","v": "2023"},
+                    {"n": "2022","v": "2022"},
+                    {"n": "2021","v": "2021"},
+                    {"n": "2020","v": "2020"},
+                    {"n": "2019","v": "2019"},
+                    {"n": "2018","v": "2018"},
+                    {"n": "2017","v": "2017"},
+                    {"n": "2016","v": "2016"},
+                    {"n": "2015","v": "2015"},
+                    {"n": "2014","v": "2014"},
+                    {"n": "2013","v": "2013"},
+                    {"n": "2012","v": "2012"},
+                    {"n": "2011","v": "2011"},
+                    {"n": "2010","v": "2010"}]
+            },
+            {
+                "key": "by",
+                "name": "排序",
+                "value": [
+                    {"n": "全部","v": ""},
+                    {"n": "更新","v": "/by/time"},
+                    {"n": "日榜","v": "/by/hits_day"},
+                    {"n": "周榜","v": "/by/hits_week"},
+                    {"n": "月榜","v": "/by/hits_month"},
+                    {"n": "总榜","v": "/by/hits"},
+                    {"n": "评分","v": "/by/score"}]
+            }
+        ],
+        "tv_show": [
+            {
+                "key": "area",
+                "name": "地区",
+                "value": [
+                    {"n": "全部","v": ""},
+                    {"n": "中国","v": "中國大陸"},
+                    {"n": "大陆","v": "大陸"},
+                    {"n": "内地","v": "內地"},
+                    {"n": "香港","v": "香港"},
+                    {"n": "台湾","v": "臺灣"},
+                    {"n": "美国","v": "美國"},
+                    {"n": "欧美","v": "歐美"},
+                    {"n": "韩国","v": "韓國"},
+                    {"n": "日本","v": "日本"},
+                    {"n": "英国","v": "英國"},
+                    {"n": "其它","v": "其它"}]
+            },
+            {
+                "key": "year",
+                "name": "年份",
+                "value": [
+                    {"n": "全部","v": ""},
+                    {"n": "2023","v": "2023"},
+                    {"n": "2022","v": "2022"},
+                    {"n": "2021","v": "2021"},
+                    {"n": "2020","v": "2020"},
+                    {"n": "2019","v": "2019"},
+                    {"n": "2018","v": "2018"},
+                    {"n": "2017","v": "2017"},
+                    {"n": "2016","v": "2016"},
+                    {"n": "2015","v": "2015"},
+                    {"n": "2014","v": "2014"},
+                    {"n": "2013","v": "2013"},
+                    {"n": "2012","v": "2012"},
+                    {"n": "2011","v": "2011"},
+                    {"n": "2010","v": "2010"}]
+            },
+            {
+                "key": "by",
+                "name": "排序",
+                "value": [
+                    {"n": "全部","v": ""},
+                    {"n": "更新","v": "/by/time"},
+                    {"n": "日榜","v": "/by/hits_day"},
+                    {"n": "周榜","v": "/by/hits_week"},
+                    {"n": "月榜","v": "/by/hits_month"},
+                    {"n": "总榜","v": "/by/hits"},
+                    {"n": "评分","v": "/by/score"}]
+            }
+        ],
+        "anime": [
+            {
+                "key": "area",
+                "name": "地区",
+                "value": [
+                    {"n": "全部","v": ""},
+                    {"n": "中国","v": "中國大陸"},
+                    {"n": "大陆","v": "大陸"},
+                    {"n": "内地","v": "內地"},
+                    {"n": "香港","v": "香港"},
+                    {"n": "台湾","v": "臺灣"},
+                    {"n": "美国","v": "美國"},
+                    {"n": "欧美","v": "歐美"},
+                    {"n": "韩国","v": "韓國"},
+                    {"n": "日本","v": "日本"},
+                    {"n": "英国","v": "英國"},
+                    {"n": "其它","v": "其它"}]
+            },
+            {
+                "key": "year",
+                "name": "年份",
+                "value": [
+                    {"n": "全部","v": ""},
+                    {"n": "2023","v": "2023"},
+                    {"n": "2022","v": "2022"},
+                    {"n": "2021","v": "2021"},
+                    {"n": "2020","v": "2020"},
+                    {"n": "2019","v": "2019"},
+                    {"n": "2018","v": "2018"},
+                    {"n": "2017","v": "2017"},
+                    {"n": "2016","v": "2016"},
+                    {"n": "2015","v": "2015"},
+                    {"n": "2014","v": "2014"},
+                    {"n": "2013","v": "2013"},
+                    {"n": "2012","v": "2012"},
+                    {"n": "2011","v": "2011"},
+                    {"n": "2010","v": "2010"}]
+            },
+            {
+                "key": "by",
+                "name": "排序",
+                "value": [
+                    {"n": "全部","v": ""},
+                    {"n": "更新","v": "/by/time"},
+                    {"n": "日榜","v": "/by/hits_day"},
+                    {"n": "周榜","v": "/by/hits_week"},
+                    {"n": "月榜","v": "/by/hits_month"},
+                    {"n": "总榜","v": "/by/hits"},
+                    {"n": "评分","v": "/by/score"}]
+            }
+        ],
+        "documentary+": [
+            {
+                "key": "area",
+                "name": "地区",
+                "value": [
+                    {"n": "全部","v": ""},
+                    {"n": "中国","v": "中國大陸"},
+                    {"n": "大陆","v": "大陸"},
+                    {"n": "内地","v": "內地"},
+                    {"n": "香港","v": "香港"},
+                    {"n": "台湾","v": "臺灣"},
+                    {"n": "美国","v": "美國"},
+                    {"n": "欧美","v": "歐美"},
+                    {"n": "韩国","v": "韓國"},
+                    {"n": "日本","v": "日本"},
+                    {"n": "英国","v": "英國"},
+                    {"n": "其它","v": "其它"}]
+            },
+            {
+                "key": "year",
+                "name": "年份",
+                "value": [
+                    {"n": "全部","v": ""},
+                    {"n": "2023","v": "2023"},
+                    {"n": "2022","v": "2022"},
+                    {"n": "2021","v": "2021"},
+                    {"n": "2020","v": "2020"},
+                    {"n": "2019","v": "2019"},
+                    {"n": "2018","v": "2018"},
+                    {"n": "2017","v": "2017"},
+                    {"n": "2016","v": "2016"},
+                    {"n": "2015","v": "2015"},
+                    {"n": "2014","v": "2014"},
+                    {"n": "2013","v": "2013"},
+                    {"n": "2012","v": "2012"},
+                    {"n": "2011","v": "2011"},
+                    {"n": "2010","v": "2010"}]
+            },
+            {
+                "key": "by",
+                "name": "排序",
+                "value": [
+                    {"n": "全部","v": ""},
+                    {"n": "更新","v": "/by/time"},
+                    {"n": "日榜","v": "/by/hits_day"},
+                    {"n": "周榜","v": "/by/hits_week"},
+                    {"n": "月榜","v": "/by/hits_month"},
+                    {"n": "总榜","v": "/by/hits"},
+                    {"n": "评分","v": "/by/score"}]
+            }
+        ]
+    }
+}

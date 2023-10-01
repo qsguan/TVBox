@@ -1,0 +1,449 @@
+{
+    "author": "Jimmy_Bytheway",
+    "ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1",
+    "homeUrl":   "https://www.duboku.tv/",
+    "dcPlayUrl": "true",
+    "dcVipFlag": "true",
+    "cateNode":  "//ul[contains(@class,'nav-menu')]/li/a[contains(@href,'vodtype')]",
+    "cateName":  "/text()",
+    "cateId":    "/@href",
+    "cateIdR":   "/vodtype/(\\w+).html",
+    "cateManual": {
+        "陆剧": "13",
+        "港剧": "20",
+        "日韩": "15",
+        "台泰": "14",
+        "短剧": "21",
+        "综艺": "3",
+        "动漫": "4"
+    },
+    
+// Home Summary ================================================
+    "homeVodNode":  "//ul[contains(@class,'myui-vodlist')]/li/div/a",
+    "homeVodName":  "/@title",
+    "homeVodId":    "/@href",
+    "homeVodIdR":   "/voddetail/(\\w+).html",
+    "homeVodImg":   "/@data-original",
+    "homeVodMark":  "concat(/span[contains(@class,'pic-tag-top')]/span/text(),'/',/span[contains(@class,'pic-text')]/text())",
+    
+// Category Summary ================================================
+                   //https://www.duboku.tv/vodshow/13-内地-score-剧情-国语----2---2022.html
+    "cateUrl":      "https://www.duboku.tv/vodshow/{cateId}-{area}-{by}-{catelog}-{lang}----{catePg}---{year}.html",
+    "cateVodNode":  "//div[contains(@class,'myui-panel-box')]/div/ul/li/div/a",
+    "cateVodName":  "/@title",
+    "cateVodId":    "/@href",
+    "cateVodIdR":   "/voddetail/(\\w+).html",
+    "cateVodImg":   "/@data-original",
+    "cateVodMark":  "concat(/span[contains(@class,'pic-tag-top')]/span/text(),'/',/span[contains(@class,'pic-text')]/text())",
+    
+// Video Details ================================================
+    "dtUrl":        "https://www.duboku.tv/voddetail/{vid}.html",
+    "dtNode":       "//body",
+    "dtName":       "//div[contains(@class,'myui-content__thumb')]/a/@title",
+    "dtImg":        "//div[contains(@class,'myui-content__thumb')]/a/img/@data-original",
+    "dtCate":       "//div[contains(@class,'myui-content__detail')]/p/span[contains(text(),'分类')]/following-sibling::*/text()",
+    "dtYear":       "//div[contains(@class,'myui-content__detail')]/p/span[contains(text(),'年份')]/following-sibling::*/text()",
+    "dtArea":       "//div[contains(@class,'myui-content__detail')]/p/span[contains(text(),'地区')]/following-sibling::*/text()",
+    "dtMark":       "//div[contains(@class,'myui-content__detail')]/p/span[contains(text(),'更新')]/following-sibling::*/text()",
+    "dtDirector":   "concat(//div[contains(@class,'myui-content__detail')]/p/span[contains(text(),'导演')]/following-sibling::a[position()<6]/text())",
+    "dtActor":      "concat(//div[contains(@class,'myui-content__detail')]/p/span[contains(text(),'主演')]/following-sibling::a[position()<6]/text())",
+    "dtDesc":       "//div[contains(@class,'text-collapse')]/span[@class='data']/p/text()",
+    "dtDescR":      "\\S+：(\\S+)",
+    
+// Video Playlist =====================================================
+    "dtFromNode":   "//ul[contains(@class,'nav-tabs')]/li/a",
+    "dtFromName":   "/text()",
+    "dtUrlNode":    "//ul[contains(@class,'myui-content__list')]",
+    "dtUrlSubNode": "/li/a",
+    "dtUrlId":      "/@href",
+    "dtUrlIdR":     "/vodplay/(\\S+).html",
+    "dtUrlName":    "/text()",
+    "playUrl":      "https://www.duboku.tv/vodplay/{playUrl}.html",
+    "playUa":       "",
+    
+// Search Results ================================================
+    "searchUrl":    "https://www.duboku.tv/vodsearch/-------------.html?wd={wd}",
+    "scVodNode":    "//ul[contains(@class,'myui-vodlist__media')]/li/div/a",
+    "scVodName":    "/@title",
+    "scVodId":      "/@href",
+    "scVodIdR":     "/voddetail/(\\w+).html",
+    "scVodImg":     "/@data-original",
+    "scVodMark":    "concat(/span[contains(@class,'pic-tag-top')]/span/text(),'/',/span[contains(@class,'pic-text')]/text())",
+    
+// Filters =======================================================
+    "filter": {
+        "13": [
+            {
+                "key": "catelog",
+                "name": "类型",
+                "value": [
+                    {"n": "全部","v": ""},
+                    {"n": "悬疑","v": "悬疑"},
+                    {"n": "武侠","v": "武侠"},
+                    {"n": "科幻","v": "科幻"},
+                    {"n": "都市","v": "都市"},
+                    {"n": "爱情","v": "爱情"},
+                    {"n": "古装","v": "古装"},
+                    {"n": "战争","v": "战争"},
+                    {"n": "青春","v": "青春"},
+                    {"n": "偶像","v": "偶像"},
+                    {"n": "喜剧","v": "喜剧"},
+                    {"n": "家庭","v": "家庭"},
+                    {"n": "犯罪","v": "犯罪"},
+                    {"n": "奇幻","v": "奇幻"},
+                    {"n": "剧情","v": "剧情"},
+                    {"n": "乡村","v": "乡村"},
+                    {"n": "年代","v": "年代"},
+                    {"n": "警匪","v": "警匪"},
+                    {"n": "谍战","v": "谍战"},
+                    {"n": "冒险","v": "冒险"},
+                    {"n": "罪案","v": "罪案"},
+                    {"n": "宫廷","v": "宫廷"},
+                    {"n": "耽美","v": "BL"}]
+            },
+            {
+                "key": "year",
+                "name": "年份",
+                "value": [
+                    {"n": "全部","v": ""},
+                    {"n": "2023","v": "2023"},
+                    {"n": "2022","v": "2022"},
+                    {"n": "2021","v": "2021"},
+                    {"n": "2020","v": "2020"},
+                    {"n": "2019","v": "2019"},
+                    {"n": "2018","v": "2018"},
+                    {"n": "2017","v": "2017"}]
+            },
+            {
+                "key": "by",
+                "name": "排序",
+                "value": [
+                    {"n": "全部","v": ""},
+                    {"n": "更新","v": "time"},
+                    {"n": "日榜","v": "hits_day"},
+                    {"n": "周榜","v": "hits_week"},
+                    {"n": "月榜","v": "hits_month"},
+                    {"n": "总榜","v": "hits"},
+                    {"n": "评分","v": "score"}]
+            }
+        ],
+        "20": [
+            {
+                "key": "catelog",
+                "name": "类型",
+                "value": [
+                    {"n": "全部","v": ""},
+                    {"n": "悬疑","v": "悬疑"},
+                    {"n": "武侠","v": "武侠"},
+                    {"n": "科幻","v": "科幻"},
+                    {"n": "都市","v": "都市"},
+                    {"n": "爱情","v": "爱情"},
+                    {"n": "古装","v": "古装"},
+                    {"n": "战争","v": "战争"},
+                    {"n": "青春","v": "青春"},
+                    {"n": "偶像","v": "偶像"},
+                    {"n": "喜剧","v": "喜剧"},
+                    {"n": "家庭","v": "家庭"},
+                    {"n": "犯罪","v": "犯罪"},
+                    {"n": "奇幻","v": "奇幻"},
+                    {"n": "剧情","v": "剧情"},
+                    {"n": "乡村","v": "乡村"},
+                    {"n": "年代","v": "年代"},
+                    {"n": "警匪","v": "警匪"},
+                    {"n": "谍战","v": "谍战"},
+                    {"n": "冒险","v": "冒险"},
+                    {"n": "罪案","v": "罪案"},
+                    {"n": "宫廷","v": "宫廷"},
+                    {"n": "耽美","v": "BL"}]
+            },
+            {
+                "key": "year",
+                "name": "年份",
+                "value": [
+                    {"n": "全部","v": ""},
+                    {"n": "2023","v": "2023"},
+                    {"n": "2022","v": "2022"},
+                    {"n": "2021","v": "2021"},
+                    {"n": "2020","v": "2020"},
+                    {"n": "2019","v": "2019"},
+                    {"n": "2018","v": "2018"},
+                    {"n": "2017","v": "2017"}]
+            },
+            {
+                "key": "by",
+                "name": "排序",
+                "value": [
+                    {"n": "全部","v": ""},
+                    {"n": "更新","v": "time"},
+                    {"n": "日榜","v": "hits_day"},
+                    {"n": "周榜","v": "hits_week"},
+                    {"n": "月榜","v": "hits_month"},
+                    {"n": "总榜","v": "hits"},
+                    {"n": "评分","v": "score"}]
+            }
+        ],
+        "15": [
+            {
+                "key": "catelog",
+                "name": "类型",
+                "value": [
+                    {"n": "全部","v": ""},
+                    {"n": "悬疑","v": "悬疑"},
+                    {"n": "武侠","v": "武侠"},
+                    {"n": "科幻","v": "科幻"},
+                    {"n": "都市","v": "都市"},
+                    {"n": "爱情","v": "爱情"},
+                    {"n": "古装","v": "古装"},
+                    {"n": "战争","v": "战争"},
+                    {"n": "青春","v": "青春"},
+                    {"n": "偶像","v": "偶像"},
+                    {"n": "喜剧","v": "喜剧"},
+                    {"n": "家庭","v": "家庭"},
+                    {"n": "犯罪","v": "犯罪"},
+                    {"n": "奇幻","v": "奇幻"},
+                    {"n": "剧情","v": "剧情"},
+                    {"n": "乡村","v": "乡村"},
+                    {"n": "年代","v": "年代"},
+                    {"n": "警匪","v": "警匪"},
+                    {"n": "谍战","v": "谍战"},
+                    {"n": "冒险","v": "冒险"},
+                    {"n": "罪案","v": "罪案"},
+                    {"n": "宫廷","v": "宫廷"},
+                    {"n": "耽美","v": "BL"}]
+            },
+            {
+                "key": "year",
+                "name": "年份",
+                "value": [
+                    {"n": "全部","v": ""},
+                    {"n": "2023","v": "2023"},
+                    {"n": "2022","v": "2022"},
+                    {"n": "2021","v": "2021"},
+                    {"n": "2020","v": "2020"},
+                    {"n": "2019","v": "2019"},
+                    {"n": "2018","v": "2018"},
+                    {"n": "2017","v": "2017"}]
+            },
+            {
+                "key": "by",
+                "name": "排序",
+                "value": [
+                    {"n": "全部","v": ""},
+                    {"n": "更新","v": "time"},
+                    {"n": "日榜","v": "hits_day"},
+                    {"n": "周榜","v": "hits_week"},
+                    {"n": "月榜","v": "hits_month"},
+                    {"n": "总榜","v": "hits"},
+                    {"n": "评分","v": "score"}]
+            }
+        ],
+        "14": [
+            {
+                "key": "catelog",
+                "name": "类型",
+                "value": [
+                    {"n": "全部","v": ""},
+                    {"n": "悬疑","v": "悬疑"},
+                    {"n": "武侠","v": "武侠"},
+                    {"n": "科幻","v": "科幻"},
+                    {"n": "都市","v": "都市"},
+                    {"n": "爱情","v": "爱情"},
+                    {"n": "古装","v": "古装"},
+                    {"n": "战争","v": "战争"},
+                    {"n": "青春","v": "青春"},
+                    {"n": "偶像","v": "偶像"},
+                    {"n": "喜剧","v": "喜剧"},
+                    {"n": "家庭","v": "家庭"},
+                    {"n": "犯罪","v": "犯罪"},
+                    {"n": "奇幻","v": "奇幻"},
+                    {"n": "剧情","v": "剧情"},
+                    {"n": "乡村","v": "乡村"},
+                    {"n": "年代","v": "年代"},
+                    {"n": "警匪","v": "警匪"},
+                    {"n": "谍战","v": "谍战"},
+                    {"n": "冒险","v": "冒险"},
+                    {"n": "罪案","v": "罪案"},
+                    {"n": "宫廷","v": "宫廷"},
+                    {"n": "耽美","v": "BL"}]
+            },
+            {
+                "key": "year",
+                "name": "年份",
+                "value": [
+                    {"n": "全部","v": ""},
+                    {"n": "2023","v": "2023"},
+                    {"n": "2022","v": "2022"},
+                    {"n": "2021","v": "2021"},
+                    {"n": "2020","v": "2020"},
+                    {"n": "2019","v": "2019"},
+                    {"n": "2018","v": "2018"}]
+            },
+            {
+                "key": "by",
+                "name": "排序",
+                "value": [
+                    {"n": "全部","v": ""},
+                    {"n": "更新","v": "time"},
+                    {"n": "日榜","v": "hits_day"},
+                    {"n": "周榜","v": "hits_week"},
+                    {"n": "月榜","v": "hits_month"},
+                    {"n": "总榜","v": "hits"},
+                    {"n": "评分","v": "score"}]
+            }
+        ],
+        "21": [
+            {
+                "key": "catelog",
+                "name": "类型",
+                "value": [
+                    {"n": "全部","v": ""},
+                    {"n": "悬疑","v": "悬疑"},
+                    {"n": "武侠","v": "武侠"},
+                    {"n": "科幻","v": "科幻"},
+                    {"n": "都市","v": "都市"},
+                    {"n": "爱情","v": "爱情"},
+                    {"n": "古装","v": "古装"},
+                    {"n": "青春","v": "青春"},
+                    {"n": "喜剧","v": "喜剧"},
+                    {"n": "家庭","v": "家庭"},
+                    {"n": "犯罪","v": "犯罪"},
+                    {"n": "奇幻","v": "奇幻"},
+                    {"n": "剧情","v": "剧情"},
+                    {"n": "谍战","v": "谍战"}]
+            },
+            {
+                "key": "year",
+                "name": "年份",
+                "value": [
+                    {"n": "全部","v": ""},
+                    {"n": "2023","v": "2023"},
+                    {"n": "2022","v": "2022"},
+                    {"n": "2021","v": "2021"},
+                    {"n": "2020","v": "2020"},
+                    {"n": "2019","v": "2019"},
+                    {"n": "2018","v": "2018"},
+                    {"n": "2017","v": "2017"}]
+            },
+            {
+                "key": "by",
+                "name": "排序",
+                "value": [
+                    {"n": "全部","v": ""},
+                    {"n": "更新","v": "time"},
+                    {"n": "日榜","v": "hits_day"},
+                    {"n": "周榜","v": "hits_week"},
+                    {"n": "月榜","v": "hits_month"},
+                    {"n": "总榜","v": "hits"},
+                    {"n": "评分","v": "score"}]
+            }
+        ],
+        "3": [
+            {
+                "key": "catelog",
+                "name": "类型",
+                "value": [
+                    {"n": "全部","v": ""},
+                    {"n": "真人秀","v": "真人秀"},
+                    {"n": "选秀","v": "选秀"},
+                    {"n": "竞演","v": "竞演"},
+                    {"n": "情感","v": "情感"},
+                    {"n": "访谈","v": "访谈"},
+                    {"n": "播报","v": "播报"},
+                    {"n": "旅游","v": "旅游"},
+                    {"n": "音乐","v": "音乐"},
+                    {"n": "美食","v": "美食"},
+                    {"n": "纪实","v": "纪实"},
+                    {"n": "曲艺","v": "曲艺"},
+                    {"n": "生活","v": "生活"},
+                    {"n": "游戏","v": "游戏互动"}]
+            },
+            {
+                "key": "year",
+                "name": "年份",
+                "value": [
+                    {"n": "全部","v": ""},
+                    {"n": "2023","v": "2023"},
+                    {"n": "2022","v": "2022"},
+                    {"n": "2021","v": "2021"},
+                    {"n": "2020","v": "2020"},
+                    {"n": "2019","v": "2019"}]
+            },
+            {
+                "key": "by",
+                "name": "排序",
+                "value": [
+                    {"n": "全部","v": ""},
+                    {"n": "更新","v": "time"},
+                    {"n": "日榜","v": "hits_day"},
+                    {"n": "周榜","v": "hits_week"},
+                    {"n": "月榜","v": "hits_month"},
+                    {"n": "总榜","v": "hits"},
+                    {"n": "评分","v": "score"}]
+            }
+        ],
+        "4": [
+            {
+                "key": "area",
+                "name": "地区",
+                "value": [
+                    {"n": "全部","v": ""},
+                    {"n": "国产","v": "国产"},
+                    {"n": "日本","v": "日本"},
+                    {"n": "美国","v": "美国"},
+                    {"n": "法国","v": "法国"},
+                    {"n": "其他","v": "其他"}]
+            },
+            {
+                "key": "catelog",
+                "name": "类型",
+                "value": [
+                    {"n": "全部","v": ""},
+                    {"n": "玄幻","v": "玄幻"},
+                    {"n": "武侠","v": "武侠"},
+                    {"n": "情感","v": "情感"},
+                    {"n": "科幻","v": "科幻"},
+                    {"n": "热血","v": "热血"},
+                    {"n": "推理","v": "推理"},
+                    {"n": "搞笑","v": "搞笑"},
+                    {"n": "冒险","v": "冒险"},
+                    {"n": "萝莉","v": "萝莉"},
+                    {"n": "校园","v": "校园"},
+                    {"n": "动作","v": "动作"},
+                    {"n": "机战","v": "机战"},
+                    {"n": "运动","v": "运动"},
+                    {"n": "战争","v": "战争"},
+                    {"n": "少年","v": "少年"},
+                    {"n": "少女","v": "少女"},
+                    {"n": "社会","v": "社会"},
+                    {"n": "亲子","v": "亲子"},
+                    {"n": "益智","v": "益智"},
+                    {"n": "励志","v": "励志"}]
+            },
+            {
+                "key": "year",
+                "name": "年份",
+                "value": [
+                    {"n": "全部","v": ""},
+                    {"n": "2023","v": "2023"},
+                    {"n": "2022","v": "2022"},
+                    {"n": "2021","v": "2021"},
+                    {"n": "2020","v": "2020"},
+                    {"n": "2019","v": "2019"},
+                    {"n": "2018","v": "2018"},
+                    {"n": "2017","v": "2017"}]
+            },
+            {
+                "key": "by",
+                "name": "排序",
+                "value": [
+                    {"n": "全部","v": ""},
+                    {"n": "更新","v": "time"},
+                    {"n": "日榜","v": "hits_day"},
+                    {"n": "周榜","v": "hits_week"},
+                    {"n": "月榜","v": "hits_month"},
+                    {"n": "总榜","v": "hits"},
+                    {"n": "评分","v": "score"}]
+            }
+        ]
+    }
+}
