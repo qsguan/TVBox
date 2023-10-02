@@ -12,7 +12,7 @@
         "电影":   "dianying",
         "电视剧": "dianshiju",
         "综艺":   "zongyi",
-        "动漫":   "dongman",
+        "动漫2":   "dongman",
         "纪录片": "jilupian"
     },
     
@@ -38,13 +38,13 @@
     "dtNode":       "//div[@class='module module-info']",
     "dtName":       "//div[@class='module-info-heading']/h1/text()",
     "dtImg":        "/div/div/div/div/img/@data-original",
-    "dtCate":       "//div[@class='module-info-tag']/div[3]/a/text()",
+    "dtCate":       "concat(//div[@class='module-info-tag']/div[3]/a/text())",
     "dtYear":       "//div[@class='module-info-tag']/div[1]/a/text()",
     "dtArea":       "//div[@class='module-info-tag']/div[2]/a/text()",
     "dtMark":       "//span[contains(text(),'集数') or contains(text(),'备注') or contains(text(),'片长')]/following-sibling::*/text()",
     "dtDirector":   "concat(//span[contains(text(),'导演')]/following-sibling::*/a[position()<6]/text())",
     "dtActor":      "concat(//span[contains(text(),'主演')]/following-sibling::*/a[position()<6]/text())",
-    "dtDesc":       "//div[contains(@class,'module-info-introduction-content')]//text()",
+    "dtDesc":       "//div[contains(@class,'module-info-introduction-content')]",
     
 // Video Playlist =====================================================
     "dtFromNode":   "//div[contains(@class,'module-tab-items-box')]//div[contains(@class,'module-tab-item')]",
