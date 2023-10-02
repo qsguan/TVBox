@@ -13,7 +13,7 @@
         "电视剧": "2",
         "综艺库": "3",
         "动漫库": "4",
-        "纪录片1": "20"
+        "纪录片2": "20"
     },
     
 // Home Summary ================================================
@@ -26,15 +26,15 @@
     "homeVodMark":  "concat(//div[contains(@class,'caption')]/span[1]/text(),'/',/div[contains(@class,'text')]/text())",
     
 // Category Summary ================================================
-                   //
-    "cateUrl":      "",
-    "cateVodNode":  "",
-    "cateVodName":  "",
-    "cateVodId":    "",
-    "cateVodIdR":   "",
-    "cateVodImg":   "",
+                   //https://haituu.tv/vod/show/area/大陆/by/score/class/剧情/id/11/lang/国语/page/2/year/2022.html
+    "cateUrl":      "https://haituu.tv/vod/show{area}{by}{class}/id/{cateId}{lang}/page/{catePg}{year}.html",
+    "cateVodNode":  "//div[@class='content']/div[contains(@class,'module')]//div[@class='module-item']",
+    "cateVodName":  "/div[contains(@class,'box')]/a/@title",
+    "cateVodId":    "/div[contains(@class,'box')]/a/@href",
+    "cateVodIdR":   "/vod/detail/id/(\\S+).html",
+    "cateVodImg":   "/div[contains(@class,'cover')]/div/img/@data-src",
     "cateVodImgR":  ".*(http\\S+)",
-    "cateVodMark":  "",
+    "cateVodMark":  "concat(//div[contains(@class,'caption')]/span[1]/text(),'/',/div[contains(@class,'text')]/text())",
     
 // Video Details ================================================
     "dtUrl":        "https://haituu.tv/vod/detail/id/{vid}.html",
@@ -42,14 +42,13 @@
     "dtName":       "//h1[@class='page-title']/text()",
     "dtImg":        "//div[@class='video-cover']/div/div/img/@data-src",
     "dtImgR":       ".*(http\\S+)",
-    "dtCate":       "",
-    "dtYear":       "",
-    "dtArea":       "",
-    "dtMark":       "",
-    "dtDirector":   "",
-    "dtActor":      "",
-    "dtDesc":       "",
-    "dtDescR":      "",
+    "dtCate":       "concat(//div[contains(@class,'video-info-aux')]/div/a/text())",
+    "dtYear":       "//div[contains(@class,'video-info-aux')]/a[2]/text()",
+    "dtArea":       "//div[contains(@class,'video-info-aux')]/a[3]/text()",
+    "dtMark":       "//span[contains(text(),'集数')]/following-sibling::div/text()",
+    "dtDirector":   "concat(//span[contains(text(),'导演')]/following-sibling::div/a[position()<6]/text())",
+    "dtActor":      "concat(//span[contains(text(),'主演')]/following-sibling::div/a[position()<6]/text())",
+    "dtDesc":       "//span[contains(text(),'剧情')]/following-sibling::div/span/text()",
     
 // Video Playlist =====================================================
     "dtFromNode":   "//div[contains(@class,'module-player-tab')]/div/div/div",
@@ -63,15 +62,14 @@
     "playUa":       "",
     
 // Search Results ================================================
-    "searchUrl":    "",
-    "scVodNode":    "",
-    "scVodName":    "",
-    "scVodId":      "",
-    "scVodIdR":     "",
-    "scVodImg":     "",
+    "searchUrl":    "https://haituu.tv/vod/search.html?wd={wd}",
+    "scVodNode":    "//div[@class='content']/div[contains(@class,'module')]//div[@class='module-search-item']",
+    "scVodName":    "//div[contains(@class,'info-header')]/a/@title",
+    "scVodId":      "//div[contains(@class,'info-header')]/a/@href",
+    "scVodIdR":     "/vod/detail/id/(\\S+).html",
+    "scVodImg":     "//div[contains(@class,'cover')]/div/img/@data-src",
     "scVodImgR":    ".*(http\\S+)",
-    "scVodMark":    "",
-    "scVodMarkR":   "",
+    "scVodMark":    "concat(//div[contains(@class,'video-info-aux')]/div[1]//a/text(),'/',//div[@class='video-info-header']/a/text())",
     
 // Filters =======================================================
     "filter": {
