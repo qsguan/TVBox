@@ -119,16 +119,6 @@
             "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Active/7XiYY.json"
         },
         {
-            "key": "csp_xpath_HaiTuYY",
-            "name": "海兔影院",
-            "type": 3,
-            "api": "csp_XPathMacFilter",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
-            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Active/HaiTuYY.json"
-        },
-        {
             "key": "csp_xpath_OuDiYY",
             "name": "欧帝影院",
             "type": 3,
@@ -137,6 +127,16 @@
             "quickSearch": 1,
             "filterable": 1,
             "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Active/OuDiYY.json"
+        },
+        {
+            "key": "csp_xpath_HaiTuYY",
+            "name": "海兔影院",
+            "type": 3,
+            "api": "csp_XPathMacFilter",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Active/HaiTuYY.json"
         },
         {
             "key": "csp_xpath_HuaLeTV",

@@ -13,7 +13,7 @@
         "电视剧": "2",
         "综艺库": "3",
         "动漫库": "4",
-        "体育库1": "5"
+        "体育库": "5"
     },
     
 // Home Summary ================================================
@@ -27,15 +27,16 @@
     "homeVodMarkR": "\\S+:(\\S+)",
     
 // Category Summary ================================================
-                   //
-    "cateUrl":      "",
-    "cateVodNode":  "",
-    "cateVodName":  "",
-    "cateVodId":    "",
-    "cateVodIdR":   "",
-    "cateVodImg":   "",
+                   //https://www.odivod.com/vodshow/11-大陆-score-剧情-国语----2---2021.html
+    "cateUrl":      "https://www.odivod.com/vodshow/{cateId}-{area}-{by}-{catelog}-{lang}----{catePg}---{year}.html",
+    "cateVodNode":  "//div[@class='module']/a",
+    "cateVodName":  "/@title",
+    "cateVodId":    "/@href",
+    "cateVodIdR":   "/voddetail/(\\S+).html",
+    "cateVodImg":   "/div/div/img/@data-original",
     "cateVodImgR":  ".*(http\\S+)",
-    "cateVodMark":  "",
+    "cateVodMark":  "concat(//div[contains(@class,'douban')]/text(),'/',//div[contains(@class,'note')]/text())",
+    "cateVodMarkR": "\\S+:(\\S+)",
     
 // Video Details ================================================
     "dtUrl":        "https://www.odivod.com/voddetail/{vid}.html",
@@ -43,14 +44,13 @@
     "dtName":       "//div[contains(@class,'info-heading')]/h1/text()",
     "dtImg":        "//div[contains(@class,'info-poster')]/div/div/img/@data-original",
     "dtImgR":       ".*(http\\S+)",
-    "dtCate":       "",
-    "dtYear":       "",
-    "dtArea":       "",
-    "dtMark":       "",
-    "dtDirector":   "",
-    "dtActor":      "",
-    "dtDesc":       "",
-    "dtDescR":      "",
+    "dtCate":       "concat(//div[contains(@class,'info-heading')]/div[1]/div[3]/a/text())",
+    "dtYear":       "//div[contains(@class,'info-heading')]/div[1]/div[1]/a/text()",
+    "dtArea":       "//div[contains(@class,'info-heading')]/div[1]/div[2]/a/text()",
+    "dtMark":       "//span[contains(text(),'备注')]/following-sibling::div/text()",
+    "dtDirector":   "concat(//span[contains(text(),'导演')]/following-sibling::div/a[position()<6]/text())",
+    "dtActor":      "concat(//span[contains(text(),'主演')]/following-sibling::div/a[position()<6]/text())",
+    "dtDesc":       "//div[contains(@class,'module-info-introduction-content')]",
     
 // Video Playlist =====================================================
     "dtFromNode":   "//div[contains(@class,'player-heading')]/div/div/div/div",
@@ -64,15 +64,14 @@
     "playUa":       "",
     
 // Search Results ================================================
-    "searchUrl":    "",
-    "scVodNode":    "",
-    "scVodName":    "",
-    "scVodId":      "",
-    "scVodIdR":     "",
-    "scVodImg":     "",
+    "searchUrl":    "https://www.odivod.com/vodsearch/-------------.html?wd={wd}",
+    "scVodNode":    "//div[contains(@class,'module-card-items')]/div",
+    "scVodName":    "//div[contains(@class,'item-title')]/a//text()",
+    "scVodId":      "//div[contains(@class,'item-title')]/a/@href",
+    "scVodIdR":     "/voddetail/(\\S+).html",
+    "scVodImg":     "//div[contains(@class,'item-pic')]/img/@data-original",
     "scVodImgR":    ".*(http\\S+)",
-    "scVodMark":    "",
-    "scVodMarkR":   "",
+    "scVodMark":    "concat(//div[@class='module-card-item-info']/div[2]/div/text()[1],'/',/a/div/div/text())",
     
 // Filters =======================================================
     "filter": {
