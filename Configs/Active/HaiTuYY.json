@@ -13,7 +13,7 @@
         "电视剧": "2",
         "综艺库": "3",
         "动漫库": "4",
-        "纪录片2": "20"
+        "纪录片1": "20"
     },
     
 // Home Summary ================================================
@@ -51,8 +51,9 @@
     "dtDesc":       "//span[contains(text(),'剧情')]/following-sibling::div/span/text()",
     
 // Video Playlist =====================================================
-    "dtFromNode":   "//div[contains(@class,'module-player-tab')]/div/div/div",
-    "dtFromName":   "/span/text()",
+    "dtFromNode":   "//div[contains(@class,'module-player-tab')]/div/div/div/span",
+    #"dtFromName":   "/text()",
+    "dtFromName":   "concat('播放源',count(parent::*/parent::*/parent::*/preceding::*/div[contains(@class,'module-player-tab')]/div/div/div/span)+1)",
     "dtUrlNode":    "//div[contains(@class,'module-player-list')]/div[contains(@class,'box')]/div",
     "dtUrlSubNode": "/a",
     "dtUrlId":      "/@href",
