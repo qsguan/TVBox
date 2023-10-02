@@ -26,22 +26,8 @@
             "searchable": 0,
             "quickSearch": 0,
             "filterable": 0,
-            "jar": "https://github.com/qsguan/TVBox/raw/master/Spiders/xhdwc.tk_231001.jar"
-        },
-        {
-            "key": "豆瓣榜单",
-            "name": "豆瓣榜单5",
-            "type": 3,
-            "api": "csp_DouDou",
-            "searchable": 0,
-            "quickSearch": 0,
-            "filterable": 0,
             "jar": "https://github.com/qsguan/TVBox/raw/master/Spiders/xhdwc.tk_modified.jar"
         },
-
-
-
-
         {
             "key": "csp_xpath_唐人街",
             "name": "唐人街",
