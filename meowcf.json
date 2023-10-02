@@ -129,16 +129,6 @@
             "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Active/OuDiYY.json"
         },
         {
-            "key": "csp_xpath_HaiTuYY",
-            "name": "海兔影院",
-            "type": 3,
-            "api": "csp_XPathMacFilter",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
-            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Active/HaiTuYY.json"
-        },
-        {
             "key": "csp_xpath_HuaLeTV",
             "name": "华乐影院",
             "type": 3,
@@ -147,6 +137,16 @@
             "quickSearch": 1,
             "filterable": 1,
             "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Active/HuaLeTV.json"
+        },
+        {
+            "key": "csp_xpath_虾米影院",
+            "name": "虾米影院",
+            "type": 3,
+            "api": "csp_XPathMacFilter",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Active/XiaMiTV.json"
         },
         {
             "key": "csp_xpath_XiaoBTV",
@@ -159,14 +159,14 @@
             "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Active/XiaoBTV.json"
         },
         {
-            "key": "csp_xpath_虾米影院",
-            "name": "虾米影院",
+            "key": "csp_xpath_IYiFan",
+            "name": "爱壹帆TV",
             "type": 3,
             "api": "csp_XPathMacFilter",
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1,
-            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Active/XiaMiTV.json"
+            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Active/IYiFanTV.json"
         },
         {
             "key": "csp_xpath_NiVodTV",
