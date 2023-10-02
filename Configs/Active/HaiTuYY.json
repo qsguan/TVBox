@@ -1,7 +1,7 @@
 {
     "author": "Jimmy_Bytheway",
     "ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1",
-    "homeUrl":   "https://hoho.tv/",
+    "homeUrl":   "https://haituu.tv/",
     "dcPlayUrl": "true",
     "dcVipFlag": "true",
     "cateNode":  "//div[@class='nav']/ul[@class='nav-menu-items']/li/a[contains(@href,'type')]",
@@ -12,21 +12,21 @@
         "电影库": "1",
         "电视剧": "2",
         "综艺库": "3",
-        "动漫库": "4", #, "test": "test"
-        "纪录片": "5", "test": "test"
+        "动漫库": "4",
+        "纪录片": "20"
     },
     
 // Home Summary ================================================
-    "homeVodNode":  "",
-    "homeVodName":  "",
-    "homeVodId":    "",
-    "homeVodIdR":   "",
-    "homeVodImg":   "",
+    "homeVodNode":  "//div[@class='content']/div[contains(@class,'module')][position()<6]//div[@class='module-item']",
+    "homeVodName":  "/div[contains(@class,'box')]/a/@title",
+    "homeVodId":    "/div[contains(@class,'box')]/a/@href",
+    "homeVodIdR":   "/vod/detail/id/(\\S+).html",
+    "homeVodImg":   "/div[contains(@class,'cover')]/div/img/@data-src",
     "homeVodImgR":  ".*(http\\S+)",
-    "homeVodMark":  "",
-    "homeVodMarkR": "",
+    "homeVodMark":  "concat(//div[contains(@class,'caption')]/span[1]/text(),'/',/div[contains(@class,'text')]/text())",
     
 // Category Summary ================================================
+                   //
     "cateUrl":      "",
     "cateVodNode":  "",
     "cateVodName":  "",
@@ -37,10 +37,10 @@
     "cateVodMark":  "",
     
 // Video Details ================================================
-    "dtUrl":        "",
-    "dtNode":       "",
-    "dtName":       "",
-    "dtImg":        "",
+    "dtUrl":        "https://haituu.tv/vod/detail/id/{vid}.html",
+    "dtNode":       "//div[@class='box view-heading']",
+    "dtName":       "//h1[@class='page-title']/text()",
+    "dtImg":        "//div[@class='video-cover']/div/div/img/@data-src",
     "dtImgR":       ".*(http\\S+)",
     "dtCate":       "",
     "dtYear":       "",
@@ -52,15 +52,14 @@
     "dtDescR":      "",
     
 // Video Playlist =====================================================
-    "dtFromNode":   "",
-    "dtFromName":   "",
-    "dtFromNameR":  "",
-    "dtUrlNode":    "",
-    "dtUrlSubNode": "",
-    "dtUrlId":      "",
-    "dtUrlIdR":     "",
-    "dtUrlName":    "",
-    "playUrl":      "",
+    "dtFromNode":   "//div[contains(@class,'module-player-tab')]/div/div/div",
+    "dtFromName":   "/span/text()",
+    "dtUrlNode":    "//div[contains(@class,'module-player-list')]/div[contains(@class,'box')]/div",
+    "dtUrlSubNode": "/a",
+    "dtUrlId":      "/a/@href",
+    "dtUrlIdR":     "/vod/play/id/(\\S+).html",
+    "dtUrlName":    "/span/text()",
+    "playUrl":      "https://haituu.tv/vod/play/id/{playUrl}.html",
     "playUa":       "",
     
 // Search Results ================================================
@@ -77,13 +76,7 @@
 // Filters =======================================================
     "filter": {
         "1": [
-            {
-                "key": "catelog",
-                "name": "分类",
-                "value": [
-                    {"n": "全部","v": ""},
-                    {"n": "其他","v": "其他"}]
-            }
+
         ],
         "2": [
 
@@ -94,8 +87,8 @@
         "4": [
 
         ],
-        "5": [
+        "20": [
 
-        ], "test": []
+        ]
     }
 }
