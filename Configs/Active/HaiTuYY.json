@@ -13,7 +13,7 @@
         "电视剧": "2",
         "综艺库": "3",
         "动漫库": "4",
-        "纪录片": "20"
+        "纪录片1": "20"
     },
     
 // Home Summary ================================================
@@ -56,7 +56,7 @@
     "dtFromName":   "/span/text()",
     "dtUrlNode":    "//div[contains(@class,'module-player-list')]/div[contains(@class,'box')]/div",
     "dtUrlSubNode": "/a",
-    "dtUrlId":      "/a/@href",
+    "dtUrlId":      "/@href",
     "dtUrlIdR":     "/vod/play/id/(\\S+).html",
     "dtUrlName":    "/span/text()",
     "playUrl":      "https://haituu.tv/vod/play/id/{playUrl}.html",
