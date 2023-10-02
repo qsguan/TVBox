@@ -12,8 +12,8 @@
         "电影":   "1",
         "电视剧": "222",
         "综艺":   "3",
-        "动漫":   "4", #, "test": "test"
-        "纪录片": "5"
+        "动漫":   "4",
+        "纪录片1": "5"
     },
     
 // Home Summary ================================================
@@ -42,7 +42,7 @@
     "dtYear":       "//em[contains(text(),'年份')]/parent::li/text()",
     "dtArea":       "//em[contains(text(),'地区')]/parent::li/text()",
     "dtMark":       "//em[contains(text(),'状态')]/following-sibling::span/text()",
-    "dtDirector":   "concat(//em[contains(text(),'导演')]/parent::li//text()",
+    "dtDirector":   "concat(//em[contains(text(),'导演')]/parent::li//text())",
     "dtDirectorR":  "\\S+：(\\S+)",
     "dtActor":      "concat(//em[contains(text(),'主演')]/parent::li//text())",
     "dtActorR":     "\\S+：(\\S+)",
@@ -72,15 +72,9 @@
 // Filters =======================================================
     "filter": {
         "1": [
-            {
-                "key": "catelog",
-                "name": "分类",
-                "value": [
-                    {"n": "全部","v": ""},
-                    {"n": "其他","v": "其他"}]
-            }
+
         ],
-        "2": [
+        "222": [
 
         ],
         "3": [
@@ -91,6 +85,6 @@
         ],
         "5": [
 
-        ], "test": []
+        ]
     }
 }
