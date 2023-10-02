@@ -13,7 +13,7 @@
         "电视剧": "222",
         "综艺":   "3",
         "动漫":   "4",
-        "纪录片1": "5"
+        "纪录片": "5"
     },
     
 // Home Summary ================================================
@@ -29,7 +29,7 @@
     "cateVodNode":  "//ul[contains(@class,'hl-vod-list')]/li/a",
     "cateVodName":  "/@title",
     "cateVodId":    "/@href",
-    "cateVodIdR":   "/voddetail/(\\S+)/.html",
+    "cateVodIdR":   "/voddetail/(\\S+).html",
     "cateVodImg":   "/@data-original",
     "cateVodMark":  "/div[@class='hl-pic-text']/span/text()",
     

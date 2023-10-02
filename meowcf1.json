@@ -123,7 +123,7 @@
         },
         {
             "key": "csp_xpath_LanHTV", #无法获取影片详情页面(不可使用)
-            "name": "兰花影院1",
+            "name": "兰花影院",
             "type": 3,
             "api": "csp_XPathMacFilter",
             "searchable": 1,
