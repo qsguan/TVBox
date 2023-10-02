@@ -47,7 +47,7 @@
     "dtDesc":       "//em[contains(text(),'简介')]/parent::li/text()",
     
 // Video Playlist =====================================================
-    "dtFromNode":   "//div[contains(@class,'hl-play-source')]/div/div/a",
+    "dtFromNode":   "//div[contains(@class,'hl-play-source')]/div/div[not(@class='row')]/a",
     "dtFromName":   "/text()",
     "dtUrlNode":    "//div[contains(@class,'hl-play-source')]/div/div/div/ul",
     "dtUrlSubNode": "/li/a",
