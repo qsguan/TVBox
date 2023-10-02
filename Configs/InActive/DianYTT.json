@@ -12,7 +12,7 @@
         "电影库":   "1",
         "电视剧":   "2",
         "综艺库":   "3",
-        "动漫库":   "4",
+        "动漫库1":   "4",
         "体育赛事": "34"
     },
     
@@ -23,7 +23,7 @@
     "homeVodIdR":   "/index.php/vod/detail/id/(\\S+).html",
     "homeVodImg":   "/@data-original",
     "homeVodImgR":  ".*(http\\S+)",
-    "homeVodMark":  "concat( /span/em[2]/text(),'/',/span[contains(@class,'pic_text')]/text())",
+    "homeVodMark":  "concat(/span/em[2]/text(),'/',/span[contains(@class,'pic_text')]/text())",
     
 // Category Summary ================================================
                    //https://www.m1949.cc/index.php/vod/show/area/大陆/by/score/class/剧情/id/11/lang/国语/page/2/year/2022.html
@@ -56,9 +56,9 @@
     "dtUrlNode":    "//div[@class='play_source']//div[contains(@class,'playlist_full')]/ul",
     "dtUrlSubNode": "/li/a",
     "dtUrlId":      "/@href",
-    "dtUrlIdR":     "/index.php/vod/play/id/(\\S+).html",
+    "dtUrlIdR":     "/index.php/vod/play/(\\S+).html",
     "dtUrlName":    "/text()",
-    "playUrl":      "https://www.m1949.cc/index.php/vod/play/id/{playUrl}.html",
+    "playUrl":      "https://www.m1949.cc/index.php/vod/play/{playUrl}.html",
     "playUa":       "",
     
 // Search Results ================================================
