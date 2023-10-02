@@ -112,6 +112,16 @@
             "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/InActive/WaiPXQ.json"
         },
         {
+            "key": "csp_xpath_HaiTuYY", #节点名字有重复,只能获取单一节点
+            "name": "海兔影院",
+            "type": 3,
+            "api": "csp_XPathMacFilter",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/InActive/HaiTuYY.json"
+        },
+        {
             "key": "csp_xpath_555DYY", #无法获取影片详情页面(不可使用)
             "name": "555电影院",
             "type": 3,
