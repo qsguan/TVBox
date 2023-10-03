@@ -13,11 +13,11 @@
         "电视剧":   "2",
         "综艺库":   "3",
         "动漫库":   "4",
-        "电影解说": "43"
+        "电影解说1": "43"
     },
     
 // Home Summary ================================================
-    "homeVodNode":  "//div[contains(@class,'box-width wow')]//div[contains(@class,'public-list-box') and not(@role='group')]",
+    "homeVodNode":  "//div[contains(@class,'box-width wow')][position()<7]//div[contains(@class,'public-list-box') and not(@role='group')]",
     "homeVodName":  "/div[@class='public-list-button']/a/@title",
     "homeVodId":    "/div[@class='public-list-button']/a/@href",
     "homeVodIdR":   "/voddetail/(\\S+)/",
