@@ -1,7 +1,7 @@
 {
     "author": "Jimmy_Bytheway",
     "ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1",
-    "homeUrl":   "https://hoho.tv/", # https://www.hoho.tv/
+    "homeUrl":   "https://hoho.tv/", #https://www.hoho.tv/
     "dcPlayUrl": "true",
     "dcVipFlag": "true",
     "cateNode":  "//div[@class='nav']/ul[@class='nav-menu-items']/li/a[contains(@href,'type')]",
@@ -195,9 +195,6 @@
                     {"n": "奇幻","v": "/class/奇幻"},
                     {"n": "剧情","v": "/class/剧情"},
                     {"n": "历史","v": "/class/历史"},
-                    {"n": "经典","v": "/class/经典"},
-                    {"n": "乡村","v": "/class/乡村"},
-                    {"n": "商战","v": "/class/商战"},
                     {"n": "网剧","v": "/class/网剧"},
                     {"n": "其他","v": "/class/其他"}]
             },
@@ -267,9 +264,7 @@
                     {"n": "纪实","v": "/class/纪实"},
                     {"n": "曲艺","v": "/class/曲艺"},
                     {"n": "生活","v": "/class/生活"},
-                    {"n": "游戏","v": "/class/游戏互动"},
-                    {"n": "财经","v": "/class/财经"},
-                    {"n": "求职","v": "/class/求职"}]
+                    {"n": "游戏","v": "/class/游戏"}]
             },
             {
                 "key": "year",
@@ -327,13 +322,11 @@
                 "name": "类型",
                 "value": [
                     {"n": "全部","v": ""},
-                    {"n": "情感","v": "/class/情感"},
                     {"n": "科幻","v": "/class/科幻"},
                     {"n": "热血","v": "/class/热血"},
                     {"n": "推理","v": "/class/推理"},
                     {"n": "搞笑","v": "/class/搞笑"},
                     {"n": "冒险","v": "/class/冒险"},
-                    {"n": "萝莉","v": "/class/萝莉"},
                     {"n": "校园","v": "/class/校园"},
                     {"n": "动作","v": "/class/动作"},
                     {"n": "机战","v": "/class/机战"},

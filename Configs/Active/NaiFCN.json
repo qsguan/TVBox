@@ -34,7 +34,7 @@
     "cateVodIdR":   "/index.php/vod/detail/id/(\\S+).html",
     "cateVodImg":   "/div/div/img/@data-original",
     "cateVodImgR":  ".*(http\\S+)",
-    "cateVodMark":  "/div/div[contains(@class,'douban')]/text()",
+    "cateVodMark":  "/div/div[contains(@class,'note')]/text()",
     
 // Video Details ================================================
     "dtUrl":        "https://naifeicn.com/index.php/vod/detail/id/{vid}.html",
