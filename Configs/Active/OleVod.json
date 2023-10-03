@@ -50,7 +50,6 @@
     "dtDirector":   "concat(//div[contains(@class,'hl-data-sm')]//em[contains(text(),'导演')]/following-sibling::a[position()<6]/text())",
     "dtActor":      "concat(//div[contains(@class,'hl-data-sm')]//em[contains(text(),'主演')]/following-sibling::a[position()<6]/text())",
     "dtDesc":       "//div[contains(@class,'hl-data-sm')]//em[contains(text(),'简介')]/parent::*/text()",
-    "dtDescR":      "\"(\\S+)\"",
     
 // Video Playlist =====================================================
     "dtFromNode":   "//div[contains(@id,'playlist')]/div/div/div/a",
