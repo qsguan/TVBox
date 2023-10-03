@@ -45,11 +45,11 @@
     "dtMark":       "//p[@class='data']/span[contains(text(),'狀態')]/parent::*/text()",
     "dtDirector":   "concat(//p[@class='data']/span[contains(text(),'導演')]/following-sibling::a[position()<6]/text())",
     "dtActor":      "concat(//p[@class='data']/span[contains(text(),'主演')]/following-sibling::a[position()<6]/text())",
-    "dtDesc":       "//div[contains(@class,'text-collapse')]", #/div/p中可能没有/p节点，
+    "dtDesc":       "//div[contains(@class,'text-collapse')]", #/div/p中可能没有/p节点,用/div下所有文本内容作为剧情介绍
     
 // Video Playlist =====================================================
     "dtFromNode":   "//div[contains(@class,'col-md-wide-7')]/div[contains(@class,'myui-panel') and not(@id='desc')]/div/div/div/h3/i",
-    "dtFromName":   "/parent::h3/text()[2]", #"concat('',text())",
+    "dtFromName":   "/parent::h3/text()[2]",
     "dtFromNameR":   "(\\S+線路)",
     "dtUrlNode":    "//ul[contains(@class,'myui-content__list')]",
     "dtUrlSubNode": "/li/a",
