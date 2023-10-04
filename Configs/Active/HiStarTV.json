@@ -1,0 +1,94 @@
+{
+    "author": "Jimmy_Bytheway",
+    "ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1",
+    "homeUrl":   "https://www.histar.tv/",
+    "dcPlayUrl": "true",
+    "dcVipFlag": "true",
+    "cateNode":  "//nav[contains(@class,'nav_nav__')]/a",
+    "cateName":  "/p/text()",
+    "cateId":    "/@href",
+    "cateIdR":   "/(\\S+)",
+    "cateManual": {
+        "电影库": "movie",
+        "电视剧": "drama",
+        "综艺库": "variety",
+        "动漫库": "animation",
+        "纪录片": "documentary"
+    },
+    
+// Home Summary ================================================
+    "homeVodNode":  "//div[contains(@class,'film-list_list')]/div/figure/a",
+    "homeVodName":  "/p/text()",
+    "homeVodId":    "/@href",
+    "homeVodIdR":   "/vod/detail/(\\S+)",
+    "homeVodImg":   "/div/img/@src",
+    "homeVodImgR":  ".*(http\\S+)",
+    "homeVodMark":  "/div/@data-txt",
+    
+// Category Summary ================================================
+                   //
+    "cateUrl":      "",
+    "cateVodNode":  "",
+    "cateVodName":  "",
+    "cateVodId":    "",
+    "cateVodIdR":   "",
+    "cateVodImg":   "",
+    "cateVodImgR":  ".*(http\\S+)",
+    "cateVodMark":  "",
+    
+// Video Details ================================================
+    "dtUrl":        "https://www.histar.tv/vod/detail/{vid}",
+    "dtNode":       "//body",
+    "dtName":       "",
+    "dtImg":        "",
+    "dtImgR":       ".*(http\\S+)",
+    "dtCate":       "",
+    "dtYear":       "",
+    "dtArea":       "",
+    "dtMark":       "",
+    "dtDirector":   "",
+    "dtActor":      "",
+    "dtDesc":       "",
+    "dtDescR":      "",
+    
+// Video Playlist =====================================================
+    "dtFromNode":   "//a[contains(text(),'立即播放')] | //h2[contains(text(),'选集')]",
+    "dtFromName":   "/text()",
+    "dtUrlNode":    "//a[contains(text(),'立即播放')]/parent::div | //div[contains(@class,'episode')]",
+    "dtUrlSubNode": "/a",
+    "dtUrlId":      "/@href",
+    "dtUrlIdR":     "/vod/play/(\\S+)",
+    "dtUrlName":    "/text()",
+    "playUrl":      "https://www.histar.tv/vod/play/{playUrl}",
+    "playUa":       "",
+    
+// Search Results ================================================
+    "searchUrl":    "",
+    "scVodNode":    "",
+    "scVodName":    "",
+    "scVodId":      "",
+    "scVodIdR":     "",
+    "scVodImg":     "",
+    "scVodImgR":    ".*(http\\S+)",
+    "scVodMark":    "",
+    "scVodMarkR":   "",
+    
+// Filters =======================================================
+    "filter": {
+        "movie": [
+
+        ],
+        "drama": [
+
+        ],
+        "variety": [
+
+        ],
+        "animation": [
+
+        ],
+        "documentary": [
+
+        ]
+    }
+}

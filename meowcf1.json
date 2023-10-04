@@ -18,6 +18,17 @@
 
     ## video on-demand
     "sites": [
+        {
+            "key": "csp_xpath_星视界", #海外线路之外的线路速度很慢
+            "name": "星视界",
+            "type": 3,
+            "api": "csp_XPathMacFilter",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Active/HiStarTV.json"
+        },
+
         ## 自行配置但不好用的
         {
             "key": "csp_xpath_飞兔影视", #海外线路之外的线路速度很慢
