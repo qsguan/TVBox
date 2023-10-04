@@ -13,7 +13,7 @@
         "电视剧": "drama",
         "综艺库": "variety",
         "动漫库": "animation",
-        "纪录片2": "documentary"
+        "纪录片3": "documentary"
     },
     
 // Home Summary ================================================
@@ -47,11 +47,11 @@
     "dtAreaR":      ".*/(.*)",
     "dtMark":       "",
     "dtDirector":   "concat(//p[contains(text(),'导演')]/text())",
-    "dtDirectorR":  "\\S+：(\\S+)",
+    "dtDirectorR":  "\\S+：(.*)",
     "dtActor":      "concat(//p[contains(text(),'演员')]/text())",
-    "dtActorR":     "\\S+：(\\S+)",
+    "dtActorR":     "\\S+：(.*)",
     "dtDesc":       "concat(//p[contains(text(),'剧情')]/text())",
-    "dtDescR":      "\\S+：(\\S+)",
+    "dtDescR":      "\\S+：(.*)",
     
 // Video Playlist =====================================================
     "dtFromNode":   "(//a[contains(text(),'立即播放')] | //h2[contains(text(),'选集')])",
