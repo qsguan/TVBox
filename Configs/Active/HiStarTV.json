@@ -13,7 +13,7 @@
         "电视剧": "drama",
         "综艺库": "variety",
         "动漫库": "animation",
-        "纪录片1": "documentary"
+        "纪录片2": "documentary"
     },
     
 // Home Summary ================================================
@@ -22,7 +22,6 @@
     "homeVodId":    "/@href",
     "homeVodIdR":   "/vod/detail/(\\S+)",
     "homeVodImg":   "/div/img/@src",
-    "homeVodImgR":  ".*(http\\S+)",
     "homeVodMark":  "/div/@data-txt",
     
 // Category Summary ================================================
@@ -41,15 +40,18 @@
     "dtNode":       "//section[contains(@class,'detail_info__')]",
     "dtName":       "/div/h1/text()",
     "dtImg":        "/figure/a/img/@src",
-    "dtImgR":       ".*(http\\S+)",
-    "dtCate":       "",
-    "dtYear":       "",
-    "dtArea":       "",
+    "dtCate":       "/div/p[1]/text()",
+    "dtYear":       "/div/p[1]/text()",
+    "dtYearR":      "(^[0-9]{4}).*",
+    "dtArea":       "/div/p[1]/text()",
+    "dtAreaR":      ".*/(.*)",
     "dtMark":       "",
-    "dtDirector":   "",
-    "dtActor":      "",
-    "dtDesc":       "",
-    "dtDescR":      "",
+    "dtDirector":   "concat(//p[contains(text(),'导演')]/text())",
+    "dtDirectorR":  "\\S+：(\\S+)",
+    "dtActor":      "concat(//p[contains(text(),'演员')]/text())",
+    "dtActorR":     "\\S+：(\\S+)",
+    "dtDesc":       "concat(//p[contains(text(),'剧情')]/text())",
+    "dtDescR":      "\\S+：(\\S+)",
     
 // Video Playlist =====================================================
     "dtFromNode":   "(//a[contains(text(),'立即播放')] | //h2[contains(text(),'选集')])",
