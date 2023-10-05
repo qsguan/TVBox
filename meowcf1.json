@@ -18,6 +18,18 @@
 
     ## video on-demand
     "sites": [
+        ## 自行配置可以使用的
+        {
+            "key": "csp_xpath_IYiFan", #网页及内容与欧乐影视高度重合
+            "name": "爱壹帆TV",
+            "type": 3,
+            "api": "csp_XPathMacFilter",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Active/IYiFanTV.json"
+        },
+
         ## 自行配置但不好用的
         {
             "key": "csp_xpath_韩剧网", #库分类页面中无限循环显示影片

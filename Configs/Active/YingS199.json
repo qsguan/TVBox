@@ -1,0 +1,93 @@
+{
+    "author": "Jimmy_Bytheway",
+    "ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1",
+    "homeUrl":   "https://www.hzhfgy.com/",
+    "dcPlayUrl": "true",
+    "dcVipFlag": "true",
+    "cateNode":  "//div[@id='topnav']//ul[contains(@class,'nav_list')]/li/a[contains(@href,'type')]",
+    "cateName":  "/@title",
+    "cateId":    "/@href",
+    "cateIdR":   "/index.php/vod/type/id/(\\S+).html",
+    "cateManual": {
+        "电影库": "1",
+        "电视剧": "2",
+        "综艺库": "3",
+        "动漫库": "4",
+        "体育库": "31"
+    },
+    
+// Home Summary ================================================
+    "homeVodNode":  "//div[contains(@class,'vod_row')]/div[position()<6]//div[@class='cbox1']/ul/li/a",
+    "homeVodName":  "/@title",
+    "homeVodId":    "/@href",
+    "homeVodIdR":   "/index.php/vod/detail/id/(\\S+).html",
+    "homeVodImg":   "/@data-original",
+    "homeVodMark":  "concat(/span/em[1]/text(),'/',/span[contains(@class,'pic_text')]/text())",
+    
+// Category Summary ================================================
+                   //
+    "cateUrl":      "",
+    "cateVodNode":  "",
+    "cateVodName":  "",
+    "cateVodId":    "",
+    "cateVodIdR":   "",
+    "cateVodImg":   "",
+    "cateVodImgR":  ".*(http\\S+)",
+    "cateVodMark":  "",
+    
+// Video Details ================================================
+    "dtUrl":        "https://www.hzhfgy.com/index.php/vod/detail/id/{vid}.html",
+    "dtNode":       "//body",
+    "dtName":       "//div[contains(@class,'content_detail')]/div/h2/text()",
+    "dtImg":        "",
+    "dtImgR":       ".*(http\\S+)",
+    "dtCate":       "",
+    "dtYear":       "",
+    "dtArea":       "",
+    "dtMark":       "",
+    "dtDirector":   "",
+    "dtActor":      "",
+    "dtDesc":       "",
+    "dtDescR":      "",
+    
+// Video Playlist =====================================================
+    "dtFromNode":   "//div[@class='play_source']/div/a",
+    "dtFromName":   "/@alt",
+    "dtUrlNode":    "//div[@class='playlist_full']/ul",
+    "dtUrlSubNode": "/li/a",
+    "dtUrlId":      "/@href",
+    "dtUrlIdR":     "/index.php/vod/play/id/(\\S+).html",
+    "dtUrlName":    "/text()",
+    "playUrl":      "https://www.hzhfgy.com/index.php/vod/play/id/{playUrl}.html",
+    "playUa":       "",
+    
+// Search Results ================================================
+    "searchUrl":    "",
+    "scVodNode":    "",
+    "scVodName":    "",
+    "scVodId":      "",
+    "scVodIdR":     "",
+    "scVodImg":     "",
+    "scVodImgR":    ".*(http\\S+)",
+    "scVodMark":    "",
+    "scVodMarkR":   "",
+    
+// Filters =======================================================
+    "filter": {
+        "1": [
+
+        ],
+        "2": [
+
+        ],
+        "3": [
+
+        ],
+        "4": [
+
+        ],
+        "31": [
+
+        ]
+    }
+}
