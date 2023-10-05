@@ -13,7 +13,7 @@
         "电视剧": "2",
         "综艺库": "3",
         "动漫库": "4",
-        "体育库1": "31"
+        "体育库3": "31"
     },
     
 // Home Summary ================================================
@@ -38,7 +38,7 @@
     "dtUrl":        "https://www.hzhfgy.com/index.php/vod/detail/id/{vid}.html",
     "dtNode":       "//body",
     "dtName":       "//div[contains(@class,'content_detail')]/div/h2/text()",
-    "dtImg":        "",
+    "dtImg":        "//div[contains(@class,'content_thumb')]/a/@data-original",
     "dtCate":       "",
     "dtYear":       "",
     "dtArea":       "",
