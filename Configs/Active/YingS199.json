@@ -13,7 +13,7 @@
         "电视剧": "2",
         "综艺库": "3",
         "动漫库": "4",
-        "体育库2": "31"
+        "体育库1": "31"
     },
     
 // Home Summary ================================================
@@ -60,14 +60,13 @@
     "playUa":       "",
     
 // Search Results ================================================
-    "searchUrl":    "",
-    "scVodNode":    "",
-    "scVodName":    "",
-    "scVodId":      "",
-    "scVodIdR":     "",
-    "scVodImg":     "",
-    "scVodMark":    "",
-    "scVodMarkR":   "",
+    "searchUrl":    "https://www.hzhfgy.com/index.php/vod/search.html?wd={wd}",
+    "scVodNode":    "//ul[contains(@class,'vodlist')]/li[@class='searchlist_item']",
+    "scVodName":    "/div/h4/a/@title",
+    "scVodId":      "/div/h4/a/@href",
+    "scVodIdR":     "/index.php/vod/detail/id/(\\S+).html",
+    "scVodImg":     "/div/a/@data-original",
+    "scVodMark":    "concat(/div/h4/a/span/text(),'/',/div/a/span[contains(@class,'pic_text')]/text())",
     
 // Filters =======================================================
     "filter": {
