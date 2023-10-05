@@ -13,7 +13,7 @@
         "电视剧": "2",
         "综艺库": "3",
         "动漫库": "4",
-        "体育库": "31"
+        "体育库1": "31"
     },
     
 // Home Summary ================================================
@@ -22,7 +22,7 @@
     "homeVodId":    "/@href",
     "homeVodIdR":   "/index.php/vod/detail/id/(\\S+).html",
     "homeVodImg":   "/@data-original",
-    "homeVodMark":  "concat(/span/em[1]/text(),'/',/span[contains(@class,'pic_text')]/text())",
+    "homeVodMark":  "concat(/span/em[1]/text(),'/',/span/em[2]/text(),'/',/span[contains(@class,'pic_text')]/text())",
     
 // Category Summary ================================================
                    //
@@ -32,7 +32,6 @@
     "cateVodId":    "",
     "cateVodIdR":   "",
     "cateVodImg":   "",
-    "cateVodImgR":  ".*(http\\S+)",
     "cateVodMark":  "",
     
 // Video Details ================================================
@@ -40,7 +39,6 @@
     "dtNode":       "//body",
     "dtName":       "//div[contains(@class,'content_detail')]/div/h2/text()",
     "dtImg":        "",
-    "dtImgR":       ".*(http\\S+)",
     "dtCate":       "",
     "dtYear":       "",
     "dtArea":       "",
@@ -68,7 +66,6 @@
     "scVodId":      "",
     "scVodIdR":     "",
     "scVodImg":     "",
-    "scVodImgR":    ".*(http\\S+)",
     "scVodMark":    "",
     "scVodMarkR":   "",
     
