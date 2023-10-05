@@ -13,7 +13,7 @@
         "电视剧": "2",
         "综艺库": "3",
         "动漫库": "4",
-        "体育库4": "31"
+        "体育库5": "31"
     },
     
 // Home Summary ================================================
@@ -61,7 +61,7 @@
     
 // Search Results ================================================
     "searchUrl":    "https://www.hzhfgy.com/index.php/vod/search.html?wd={wd}",
-    "scVodNode":    "//ul[contains(@class,'vodlist')]/li[@class='searchlist_item']",
+    "scVodNode":    "//div[contains(@class,'search_box')]/ul[contains(@class,'vodlist')]/li",
     "scVodName":    "/div/h4/a/@title",
     "scVodId":      "/div/h4/a/@href",
     "scVodIdR":     "/index.php/vod/detail/id/(\\S+).html",
