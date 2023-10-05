@@ -13,7 +13,7 @@
         "电视剧": "2",
         "综艺库": "3",
         "动漫库": "4",
-        "体育库3": "31"
+        "体育库4": "31"
     },
     
 // Home Summary ================================================
@@ -21,7 +21,7 @@
     "homeVodName":  "/@title",
     "homeVodId":    "/@href",
     "homeVodIdR":   "/index.php/vod/detail/id/(\\S+).html",
-    "homeVodImg":   "/@data-original",
+    "homeVodImg":   "concat('https:\/\/www.hzhfgy.com/',/@data-original)",
     "homeVodMark":  "concat(/span/em[1]/text(),'/',/span/em[2]/text(),'/',/span[contains(@class,'pic_text')]/text())",
     
 // Category Summary ================================================
