@@ -13,7 +13,7 @@
         "电视剧": "2",
         "综艺库": "3",
         "动漫库": "4",
-        "体育库1": "31"
+        "体育库2": "31"
     },
     
 // Home Summary ================================================
@@ -25,14 +25,14 @@
     "homeVodMark":  "concat(/span/em[1]/text(),'/',/span/em[2]/text(),'/',/span[contains(@class,'pic_text')]/text())",
     
 // Category Summary ================================================
-                   //
-    "cateUrl":      "",
-    "cateVodNode":  "",
-    "cateVodName":  "",
-    "cateVodId":    "",
-    "cateVodIdR":   "",
-    "cateVodImg":   "",
-    "cateVodMark":  "",
+                   //https://www.hzhfgy.com/index.php/vod/show/area/大陆/by/score/class/剧情/id/11/page/2/year/2022.html
+    "cateUrl":      "https://www.hzhfgy.com/index.php/vod/show{area}{by}{class}/id/{cateId}/page/{catePg}{year}.html",
+    "cateVodNode":  "//ul[contains(@class,'vodlist') and not(@id='conch_history')]/li/a",
+    "cateVodName":  "/@title",
+    "cateVodId":    "/@href",
+    "cateVodIdR":   "/index.php/vod/detail/id/(\\S+).html",
+    "cateVodImg":   "/@data-original",
+    "cateVodMark":  "/span[contains(@class,'pic_text')]/text()",
     
 // Video Details ================================================
     "dtUrl":        "https://www.hzhfgy.com/index.php/vod/detail/id/{vid}.html",
