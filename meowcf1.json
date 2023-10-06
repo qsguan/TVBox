@@ -42,16 +42,6 @@
             "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/InActive/HanJuW.json"
         },
         {
-            "key": "csp_xpath_飞兔影视", #海外线路之外的线路速度较慢
-            "name": "飞兔影视",
-            "type": 3,
-            "api": "csp_XPathMacFilter",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
-            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/InActive/FeiTuYS.json"
-        },
-        {
             "key": "csp_xpath_动漫岛", #动漫库内容杂乱且播放速度较慢
             "name": "动漫岛",
             "type": 3,
@@ -60,6 +50,16 @@
             "quickSearch": 1,
             "filterable": 1,
             "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/InActive/DMDao.json"
+        },
+        {
+            "key": "csp_xpath_飞兔影视", #海外线路之外的线路速度较慢
+            "name": "飞兔影视",
+            "type": 3,
+            "api": "csp_XPathMacFilter",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/InActive/FeiTuYS.json"
         },
         {
             "key": "csp_xpath_GimyTV", #搜片时需输入繁体字来进行搜索
