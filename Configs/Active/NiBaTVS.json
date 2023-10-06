@@ -12,7 +12,7 @@
         "电影库": "1",
         "电视剧": "2",
         "综艺库": "3",
-        "动漫库1": "4"
+        "动漫库2": "4"
     },
     
 // Home Summary ================================================
@@ -25,7 +25,7 @@
     
 // Category Summary ================================================
                    //https://www.nibatvs.com/index.php/vod/show/area/大陆/by/score/lang/国语/class/剧情/id/1/page/2/year/2022.html
-    "cateUrl":      "https://www.nibatvs.com/index.php/vod/show{area}{by}{class}/id/{cateId}/page/{catePg}{year}.html",
+    "cateUrl":      "https://www.nibatvs.com/index.php/vod/show/id/{cateId}/page/{catePg}.html",
     "cateVodNode":  "//div[@class='hl-list-wrap']/ul[contains(@class,'hl-vod-list')]/li/a",
     "cateVodName":  "/@title",
     "cateVodId":    "/@href",
