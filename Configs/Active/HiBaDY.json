@@ -12,7 +12,7 @@
         "电影库": "1",
         "电视剧": "2",
         "综艺库": "3",
-        "动漫库2": "4"
+        "动漫库3": "4"
     },
     
 // Home Summary ================================================
@@ -27,13 +27,13 @@
 // Category Summary ================================================
                    //https://hibady.com/index.php/vod/show/area/大陆/by/hits/class/剧情/id/1/page/2/year/2022.html
     "cateUrl":      "https://hibady.com/index.php/vod/show{area}{by}{class}/id/{cateId}/page/{catePg}{year}.html",
-    "cateVodNode":  "",
-    "cateVodName":  "",
-    "cateVodId":    "",
-    "cateVodIdR":   "",
-    "cateVodImg":   "",
+    "cateVodNode":  "//div[contains(@class,'hotgrow eclist listdh')]/div",
+    "cateVodName":  "/div/div/a/text()",
+    "cateVodId":    "/div/div/a/@href",
+    "cateVodIdR":   "/index.php/vod/detail/id/(\\S+).html",
+    "cateVodImg":   "/div/a/div/@data-original",
     "cateVodImgR":  ".*(http\\S+)",
-    "cateVodMark":  "",
+    "cateVodMark":  "/div/a/span//text()",
     
 // Video Details ================================================
     "dtUrl":        "https://hibady.com/index.php/vod/detail/id/{vid}.html",
@@ -50,9 +50,8 @@
     "dtDesc":       "//div[contains(@class,'desc_txt')]",
     
 // Video Playlist =====================================================
-    "dtFromNode":   "//div[@class='play_source']",
-    "dtFromName":   "/div/div/a",
-    "dtFromNameR":  "/@alt",
+    "dtFromNode":   "//div[@class='play_source']/div/div/a",
+    "dtFromName":   "/@alt",
     "dtUrlNode":    "/div/div/div[contains(@class,'playlist')]",
     "dtUrlSubNode": "/ul/li/a",
     "dtUrlId":      "/@href",
