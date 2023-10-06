@@ -12,12 +12,12 @@
         "电影库": "1",
         "电视剧": "2",
         "综艺库": "3",
-        "动漫库": "4"
+        "动漫库1": "4"
     },
     
 // Home Summary ================================================
     "homeVodNode":  "//div[@class='hotgrow eclist listdh' and not(@style='display:none')]/div",
-    "homeVodName":  "/div/div/a/@title",
+    "homeVodName":  "/div/div/a/text()",
     "homeVodId":    "/div/div/a/@href",
     "homeVodIdR":   "/index.php/vod/detail/id/(\\S+).html",
     "homeVodImg":   "/div/a/div/@data-original",
