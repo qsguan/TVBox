@@ -12,7 +12,7 @@
         "电影库": "movie",
         "电视剧": "Series",
         "综艺库": "variety",
-        "动漫库11": "cartoon"
+        "动漫库12": "cartoon"
     },
     
 // Home Summary ================================================
@@ -21,9 +21,7 @@
     "homeVodId":    "/div[@class='module-item-titlebox']/a/@href",
     "homeVodIdR":   "/detail/(\\S+).html",
     "homeVodImg":   "/div[@class='module-item-cover']/div/img/@data-original",
-    "homeVodImgR":  ".*(http\\S+)",
-    "homeVodMark":  "concat(//div[contains(@class,'douban')]/text(),'/',/div[@class='module-item-text']/text())",
-    "homeVodMarkR": "\\S+:(\\S+)",
+    "homeVodMark":  "/div[@class='module-item-text']/text()",
     
 // Category Summary ================================================
                    //
