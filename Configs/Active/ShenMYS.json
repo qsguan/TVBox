@@ -12,7 +12,7 @@
         "电影库": "dianying",
         "电视剧": "dianshiju",
         "综艺库": "zongyi",
-        "动漫库3": "dongman"
+        "动漫库1": "dongman"
     },
     
 // Home Summary ================================================
@@ -55,7 +55,7 @@
     "dtUrlNode":    "//div[contains(@class,'tab-content')]/div/ul",
     "dtUrlSubNode": "/li/a",
     "dtUrlId":      "/@href",
-    "dtUrlIdR":     "/play/{playUrl}.html",
+    "dtUrlIdR":     "/play/(\\S+).html",
     "dtUrlName":    "/text()",
     "playUrl":      "https://www.aberyco.com/play/{playUrl}.html",
     "playUa":       "",
