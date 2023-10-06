@@ -149,16 +149,6 @@
             "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Active/XiaMiTV.json"
         },
         {
-            "key": "csp_xpath_NiVodTV",
-            "name": "泥视频TV",
-            "type": 3,
-            "api": "csp_XPathMacFilter",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
-            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Active/NiVodTV.json"
-        },
-        {
             "key": "csp_xpath_泥巴影院",
             "name": "泥巴影院",
             "type": 3,
@@ -167,6 +157,16 @@
             "quickSearch": 1,
             "filterable": 1,
             "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Active/NiBaTVS.json"
+        },
+        {
+            "key": "csp_xpath_NiVodTV",
+            "name": "泥视频TV",
+            "type": 3,
+            "api": "csp_XPathMacFilter",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Active/NiVodTV.json"
         },
         {
             "key": "csp_xpath_HiBaDY",
