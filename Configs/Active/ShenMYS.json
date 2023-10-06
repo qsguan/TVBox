@@ -12,7 +12,7 @@
         "电影库": "dianying",
         "电视剧": "dianshiju",
         "综艺库": "zongyi",
-        "动漫库1": "dongman"
+        "动漫库12": "dongman"
     },
     
 // Home Summary ================================================
@@ -68,7 +68,7 @@
     "scVodIdR":     "/(\\S+).html",
     "scVodImg":     "/div/a/@data-original",
     "scVodImgR":    ".*(http\\S+)",
-    "scVodMark":    "concat(/div/a//span[@class='tag'][2]/text(),'/',/div/a/span[contains(@class,'pic-text')]/text())",
+    "scVodMark":    "/div/a/span[contains(@class,'pic-text')]/text()",
     
 // Filters =======================================================
     "filter": {
