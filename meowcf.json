@@ -179,16 +179,6 @@
             "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Active/IYiFanTV.json"
         },
         {
-            "key": "csp_xpath_HiBaDY",
-            "name": "嘿叭电影",
-            "type": 3,
-            "api": "csp_XPathMacFilter",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
-            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Active/HiBaDY.json"
-        },
-        {
             "key": "csp_xpath_4KDYW",
             "name": "4K电影网",
             "type": 3,
@@ -208,7 +198,16 @@
             "filterable": 1,
             "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Active/NaiFCN.json"
         },
-
+        {
+            "key": "csp_xpath_HiBaDY",
+            "name": "嘿叭电影",
+            "type": 3,
+            "api": "csp_XPathMacFilter",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Active/HiBaDY.json"
+        },
         {
             "key": "csp_xpath_动漫巴士",
             "name": "动漫巴士",
