@@ -12,7 +12,7 @@
         "电影库": "dianying",
         "电视剧": "dianshiju",
         "综艺库": "zongyi",
-        "动漫库": "dongman"
+        "动漫库3": "dongman"
     },
     
 // Home Summary ================================================
@@ -41,14 +41,13 @@
     "dtName":       "//div[@class='myui-content__detail']/h1/text()",
     "dtImg":        "//div[@class='myui-content__thumb']/a/img/@data-original",
     "dtImgR":       ".*(http\\S+)",
-    "dtCate":       "",
-    "dtYear":       "",
-    "dtArea":       "",
-    "dtMark":       "",
-    "dtDirector":   "",
-    "dtActor":      "",
-    "dtDesc":       "",
-    "dtDescR":      "",
+    "dtCate":       "//span[contains(text(),'分类')]/following-sibling::a[1]/text()",
+    "dtYear":       "//span[contains(text(),'年份')]/following-sibling::a[1]/text()",
+    "dtArea":       "//span[contains(text(),'地区')]/following-sibling::a[1]/text()",
+    "dtMark":       "//p[contains(@class,'data')]/span[contains(text(),'更新')]/parent::p/span[@class='text-red']/text()",
+    "dtDirector":   "concat(//span[contains(text(),'导演')]/following-sibling::a[position()<6]/text())",
+    "dtActor":      "concat(//span[contains(text(),'主演')]/following-sibling::a[position()<6]/text())",
+    "dtDesc":       "//span[@class='sketch content']",
     
 // Video Playlist =====================================================
     "dtFromNode":   "//h3[contains(text(),'播放地址')]/following-sibling::ul/li/a",
@@ -62,15 +61,14 @@
     "playUa":       "",
     
 // Search Results ================================================
-    "searchUrl":    "",
-    "scVodNode":    "",
-    "scVodName":    "",
-    "scVodId":      "",
-    "scVodIdR":     "",
-    "scVodImg":     "",
+    "searchUrl":    "https://www.aberyco.com/sou.html?wd={wd}",
+    "scVodNode":    "//ul[contains(@class,'myui-vodlist__media') and @id='searchList']/li",
+    "scVodName":    "/div/a/@title",
+    "scVodId":      "/div/a/@href",
+    "scVodIdR":     "/(\\S+).html",
+    "scVodImg":     "/div/a/@data-original",
     "scVodImgR":    ".*(http\\S+)",
-    "scVodMark":    "",
-    "scVodMarkR":   "",
+    "scVodMark":    "concat(/div/a//span[@class='tag'][2]/text(),'/',/div/a/span[contains(@class,'pic-text')]/text())",
     
 // Filters =======================================================
     "filter": {
