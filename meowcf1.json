@@ -32,7 +32,7 @@
 
         ## 自行配置但不好用的
         {
-            "key": "csp_xpath_YingS199", #无法加载显示影片的缩略图标
+            "key": "csp_xpath_YingS199", #某些影片的缩略图标无法加载
             "name": "199影视",
             "type": 3,
             "api": "csp_XPathMacFilter",
