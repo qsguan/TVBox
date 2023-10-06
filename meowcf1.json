@@ -18,10 +18,7 @@
 
     ## video on-demand
     "sites": [
-        ## 自行配置可以使用的
-
-
-        ## 自行配置但不好用的
+        ## 自行配置可正常使用
         {
             "key": "csp_xpath_YingS199", #某些影片的缩略图标无法加载
             "name": "199影视",
@@ -32,6 +29,8 @@
             "filterable": 1,
             "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/InActive/YShi199.json"
         },
+
+        ## 自行配置但不好用的
         {
             "key": "csp_xpath_韩剧网", #库分类页面中无限循环显示影片
             "name": "97韩剧网",
@@ -122,6 +121,8 @@
             "filterable": 1,
             "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/InActive/WaiPXQ.json"
         },
+
+        ## 自行配置不可使用的
         {
             "key": "csp_xpath_555DYY", #无法获取影片详情页面(不可使用)
             "name": "555电影院",
