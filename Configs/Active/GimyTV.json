@@ -20,7 +20,7 @@
     "homeVodNode":  "//ul[contains(@class,'myui-vodlist')]/li/div/a",
     "homeVodName":  "/@title",
     "homeVodId":    "/@href",
-    "homeVodIdR":   "/v/(\\w+).html",
+    "homeVodIdR":   "/(\\w+).html",
     "homeVodImg":   "/@data-original",
     "homeVodMark":  "/span[contains(@class,'pic-text')]/text()",
     
@@ -30,12 +30,12 @@
     "cateVodNode":  "//div[contains(@class,'myui-panel-box')]/div/ul/li/div/a",
     "cateVodName":  "/@title",
     "cateVodId":    "/@href",
-    "cateVodIdR":   "/v/(\\w+).html",
+    "cateVodIdR":   "/(\\w+).html",
     "cateVodImg":   "/@data-original",
     "cateVodMark":  "/span[contains(@class,'pic-text')]/text()",
     
 // Video Details ================================================
-    "dtUrl":        "https://gimy.video/v/{vid}.html",
+    "dtUrl":        "https://gimy.video/{vid}.html",
     "dtNode":       "//body",
     "dtName":       "//div[contains(@class,'myui-content__thumb')]/a/@title",
     "dtImg":        "//div[contains(@class,'myui-content__thumb')]/a/img/@data-original",
@@ -64,7 +64,7 @@
     "scVodNode":    "//ul[contains(@class,'myui-vodlist__media')]/li/div/a",
     "scVodName":    "/@title",
     "scVodId":      "/@href",
-    "scVodIdR":     "/v/(\\w+).html",
+    "scVodIdR":     "/(\\w+).html",
     "scVodImg":     "/@data-original",
     "scVodMark":    "/span[contains(@class,'pic-text')]/text()",
     
