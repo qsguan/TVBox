@@ -189,14 +189,14 @@
             "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Active/NaiFCN.json"
         },
         {
-            "key": "csp_xpath_YingS199",
-            "name": "199影视",
+            "key": "csp_xpath_HiBaDY",
+            "name": "嘿叭电影",
             "type": 3,
             "api": "csp_XPathMacFilter",
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1,
-            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Active/YShi199.json"
+            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Active/HiBaDY.json"
         },
         {
             "key": "csp_xpath_GimyTV",

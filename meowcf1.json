@@ -32,6 +32,16 @@
 
         ## 自行配置但不好用的
         {
+            "key": "csp_xpath_YingS199", #无法加载显示影片的缩略图标
+            "name": "199影视",
+            "type": 3,
+            "api": "csp_XPathMacFilter",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/InActive/YShi199.json"
+        },
+        {
             "key": "csp_xpath_韩剧网", #库分类页面中无限循环显示影片
             "name": "97韩剧网",
             "type": 3,

@@ -1,0 +1,91 @@
+{
+    "author": "Jimmy_Bytheway",
+    "ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1",
+    "homeUrl":   "https://hibady.com/",
+    "dcPlayUrl": "true",
+    "dcVipFlag": "true",
+    "cateNode":  "//div[contains(@class,'ecnav-nav')]/div/a",
+    "cateName":  "/text()",
+    "cateId":    "/@href",
+    "cateIdR":   "/index.php/vod/type/id/(\\S+).html",
+    "cateManual": {
+        "电影库": "1",
+        "电视剧": "2",
+        "综艺库": "3",
+        "动漫库": "4"
+    },
+    
+// Home Summary ================================================
+    "homeVodNode":  "//div[@class='hotgrow eclist listdh' and not(@style='display:none')]/div",
+    "homeVodName":  "/div/div/a/@title",
+    "homeVodId":    "/div/div/a/@href",
+    "homeVodIdR":   "/index.php/vod/detail/id/(\\S+).html",
+    "homeVodImg":   "/div/a/div/@data-original",
+    "homeVodImgR":  ".*(http\\S+)",
+    "homeVodMark":  "concat(/div/span/em[1]/text(),'/',/div/span/em[2]/text(),'/',/div/a/span//text())",
+    
+// Category Summary ================================================
+                   //
+    "cateUrl":      "",
+    "cateVodNode":  "",
+    "cateVodName":  "",
+    "cateVodId":    "",
+    "cateVodIdR":   "",
+    "cateVodImg":   "",
+    "cateVodImgR":  ".*(http\\S+)",
+    "cateVodMark":  "",
+    
+// Video Details ================================================
+    "dtUrl":        "https://hibady.com/index.php/vod/detail/id/{vid}.html",
+    "dtNode":       "//div[@class='detail']",
+    "dtName":       "//h1/text()",
+    "dtImg":        "/div/div/div/a/img/@src",
+    "dtImgR":       ".*(http\\S+)",
+    "dtCate":       "",
+    "dtYear":       "",
+    "dtArea":       "",
+    "dtMark":       "",
+    "dtDirector":   "",
+    "dtActor":      "",
+    "dtDesc":       "",
+    "dtDescR":      "",
+    
+// Video Playlist =====================================================
+    "dtFromNode":   "//div[@class='play_source']",
+    "dtFromName":   "/div/div/a",
+    "dtFromNameR":  "/@alt",
+    "dtUrlNode":    "/div/div/div[contains(@class,'playlist')]",
+    "dtUrlSubNode": "/ul/li/a",
+    "dtUrlId":      "/@href",
+    "dtUrlIdR":     "/index.php/vod/play/id/(\\S+).html",
+    "dtUrlName":    "/@title",
+    "playUrl":      "https://hibady.com/index.php/vod/play/id/{playUrl}.html",
+    "playUa":       "",
+    
+// Search Results ================================================
+    "searchUrl":    "",
+    "scVodNode":    "",
+    "scVodName":    "",
+    "scVodId":      "",
+    "scVodIdR":     "",
+    "scVodImg":     "",
+    "scVodImgR":    ".*(http\\S+)",
+    "scVodMark":    "",
+    "scVodMarkR":   "",
+    
+// Filters =======================================================
+    "filter": {
+        "1": [
+
+        ],
+        "2": [
+
+        ],
+        "3": [
+
+        ],
+        "4": [
+
+        ]
+    }
+}
