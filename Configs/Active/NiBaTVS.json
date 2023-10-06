@@ -1,27 +1,30 @@
 {
     "author": "Jimmy_Bytheway",
-    "ua": "",
-    "homeUrl":   "http://www.5le.cc/",
+    "ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1",
+    "homeUrl":   "https://hoho.tv/",
     "dcPlayUrl": "true",
     "dcVipFlag": "true",
-    "cateNode":  "//div[@class='nav']/ul[@class='nav-menu-items']/li/a[contains(@href,'/type')]",
+    "cateNode":  "//div[@class='nav']/ul[@class='nav-menu-items']/li/a[contains(@href,'type')]",
     "cateName":  "/@title",
     "cateId":    "/@href",
-    "cateIdR":   "/type/(\\S+).html",
+    "cateIdR":   "/vod/type/id/(\\S+).html",
     "cateManual": {
-        "电影库": "movie",
-        "电视剧": "Series",
-        "综艺库": "variety",
-        "动漫库12": "cartoon"
+        "电影库": "1",
+        "电视剧": "2",
+        "综艺库": "3",
+        "动漫库": "4",
+        "纪录片": "5"
     },
     
 // Home Summary ================================================
-    "homeVodNode":  "//main/div/div[contains(@class,'module')][position()<6]//div[@class='module-item']",
-    "homeVodName":  "/div[@class='module-item-titlebox']/a/@title",
-    "homeVodId":    "/div[@class='module-item-titlebox']/a/@href",
-    "homeVodIdR":   "/detail/(\\S+).html",
-    "homeVodImg":   "/div[@class='module-item-cover']/div/img/@data-original",
-    "homeVodMark":  "/div[@class='module-item-text']/text()",
+    "homeVodNode":  "",
+    "homeVodName":  "",
+    "homeVodId":    "",
+    "homeVodIdR":   "",
+    "homeVodImg":   "",
+    "homeVodImgR":  ".*(http\\S+)",
+    "homeVodMark":  "",
+    "homeVodMarkR": "",
     
 // Category Summary ================================================
                    //
@@ -47,10 +50,12 @@
     "dtDirector":   "",
     "dtActor":      "",
     "dtDesc":       "",
+    "dtDescR":      "",
     
 // Video Playlist =====================================================
     "dtFromNode":   "",
     "dtFromName":   "",
+    "dtFromNameR":  "",
     "dtUrlNode":    "",
     "dtUrlSubNode": "",
     "dtUrlId":      "",
@@ -68,19 +73,23 @@
     "scVodImg":     "",
     "scVodImgR":    ".*(http\\S+)",
     "scVodMark":    "",
+    "scVodMarkR":   "",
     
 // Filters =======================================================
     "filter": {
-        "movie": [
+        "1": [
 
         ],
-        "Series": [
+        "2": [
 
         ],
-        "variety": [
+        "3": [
 
         ],
-        "cartoon": [
+        "4": [
+
+        ],
+        "5": [
 
         ]
     }

@@ -132,6 +132,16 @@
             "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/InActive/DYY555.json"
         },
         {
+            "key": "csp_xpath_PianKYS", #无法获取影片详情页面(不可使用)
+            "name": "片刻影视",
+            "type": 3,
+            "api": "csp_XPathMacFilter",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/InActive/PianKYS.json"
+        },
+        {
             "key": "csp_xpath_LanHTV", #无法获取影片详情页面(不可使用)
             "name": "兰花影院",
             "type": 3,
