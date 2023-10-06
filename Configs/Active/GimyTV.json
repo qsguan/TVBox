@@ -50,7 +50,7 @@
 // Video Playlist =====================================================
     "dtFromNode":   "//div[contains(@class,'col-md-wide-7')]/div[contains(@class,'myui-panel') and not(@id='desc')]/div/div/div/h3/i",
     "dtFromName":   "/parent::h3/text()[2]",
-    "dtFromNameR":   "(\\S+線路)",
+    "dtFromNameR":   "(\\S+線)",
     "dtUrlNode":    "//ul[contains(@class,'myui-content__list')]",
     "dtUrlSubNode": "/li/a",
     "dtUrlId":      "/@href",
