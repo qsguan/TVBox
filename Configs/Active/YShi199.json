@@ -14,15 +14,15 @@
         "综艺库": "3",
         "动漫库": "4",
         "纪录片": "29",
-        "体育库1": "31"
+        "体育库2": "31"
     },
     
 // Home Summary ================================================
     "homeVodNode":  "//div[contains(@class,'vod_row')]/div[position()<6]//div[@class='cbox1']/ul/li/a",
-    "homeVodName":  "/@data-original",#/@title
+    "homeVodName":  "concat('https:\/\/www.hzhfgy.com',@data-original)",#/@title
     "homeVodId":    "/@href",
     "homeVodIdR":   "/index.php/vod/detail/id/(\\S+).html",
-    "homeVodImg":   "/@data-original",
+    "homeVodImg":   "concat('https:\/\/www.hzhfgy.com',@data-original)",
     "homeVodMark":  "concat(/span/em[1]/text(),'/',/span/em[2]/text(),'/',/span[contains(@class,'pic_text')]/text())",
     
 // Category Summary ================================================
