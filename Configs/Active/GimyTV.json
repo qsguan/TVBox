@@ -13,7 +13,7 @@
         "电视剧": "tvseries",
         "综艺库": "tv_show",
         "动漫库": "anime",
-        "纪录片11": "documentary+"
+        "纪录片": "documentary+"
     },
     
 // Home Summary ================================================
@@ -54,9 +54,9 @@
     "dtUrlNode":    "//ul[contains(@class,'myui-content__list')]",
     "dtUrlSubNode": "/li/a",
     "dtUrlId":      "/@href",
-    "dtUrlIdR":     "/p/(\\S+).html",
+    "dtUrlIdR":     "/(\\S+).html",
     "dtUrlName":    "/text()",
-    "playUrl":      "https://gimy.video/p/{playUrl}.html",
+    "playUrl":      "https://gimy.video/{playUrl}.html",
     "playUa":       "",
     
 // Search Results ================================================
