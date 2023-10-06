@@ -14,22 +14,22 @@
         "综艺库": "3",
         "动漫库": "4",
         "纪录片": "29",
-        "体育库2": "31"
+        "体育库1": "31"
     },
     
 // Home Summary ================================================
     "homeVodNode":  "//div[contains(@class,'vod_row')]/div[position()<6]//div[@class='cbox1']/ul/li/a",
-    "homeVodName":  "concat('https:\/\/www.hzhfgy.com',@data-original)",#/@title
+    "homeVodName":  "/@title",
     "homeVodId":    "/@href",
     "homeVodIdR":   "/index.php/vod/detail/id/(\\S+).html",
-    "homeVodImg":   "concat('https:\/\/www.hzhfgy.com',@data-original)",
+    "homeVodImg":   "@data-original",
     "homeVodMark":  "concat(/span/em[1]/text(),'/',/span/em[2]/text(),'/',/span[contains(@class,'pic_text')]/text())",
     
 // Category Summary ================================================
                    //https://www.hzhfgy.com/index.php/vod/show/area/大陆/by/score/class/剧情/id/11/page/2/year/2022.html
     "cateUrl":      "https://www.hzhfgy.com/index.php/vod/show{area}{by}{class}/id/{cateId}/page/{catePg}{year}.html",
     "cateVodNode":  "//ul[contains(@class,'vodlist') and not(@id='conch_history')]/li/a",
-    "cateVodName":  "/@data-original",#/@title
+    "cateVodName":  "/@title",
     "cateVodId":    "/@href",
     "cateVodIdR":   "/index.php/vod/detail/id/(\\S+).html",
     "cateVodImg":   "/@data-original",
@@ -38,7 +38,7 @@
 // Video Details ================================================
     "dtUrl":        "https://www.hzhfgy.com/index.php/vod/detail/id/{vid}.html",
     "dtNode":       "//body",
-    "dtName":       "//div[contains(@class,'content_thumb')]/a/@data-original",#//div[contains(@class,'content_detail')]/div/h2/text()
+    "dtName":       "concat('https:\/\/www.hzhfgy.com',//div[contains(@class,'content_thumb')]/a/@data-original)",#//div[contains(@class,'content_detail')]/div/h2/text()
     "dtImg":        "//div[contains(@class,'content_thumb')]/a/@data-original",
     "dtCate":       "//span[contains(text(),'类型')]/following-sibling::a[1]/text()",
     "dtYear":       "//span[contains(text(),'年份')]/following-sibling::a[1]/text()",
@@ -62,7 +62,7 @@
 // Search Results ================================================
     "searchUrl":    "https://www.hzhfgy.com/index.php/vod/search.html?wd={wd}",
     "scVodNode":    "//div[contains(@class,'search_box')]/ul[contains(@class,'vodlist')]/li",
-    "scVodName":    "/div/a/@data-original",#/div/h4/a/@title
+    "scVodName":    "/div/h4/a/@title",
     "scVodId":      "/div/h4/a/@href",
     "scVodIdR":     "/index.php/vod/detail/id/(\\S+).html",
     "scVodImg":     "/div/a/@data-original",
