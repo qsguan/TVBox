@@ -1,0 +1,93 @@
+{
+    "author": "Jimmy_Bytheway",
+    "ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1",
+    "homeUrl":   "https://www.aberyco.com/",
+    "dcPlayUrl": "true",
+    "dcVipFlag": "true",
+    "cateNode":  "//div[contains(@class,'myui-header_bd')]/ul/li/a[contains(@href,'vod')]",
+    "cateName":  "/text()",
+    "cateId":    "/@href",
+    "cateIdR":   "/vod/(\\S+).html",
+    "cateManual": {
+        "电影库": "dianying",
+        "电视剧": "dianshiju",
+        "综艺库": "zongyi",
+        "动漫库": "dongman"
+    },
+    
+// Home Summary ================================================
+    "homeVodNode":  "//div[@class='row']/div[contains(@class,'myui-panel')][position()>1 and position()<7]/div/div/div/ul/li/div",
+    "homeVodName":  "/div/h4/a/text()",
+    "homeVodId":    "/div/h4/a/@href",
+    "homeVodIdR":   "/(\\S+).html",
+    "homeVodImg":   "/a/@data-original",
+    "homeVodImgR":  ".*(http\\S+)",
+    "homeVodMark":  "concat(/a//span[@class='tag'][2]/text(),'/',/a/span[contains(@class,'pic-text')]/text())",
+    
+// Category Summary ================================================
+                   //
+    "cateUrl":      "",
+    "cateVodNode":  "",
+    "cateVodName":  "",
+    "cateVodId":    "",
+    "cateVodIdR":   "",
+    "cateVodImg":   "",
+    "cateVodImgR":  ".*(http\\S+)",
+    "cateVodMark":  "",
+    
+// Video Details ================================================
+    "dtUrl":        "https://www.aberyco.com/{vid}.html",
+    "dtNode":       "//body",
+    "dtName":       "//div[@class='myui-content__detail']/h1/text()",
+    "dtImg":        "//div[@class='myui-content__thumb']/a/img/@data-original",
+    "dtImgR":       ".*(http\\S+)",
+    "dtCate":       "",
+    "dtYear":       "",
+    "dtArea":       "",
+    "dtMark":       "",
+    "dtDirector":   "",
+    "dtActor":      "",
+    "dtDesc":       "",
+    "dtDescR":      "",
+    
+// Video Playlist =====================================================
+    "dtFromNode":   "//h3[contains(text(),'播放地址')]/following-sibling::ul/li/a",
+    "dtFromName":   "/text()",
+    "dtUrlNode":    "//div[contains(@class,'tab-content')]/div/ul",
+    "dtUrlSubNode": "/li/a",
+    "dtUrlId":      "/@href",
+    "dtUrlIdR":     "/play/{playUrl}.html",
+    "dtUrlName":    "/text()",
+    "playUrl":      "https://www.aberyco.com/play/{playUrl}.html",
+    "playUa":       "",
+    
+// Search Results ================================================
+    "searchUrl":    "",
+    "scVodNode":    "",
+    "scVodName":    "",
+    "scVodId":      "",
+    "scVodIdR":     "",
+    "scVodImg":     "",
+    "scVodImgR":    ".*(http\\S+)",
+    "scVodMark":    "",
+    "scVodMarkR":   "",
+    
+// Filters =======================================================
+    "filter": {
+        "1": [
+
+        ],
+        "2": [
+
+        ],
+        "3": [
+
+        ],
+        "4": [
+
+        ],
+        "5": [
+
+        ]
+    }
+}
