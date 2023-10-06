@@ -1,6 +1,6 @@
 {
     "author": "Jimmy_Bytheway",
-    "ua": "",
+    "ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1",
     "homeUrl":   "https://hibady.com/",
     "dcPlayUrl": "true",
     "dcVipFlag": "true",
@@ -12,7 +12,7 @@
         "电影库": "1",
         "电视剧": "2",
         "综艺库": "3",
-        "动漫库3": "4"
+        "动漫库4": "4"
     },
     
 // Home Summary ================================================
@@ -52,7 +52,7 @@
 // Video Playlist =====================================================
     "dtFromNode":   "//div[@class='play_source']/div/div/a",
     "dtFromName":   "/@alt",
-    "dtUrlNode":    "/div/div/div[contains(@class,'playlist')]",
+    "dtUrlNode":    "//div/div/div[contains(@class,'playlist')]",
     "dtUrlSubNode": "/ul/li/a",
     "dtUrlId":      "/@href",
     "dtUrlIdR":     "/index.php/vod/play/id/(\\S+).html",
