@@ -1,6 +1,6 @@
 {
     "author": "Jimmy_Bytheway",
-    "ua": "",
+    "ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1",
     "homeUrl":   "https://www.nibatvs.com/",
     "dcPlayUrl": "true",
     "dcVipFlag": "true",
@@ -12,7 +12,7 @@
         "电影库": "1",
         "电视剧": "2",
         "综艺库": "3",
-        "动漫库3": "4"
+        "动漫库5": "4"
     },
     
 // Home Summary ================================================
@@ -26,7 +26,7 @@
 // Category Summary ================================================
                    //https://www.nibatvs.com/index.php/vod/show/area/大陆/by/score/lang/国语/class/剧情/id/1/page/2/year/2022.html
     "cateUrl":      "https://www.nibatvs.com/index.php/vod/show/id/{cateId}/page/{catePg}.html",
-    "cateVodNode":  "//div[@class='hl-list-wrap']/ul[contains(@class,'hl-vod-list')]/li/a",
+    "cateVodNode":  "//div[contains(@class,'hl-list-wrap')]/ul[contains(@class,'hl-vod-list')]/li/a",
     "cateVodName":  "/@title",
     "cateVodId":    "/@href",
     "cateVodIdR":   "/index.php/vod/detail/id/(\\S+).html",
