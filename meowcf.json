@@ -159,16 +159,6 @@
             "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Active/XiaMiTV.json"
         },
         {
-            "key": "csp_xpath_ShenMYS",
-            "name": "神马影视",
-            "type": 3,
-            "api": "csp_XPathMacFilter",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
-            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Active/ShenMYS.json"
-        },
-        {
             "key": "csp_xpath_HiBaDY",
             "name": "嘿叭电影",
             "type": 3,
