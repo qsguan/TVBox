@@ -1,30 +1,27 @@
 {
     "author": "Jimmy_Bytheway",
     "ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1",
-    "homeUrl":   "https://hoho.tv/",
+    "homeUrl":   "https://www.nibatvs.com/",
     "dcPlayUrl": "true",
     "dcVipFlag": "true",
-    "cateNode":  "//div[@class='nav']/ul[@class='nav-menu-items']/li/a[contains(@href,'type')]",
-    "cateName":  "/@title",
+    "cateNode":  "//div[contains(@class,'hl-smnav-box')]/ul/li/a[contains(@href,'type')]",
+    "cateName":  "/span/text()",
     "cateId":    "/@href",
-    "cateIdR":   "/vod/type/id/(\\S+).html",
+    "cateIdR":   "/index.php/vod/type/id/(\\S+).html",
     "cateManual": {
         "电影库": "1",
         "电视剧": "2",
         "综艺库": "3",
-        "动漫库": "4",
-        "纪录片": "5"
+        "动漫库": "4"
     },
     
 // Home Summary ================================================
-    "homeVodNode":  "",
-    "homeVodName":  "",
-    "homeVodId":    "",
-    "homeVodIdR":   "",
-    "homeVodImg":   "",
-    "homeVodImgR":  ".*(http\\S+)",
-    "homeVodMark":  "",
-    "homeVodMarkR": "",
+    "homeVodNode":  "//div[@id='conch-content']/div/div[@class='container']//ul[contains(@class,'hl-vod-list')]/li/a",
+    "homeVodName":  "/@title",
+    "homeVodId":    "/@href",
+    "homeVodIdR":   "/index.php/vod/detail/id/(\\S+).html",
+    "homeVodImg":   "/@data-original",
+    "homeVodMark":  "/div[contains(@class,'pic-text')]/span/text()",
     
 // Category Summary ================================================
                    //
@@ -34,15 +31,13 @@
     "cateVodId":    "",
     "cateVodIdR":   "",
     "cateVodImg":   "",
-    "cateVodImgR":  ".*(http\\S+)",
     "cateVodMark":  "",
     
 // Video Details ================================================
-    "dtUrl":        "",
-    "dtNode":       "",
-    "dtName":       "",
-    "dtImg":        "",
-    "dtImgR":       ".*(http\\S+)",
+    "dtUrl":        "https://www.nibatvs.com/index.php/vod/detail/id/{vid}.html",
+    "dtNode":       "//body",
+    "dtName":       "//div[contains(@class,'hl-dc-content')]/div/h2/text()",
+    "dtImg":        "//div[contains(@class,'hl-dc-pic')]/span/@data-original",
     "dtCate":       "",
     "dtYear":       "",
     "dtArea":       "",
@@ -53,15 +48,14 @@
     "dtDescR":      "",
     
 // Video Playlist =====================================================
-    "dtFromNode":   "",
-    "dtFromName":   "",
-    "dtFromNameR":  "",
-    "dtUrlNode":    "",
-    "dtUrlSubNode": "",
-    "dtUrlId":      "",
-    "dtUrlIdR":     "",
-    "dtUrlName":    "",
-    "playUrl":      "",
+    "dtFromNode":   "//div[contains(@class,'hl-play-source')]/div/div/a",
+    "dtFromName":   "/@alt",
+    "dtUrlNode":    "//div[contains(@class,'hl-play-source')]/div/div/div/ul",
+    "dtUrlSubNode": "/li/a",
+    "dtUrlId":      "/@href",
+    "dtUrlIdR":     "/index.php/vod/play/id/(\\S+).html",
+    "dtUrlName":    "/text()",
+    "playUrl":      "https://www.nibatvs.com/index.php/vod/play/id/{playUrl}.html",
     "playUa":       "",
     
 // Search Results ================================================
@@ -71,7 +65,6 @@
     "scVodId":      "",
     "scVodIdR":     "",
     "scVodImg":     "",
-    "scVodImgR":    ".*(http\\S+)",
     "scVodMark":    "",
     "scVodMarkR":   "",
     
@@ -87,9 +80,6 @@
 
         ],
         "4": [
-
-        ],
-        "5": [
 
         ]
     }
