@@ -20,7 +20,7 @@
     "homeVodNode":  "//ul[contains(@class,'hl-vod-list')]/li/a",
     "homeVodName":  "/@title",
     "homeVodId":    "/@href",
-    "homeVodIdR":   "/voddetail/(\\S+)/.html",
+    "homeVodIdR":   "/voddetail/(\\S+).html",
     "homeVodImg":   "/@data-original",
     "homeVodMark":  "/div[@class='hl-pic-text']/span/text()",
     
@@ -65,7 +65,7 @@
     "scVodNode":    "//ul[contains(@class,'hl-one-list')]/li/div/div/div/a",
     "scVodName":    "/@title",
     "scVodId":      "/@href",
-    "scVodIdR":     "/voddetail/(\\S+)/.html",
+    "scVodIdR":     "/voddetail/(\\S+).html",
     "scVodImg":     "/@data-original",
     "scVodMark":    "/div[@class='hl-pic-text']/span/text()",
     

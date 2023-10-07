@@ -169,14 +169,14 @@
             "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Active/NiVodTV.json"
         },
         {
-            "key": "csp_xpath_首播站",
-            "name": "首播站",
+            "key": "csp_xpath_HiBaDY",
+            "name": "嘿叭电影",
             "type": 3,
             "api": "csp_XPathMacFilter",
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1,
-            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Active/ShouBZ.json"
+            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Active/HiBaDY.json"
         },
         {
             "key": "csp_xpath_4KDYW",
@@ -199,14 +199,14 @@
             "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Active/NaiFCN.json"
         },
         {
-            "key": "csp_xpath_HiBaDY",
-            "name": "嘿叭电影",
+            "key": "csp_xpath_GimyTV",
+            "name": "剧迷影院",
             "type": 3,
             "api": "csp_XPathMacFilter",
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1,
-            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Active/HiBaDY.json"
+            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Active/GimyTV.json"
         },
         {
             "key": "csp_xpath_动漫巴士",
