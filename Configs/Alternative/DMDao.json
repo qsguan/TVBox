@@ -1,6 +1,6 @@
 {
     "author": "Jimmy_Bytheway",
-    "ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1",
+    "ua": "",
     "homeUrl":   "http://www.88dmw.com/", ##www.dmd86.com
     "dcPlayUrl": "true",
     "dcVipFlag": "true",
@@ -12,7 +12,7 @@
         "新番连载": "1",
         "完结日漫": "3",
         "热门国漫": "4",
-        "剧场动漫": "16"
+        "剧场动漫1": "16"
     },
 
 // Home Summary ================================================
