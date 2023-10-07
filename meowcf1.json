@@ -144,7 +144,6 @@
         },
 
         ## 自行配置无法使用的
-        {"key":"push_agent_2","name":" ","type":3,"api":"csp_PushAgent","searchable":0,"quickSearch":0,"filterable":0},
         {
             "key": "csp_xpath_HaiTuYY", #节点名字有重复,只能获取单一节点
             "name": "海兔影院",
@@ -187,7 +186,6 @@
         },
 
         ## 能够加载并播放(XPath系列)
-        {"key":"push_agent_3","name":" ","type":3,"api":"csp_PushAgent","searchable":0,"quickSearch":0,"filterable":0},
         {
             "key": "csp_xpath_唐人街",
             "name": "唐人街(XPMF)",
