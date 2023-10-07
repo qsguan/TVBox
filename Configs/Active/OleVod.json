@@ -18,7 +18,7 @@
     },
     
 // Home Summary ================================================
-    "homeVodNode":  "//ul[contains(@class,'hl-vod-list')]/li[contains(@class,'hl-list-item')]/a",
+    "homeVodNode":  "//div[contains(@class,'hl-list-rk')]/ul[contains(@class,'hl-vod-list')]/li[contains(@class,'hl-list-item')]/a",
     "homeVodName":  "/@title",
     "homeVodId":    "/@href",
     "homeVodIdR":   "/index.php/vod/detail/id/(\\w+).html",

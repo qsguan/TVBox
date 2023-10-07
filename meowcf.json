@@ -49,16 +49,6 @@
             "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Active/DuBoKu.json"
         },
         {
-            "key": "csp_xpath_首播站",
-            "name": "首播站",
-            "type": 3,
-            "api": "csp_XPathMacFilter",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
-            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Active/ShouBZ.json"
-        },
-        {
             "key": "csp_xpath_欧乐影院",
             "name": "欧乐影院",
             "type": 3,
@@ -77,6 +67,16 @@
             "quickSearch": 1,
             "filterable": 1,
             "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Active/HaoXiW.json"
+        },
+        {
+            "key": "csp_xpath_PianKYS",
+            "name": "片刻影视",
+            "type": 3,
+            "api": "csp_XPathMacFilter",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Active/PianKYS.json"
         },
         {
             "key": "csp_xpath_吼吼影院",
@@ -169,14 +169,14 @@
             "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Active/NiVodTV.json"
         },
         {
-            "key": "csp_xpath_IYiFan", #网页及内容与欧乐影视高度重合
-            "name": "爱壹帆TV",
+            "key": "csp_xpath_首播站",
+            "name": "首播站",
             "type": 3,
             "api": "csp_XPathMacFilter",
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1,
-            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Active/IYiFanTV.json"
+            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Active/ShouBZ.json"
         },
         {
             "key": "csp_xpath_4KDYW",
