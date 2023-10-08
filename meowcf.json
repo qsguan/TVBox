@@ -99,14 +99,14 @@
             "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Active/DuoNYS.json"
         },
         {
-            "key": "csp_xpath_7XiYY",
+            "key": "csp_xpath_QiXiYY",
             "name": "七喜影院",
             "type": 3,
             "api": "csp_XPathMacFilter",
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1,
-            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Active/7XiYY.json"
+            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Active/QiXiYY.json"
         },
         {
             "key": "csp_xpath_OuDiYY",
@@ -119,7 +119,7 @@
             "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Active/OuDiYY.json"
         },
         {
-            "key": "csp_xpath_LanHTV", #无广超清线路无法播放速度较慢
+            "key": "csp_xpath_LanHTV",
             "name": "兰花影院",
             "type": 3,
             "api": "csp_XPathMacFilter",
@@ -129,7 +129,7 @@
             "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Active/LanHTV.json"
         },
         {
-            "key": "csp_xpath_飞兔影视", #海外专线之外的线路速度较慢
+            "key": "csp_xpath_飞兔影视",
             "name": "飞兔影视",
             "type": 3,
             "api": "csp_XPathMacFilter",
@@ -189,14 +189,14 @@
             "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Active/NiVodTV.json"
         },
         {
-            "key": "csp_xpath_HiBaDY",
-            "name": "嘿叭电影",
+            "key": "csp_xpath_首播站",
+            "name": "首播站",
             "type": 3,
             "api": "csp_XPathMacFilter",
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1,
-            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Active/HiBaDY.json"
+            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Active/ShouBZ.json"
         },
         {
             "key": "csp_xpath_4KDYW",
