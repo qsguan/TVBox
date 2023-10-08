@@ -13,7 +13,7 @@
         "电视剧": "222",
         "综艺库": "3",
         "动漫库": "4",
-        "纪录片": "5"
+        "纪录片1": "5"
     },
     
 // Home Summary ================================================
@@ -46,7 +46,7 @@
     "dtDirector":   "concat(//em[contains(text(),'导演')]/parent::li/a/text())",
     "dtActor":      "concat(//em[contains(text(),'主演')]/parent::li/a[position()<6]/text())",
     "dtDesc":       "concat(//em[contains(text(),'简介')]/parent::li//text())",
-    "dtDescR":      "\\S+：(\\S+)",
+    "dtDescR":      "^[简介]{2}：(\\S+)",
     
 // Video Playlist =====================================================
     "dtFromNode":   "//div[contains(@class,'hl-play-source')]/div/div[not(@class='row')]/a",
