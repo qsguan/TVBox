@@ -27,7 +27,7 @@
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1,
-            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Alternative/IYiFanTV.json"
+            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Active/IYiFanTV.json"
         },
         {
             "key": "csp_xpath_首播站", #除含太多黄色内容外其它都挺好
@@ -37,27 +37,7 @@
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1,
-            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Alternative/ShouBZ.json"
-        },
-        {
-            "key": "csp_xpath_LanHTV", #无广超清线路无法播放速度较慢
-            "name": "兰花影院",
-            "type": 3,
-            "api": "csp_XPathMacFilter",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
-            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Alternative/LanHTV.json"
-        },
-        {
-            "key": "csp_xpath_飞兔影视", #海外专线之外的线路速度较慢
-            "name": "飞兔影视",
-            "type": 3,
-            "api": "csp_XPathMacFilter",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
-            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Alternative/FeiTuYS.json"
+            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Active/ShouBZ.json"
         },
         {
             "key": "csp_xpath_动漫岛", #动漫库内容杂乱且播放速度较慢
@@ -67,7 +47,7 @@
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1,
-            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Alternative/DMDao.json"
+            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Active/DMDao.json"
         },
 
         ## 自行配置但不太好用
@@ -80,7 +60,7 @@
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1,
-            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/InValid/YShi199.json"
+            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/InActive/YShi199.json"
         },
         {
             "key": "csp_xpath_韩剧网", #库分类页面中无限循环显示影片
@@ -90,7 +70,7 @@
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1,
-            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/InValid/HanJuW.json"
+            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/InActive/HanJuW.json"
         },
         {
             "key": "csp_xpath_厂长资源", #搜片时需输验证,播放速度较慢
@@ -100,7 +80,7 @@
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1,
-            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/InValid/CZZiY.json"
+            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/InActive/CZZiY.json"
         },
         {
             "key": "csp_xpath_555DYW",
@@ -110,7 +90,7 @@
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1,
-            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/InValid/DYW555.json"
+            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/InActive/DYW555.json"
         },
         {
             "key": "csp_xpath_奈飞影院", #播放节点太多而有效的节点少
@@ -120,7 +100,7 @@
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1,
-            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/InValid/NaifeiYY.json"
+            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/InActive/NaifeiYY.json"
         },
         {
             "key": "csp_xpath_电影先生", #播放节点太多而有效的节点少
@@ -130,7 +110,7 @@
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1,
-            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/InValid/DYXianS.json"
+            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/InActive/DYXianS.json"
         },
         {
             "key": "csp_xpath_歪片星球", #播放节点太多而有效的节点少
@@ -140,7 +120,7 @@
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1,
-            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/InValid/WaiPXQ.json"
+            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/InActive/WaiPXQ.json"
         },
 
         ## 自行配置无法使用的
@@ -153,7 +133,7 @@
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1,
-            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/InValid/HaiTuYY.json"
+            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/InActive/HaiTuYY.json"
         },
         {
             "key": "csp_xpath_555DYY", #无法获取影片详情页面(不可使用)
@@ -163,7 +143,7 @@
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1,
-            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/InValid/DYY555.json"
+            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/InActive/DYY555.json"
         },
         {
             "key": "csp_xpath_M1949W", #无法获取影片播放节点(不可使用)
@@ -173,7 +153,7 @@
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1,
-            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/InValid/DianYTT.json"
+            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/InActive/DianYTT.json"
         },
         {
             "key": "csp_xpath_NuNuYY", #无法获取影片播放节点(不可使用)
@@ -183,7 +163,7 @@
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1,
-            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/InValid/NuNuYY.json"
+            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/InActive/NuNuYY.json"
         },
 
         ## 能够加载并播放(XPath系列)

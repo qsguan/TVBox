@@ -119,6 +119,26 @@
             "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Active/OuDiYY.json"
         },
         {
+            "key": "csp_xpath_LanHTV", #无广超清线路无法播放速度较慢
+            "name": "兰花影院",
+            "type": 3,
+            "api": "csp_XPathMacFilter",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Active/LanHTV.json"
+        },
+        {
+            "key": "csp_xpath_飞兔影视", #海外专线之外的线路速度较慢
+            "name": "飞兔影视",
+            "type": 3,
+            "api": "csp_XPathMacFilter",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Active/FeiTuYS.json"
+        },
+        {
             "key": "csp_xpath_HuaLeTV",
             "name": "华乐影院",
             "type": 3,

@@ -1,0 +1,378 @@
+{
+    "author": "Jimmy_Bytheway",
+    "ua": "",
+    "homeUrl":   "https://www.m1949.cc/",
+    "dcPlayUrl": "true",
+    "dcVipFlag": "true",
+    "cateNode":  "//div[@class='all_menu']/div/div/ul/li/a[contains(@href,'type')]",
+    "cateName":  "/@title",
+    "cateId":    "/@href",
+    "cateIdR":   "/index.php/vod/type/id/(\\S+).html",
+    "cateManual": {
+        "电影库":   "1",
+        "电视剧":   "2",
+        "综艺库":   "3",
+        "动漫库":   "4",
+        "体育赛事": "34"
+    },
+    
+// Home Summary ================================================
+    "homeVodNode":  "//div[@class='vod_row tit_up']//div/ul/li[contains(@class,'vodlist_item')]/a",
+    "homeVodName":  "/@title",
+    "homeVodId":    "/@href",
+    "homeVodIdR":   "/index.php/vod/detail/id/(\\S+).html",
+    "homeVodImg":   "/@data-original",
+    "homeVodImgR":  ".*(http\\S+)",
+    "homeVodMark":  "concat(/span/em[2]/text(),'/',/span[contains(@class,'pic_text')]/text())",
+    
+// Category Summary ================================================
+                   //https://www.m1949.cc/index.php/vod/show/area/大陆/by/score/class/剧情/id/11/lang/国语/page/2/year/2022.html
+    "cateUrl":      "https://www.m1949.cc/index.php/vod/show{area}{by}{class}/id/{cateId}{lang}/page/{catePg}{year}.html",
+    "cateVodNode":  "//div[@class='row']/div/ul/li[contains(@class,'vodlist_item')]/a",
+    "cateVodName":  "/@title",
+    "cateVodId":    "/@href",
+    "cateVodIdR":   "/index.php/vod/detail/id/(\\S+).html",
+    "cateVodImg":   "/@data-original",
+    "cateVodImgR":  ".*(http\\S+)",
+    "cateVodMark":  "/span[contains(@class,'pic_text')]/text()",
+    
+// Video Details ================================================
+    "dtUrl":        "https://www.m1949.cc/index.php/vod/detail/id/{vid}.html",
+    "dtNode":       "//body",
+    "dtName":       "//div[contains(@class,'content_detail')]/div/h2/text()",
+    "dtImg":        "//div[contains(@class,'content_thumb')]/a/@data-original",
+    "dtImgR":       ".*(http\\S+)",
+    "dtCate":       "concat(//span[contains(text(),'类型')]/following-sibling::a[position()<4]/text())",
+    "dtYear":       "//span[contains(text(),'年份')]/following-sibling::a[1]/text()",
+    "dtArea":       "//span[contains(text(),'地区')]/following-sibling::a[1]/text()",
+    "dtMark":       "//span[contains(text(),'状态')]/following-sibling::span/text()",
+    "dtDirector":   "concat(//span[contains(text(),'导演')]/following-sibling::a[position()<6]/text())",
+    "dtActor":      "concat(//span[contains(text(),'主演')]/following-sibling::a[position()<6]/text())",
+    "dtDesc":       "//h2[text()='剧情介绍']/following-sibling::div[contains(@class,'full_text')]/span/text()",
+    
+// Video Playlist =====================================================
+    "dtFromNode":   "//div[@class='play_source']/div[contains(@class,'tab')]/a",
+    "dtFromName":   "/text()",
+    "dtUrlNode":    "//div[@class='play_source']//div[contains(@class,'playlist_full')]/ul",
+    "dtUrlSubNode": "/li/a",
+    "dtUrlId":      "/@href",
+    "dtUrlIdR":     "/index.php/vod/play/(\\S+).html",
+    "dtUrlName":    "/text()",
+    "playUrl":      "https://www.m1949.cc/index.php/vod/play/{playUrl}.html",
+    "playUa":       "",
+    
+// Search Results ================================================
+    "searchUrl":    "https://www.m1949.cc/index.php/vod/search.html?wd={wd}",
+    "scVodNode":    "//div[contains(@class,'search_box')]/ul/li",
+    "scVodName":    "/div/h4/a/@title",
+    "scVodId":      "/div/h4/a/@href",
+    "scVodIdR":     "/index.php/vod/detail/id/(\\S+).html",
+    "scVodImg":     "/div/a/@data-original",
+    "scVodImgR":    ".*(http\\S+)",
+    "scVodMark":    "concat(/div/h4/a/span/text(),'/',/div/a/span[contains(@class,'pic_text')]/text())",
+    
+// Filters =======================================================
+    "filter": {
+        "1": [
+            {
+                "key": "cateId",
+                "name": "分类",
+                "value": [
+                    {"n": "全部","v": "1"},
+                    {"n": "动作片","v": "6"},
+                    {"n": "喜剧片","v": "7"},
+                    {"n": "爱情片","v": "8"},
+                    {"n": "科幻片","v": "9"},
+                    {"n": "恐怖片","v": "10"},
+                    {"n": "剧情片","v": "11"},
+                    {"n": "战争片","v": "12"},
+                    {"n": "纪录片","v": "20"},
+                    {"n": "动画片","v": "21"}]
+            },
+            {
+                "key": "area",
+                "name": "地区",
+                "value": [
+                    {"n": "全部","v": ""},
+                    {"n": "中国","v": "/area/中国大陆"},
+                    {"n": "大陆","v": "/area/大陆"},
+                    {"n": "内地","v": "/area/内地"},
+                    {"n": "香港","v": "/area/香港"},
+                    {"n": "台湾","v": "/area/台湾"},
+                    {"n": "美国","v": "/area/美国"},
+                    {"n": "韩国","v": "/area/韩国"},
+                    {"n": "日本","v": "/area/日本"},
+                    {"n": "英国","v": "/area/英国"},
+                    {"n": "泰国","v": "/area/泰国"},
+                    {"n": "印度","v": "/area/印度"},
+                    {"n": "法国","v": "/area/法国"},
+                    {"n": "西班牙","v": "/area/西班牙"},
+                    {"n": "加拿大","v": "/area/加拿大"},
+                    {"n": "意大利","v": "/area/意大利"},
+                    {"n": "俄罗斯","v": "/area/俄罗斯"},
+                    {"n": "新加坡","v": "/area/新加坡"},
+                    {"n": "马来西亚","v": "/area/马来西亚"},
+                    {"n": "澳大利亚","v": "/area/澳大利亚"},
+                    {"n": "其它","v": "/area/其它"}]
+            },
+            {
+                "key": "year",
+                "name": "年份",
+                "value": [
+                    {"n": "全部","v": ""},
+                    {"n": "2023","v": "/year/2023"},
+                    {"n": "2022","v": "/year/2022"},
+                    {"n": "2021","v": "/year/2021"},
+                    {"n": "2020","v": "/year/2020"},
+                    {"n": "2019","v": "/year/2019"},
+                    {"n": "2018","v": "/year/2018"},
+                    {"n": "2017","v": "/year/2017"},
+                    {"n": "2016","v": "/year/2016"},
+                    {"n": "2015","v": "/year/2015"},
+                    {"n": "2014","v": "/year/2014"},
+                    {"n": "2013","v": "/year/2013"},
+                    {"n": "2012","v": "/year/2012"},
+                    {"n": "2011","v": "/year/2011"},
+                    {"n": "2010","v": "/year/2010"},
+                    {"n": "2009","v": "/year/2009"},
+                    {"n": "2008","v": "/year/2008"},
+                    {"n": "2007","v": "/year/2007"},
+                    {"n": "2006","v": "/year/2006"},
+                    {"n": "2005","v": "/year/2005"},
+                    {"n": "2004","v": "/year/2004"},
+                    {"n": "2003","v": "/year/2003"},
+                    {"n": "2002","v": "/year/2002"},
+                    {"n": "2001","v": "/year/2001"},
+                    {"n": "2000","v": "/year/2000"}]
+            },
+            {
+                "key": "by",
+                "name": "排序",
+                "value": [
+                    {"n": "全部","v": ""},
+                    {"n": "更新","v": "/by/time"},
+                    {"n": "日榜","v": "/by/hits_day"},
+                    {"n": "周榜","v": "/by/hits_week"},
+                    {"n": "月榜","v": "/by/hits_month"},
+                    {"n": "总榜","v": "/by/hits"},
+                    {"n": "评分","v": "/by/score"}]
+            }
+        ],
+        "2": [
+            {
+                "key": "cateId",
+                "name": "分类",
+                "value": [
+                    {"n": "全部","v": "2"},
+                    {"n": "国产剧","v": "13"},
+                    {"n": "港台剧","v": "14"},
+                    {"n": "日韩剧","v": "15"},
+                    {"n": "欧美剧","v": "16"},
+                    {"n": "泰国剧","v": "23"},
+                    {"n": "海外剧","v": "24"}]
+            },
+            {
+                "key": "area",
+                "name": "地区",
+                "value": [
+                    {"n": "全部","v": ""},
+                    {"n": "中国","v": "/area/中国大陆"},
+                    {"n": "大陆","v": "/area/大陆"},
+                    {"n": "内地","v": "/area/内地"},
+                    {"n": "香港","v": "/area/香港"},
+                    {"n": "台湾","v": "/area/台湾"},
+                    {"n": "美国","v": "/area/美国"},
+                    {"n": "韩国","v": "/area/韩国"},
+                    {"n": "日本","v": "/area/日本"},
+                    {"n": "英国","v": "/area/英国"},
+                    {"n": "泰国","v": "/area/泰国"},
+                    {"n": "西班牙","v": "/area/西班牙"},
+                    {"n": "其它","v": "/area/其它"}]
+            },
+            {
+                "key": "year",
+                "name": "年份",
+                "value": [
+                    {"n": "全部","v": ""},
+                    {"n": "2023","v": "/year/2023"},
+                    {"n": "2022","v": "/year/2022"},
+                    {"n": "2021","v": "/year/2021"},
+                    {"n": "2020","v": "/year/2020"},
+                    {"n": "2019","v": "/year/2019"},
+                    {"n": "2018","v": "/year/2018"},
+                    {"n": "2017","v": "/year/2017"},
+                    {"n": "2016","v": "/year/2016"},
+                    {"n": "2015","v": "/year/2015"},
+                    {"n": "2014","v": "/year/2014"},
+                    {"n": "2013","v": "/year/2013"},
+                    {"n": "2012","v": "/year/2012"},
+                    {"n": "2011","v": "/year/2011"},
+                    {"n": "2010","v": "/year/2010"},
+                    {"n": "2009","v": "/year/2009"},
+                    {"n": "2008","v": "/year/2008"},
+                    {"n": "2007","v": "/year/2007"},
+                    {"n": "2006","v": "/year/2006"},
+                    {"n": "2005","v": "/year/2005"},
+                    {"n": "2004","v": "/year/2004"},
+                    {"n": "2003","v": "/year/2003"},
+                    {"n": "2002","v": "/year/2002"},
+                    {"n": "2001","v": "/year/2001"},
+                    {"n": "2000","v": "/year/2000"}]
+            },
+            {
+                "key": "by",
+                "name": "排序",
+                "value": [
+                    {"n": "全部","v": ""},
+                    {"n": "更新","v": "/by/time"},
+                    {"n": "日榜","v": "/by/hits_day"},
+                    {"n": "周榜","v": "/by/hits_week"},
+                    {"n": "月榜","v": "/by/hits_month"},
+                    {"n": "总榜","v": "/by/hits"},
+                    {"n": "评分","v": "/by/score"}]
+            }
+        ],
+        "3": [
+            {
+                "key": "cateId",
+                "name": "分类",
+                "value": [
+                    {"n": "全部","v": "3"},
+                    {"n": "国产综","v": "25"},
+                    {"n": "日韩综","v": "26"},
+                    {"n": "港台综","v": "27"},
+                    {"n": "欧美综","v": "28"}]
+            },
+            {
+                "key": "area",
+                "name": "地区",
+                "value": [
+                    {"n": "全部","v": ""},
+                    {"n": "中国","v": "/area/中国大陆"},
+                    {"n": "大陆","v": "/area/大陆"},
+                    {"n": "内地","v": "/area/内地"},
+                    {"n": "香港","v": "/area/香港"},
+                    {"n": "台湾","v": "/area/台湾"},
+                    {"n": "美国","v": "/area/美国"},
+                    {"n": "韩国","v": "/area/韩国"},
+                    {"n": "日本","v": "/area/日本"},
+                    {"n": "英国","v": "/area/英国"},
+                    {"n": "其它","v": "/area/其它"}]
+            },
+            {
+                "key": "year",
+                "name": "年份",
+                "value": [
+                    {"n": "全部","v": ""},
+                    {"n": "2023","v": "/year/2023"},
+                    {"n": "2022","v": "/year/2022"},
+                    {"n": "2021","v": "/year/2021"},
+                    {"n": "2020","v": "/year/2020"},
+                    {"n": "2019","v": "/year/2019"},
+                    {"n": "2018","v": "/year/2018"},
+                    {"n": "2017","v": "/year/2017"},
+                    {"n": "2016","v": "/year/2016"},
+                    {"n": "2015","v": "/year/2015"},
+                    {"n": "2014","v": "/year/2014"},
+                    {"n": "2013","v": "/year/2013"},
+                    {"n": "2012","v": "/year/2012"},
+                    {"n": "2011","v": "/year/2011"},
+                    {"n": "2010","v": "/year/2010"},
+                    {"n": "2009","v": "/year/2009"},
+                    {"n": "2008","v": "/year/2008"},
+                    {"n": "2007","v": "/year/2007"},
+                    {"n": "2006","v": "/year/2006"},
+                    {"n": "2005","v": "/year/2005"},
+                    {"n": "2004","v": "/year/2004"},
+                    {"n": "2003","v": "/year/2003"},
+                    {"n": "2002","v": "/year/2002"},
+                    {"n": "2001","v": "/year/2001"},
+                    {"n": "2000","v": "/year/2000"}]
+            },
+            {
+                "key": "by",
+                "name": "排序",
+                "value": [
+                    {"n": "全部","v": ""},
+                    {"n": "更新","v": "/by/time"},
+                    {"n": "日榜","v": "/by/hits_day"},
+                    {"n": "周榜","v": "/by/hits_week"},
+                    {"n": "月榜","v": "/by/hits_month"},
+                    {"n": "总榜","v": "/by/hits"},
+                    {"n": "评分","v": "/by/score"}]
+            }
+        ],
+        "4": [
+            {
+                "key": "cateId",
+                "name": "分类",
+                "value": [
+                    {"n": "全部","v": "4"},
+                    {"n": "国产漫","v": "29"},
+                    {"n": "日韩漫","v": "30"},
+                    {"n": "欧美漫","v": "31"},
+                    {"n": "港台漫","v": "32"},
+                    {"n": "海外漫","v": "33"}]
+            },
+            {
+                "key": "area",
+                "name": "地区",
+                "value": [
+                    {"n": "全部","v": ""},
+                    {"n": "中国","v": "/area/中国大陆"},
+                    {"n": "大陆","v": "/area/大陆"},
+                    {"n": "内地","v": "/area/内地"},
+                    {"n": "香港","v": "/area/香港"},
+                    {"n": "台湾","v": "/area/台湾"},
+                    {"n": "美国","v": "/area/美国"},
+                    {"n": "韩国","v": "/area/韩国"},
+                    {"n": "日本","v": "/area/日本"},
+                    {"n": "英国","v": "/area/英国"},
+                    {"n": "其它","v": "/area/其它"}]
+            },
+            {
+                "key": "year",
+                "name": "年份",
+                "value": [
+                    {"n": "全部","v": ""},
+                    {"n": "2023","v": "/year/2023"},
+                    {"n": "2022","v": "/year/2022"},
+                    {"n": "2021","v": "/year/2021"},
+                    {"n": "2020","v": "/year/2020"},
+                    {"n": "2019","v": "/year/2019"},
+                    {"n": "2018","v": "/year/2018"},
+                    {"n": "2017","v": "/year/2017"},
+                    {"n": "2016","v": "/year/2016"},
+                    {"n": "2015","v": "/year/2015"},
+                    {"n": "2014","v": "/year/2014"},
+                    {"n": "2013","v": "/year/2013"},
+                    {"n": "2012","v": "/year/2012"},
+                    {"n": "2011","v": "/year/2011"},
+                    {"n": "2010","v": "/year/2010"},
+                    {"n": "2009","v": "/year/2009"},
+                    {"n": "2008","v": "/year/2008"},
+                    {"n": "2007","v": "/year/2007"},
+                    {"n": "2006","v": "/year/2006"},
+                    {"n": "2005","v": "/year/2005"},
+                    {"n": "2004","v": "/year/2004"},
+                    {"n": "2003","v": "/year/2003"},
+                    {"n": "2002","v": "/year/2002"},
+                    {"n": "2001","v": "/year/2001"},
+                    {"n": "2000","v": "/year/2000"}]
+            },
+            {
+                "key": "by",
+                "name": "排序",
+                "value": [
+                    {"n": "全部","v": ""},
+                    {"n": "更新","v": "/by/time"},
+                    {"n": "日榜","v": "/by/hits_day"},
+                    {"n": "周榜","v": "/by/hits_week"},
+                    {"n": "月榜","v": "/by/hits_month"},
+                    {"n": "总榜","v": "/by/hits"},
+                    {"n": "评分","v": "/by/score"}]
+            }
+        ],
+        "34": []
+    }
+}
