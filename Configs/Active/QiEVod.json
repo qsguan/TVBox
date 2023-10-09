@@ -14,7 +14,7 @@
         "综艺库":   "3",
         "动漫库":   "4",
         "纪录片":   "51",
-        "体育赛事1": "50"
+        "体育赛事2": "50"
     },
     
 // Home Summary ================================================
@@ -28,7 +28,7 @@
 // Category Summary ================================================
                    //https://www.qievod.com/qvf/11/area/大陆/by/score/page/2/year/2022/
     "cateUrl":      "https://www.qievod.com/qvf/{cateId}/area/{area}/by/{by}/page/{catePg}/year/{year}/",
-    "cateVodNode":  "//div[@class='hl-list-wrap']/ul/li",
+    "cateVodNode":  "//div[@class='hl-list-wrap']/ul[contains(@class,'hl-vod-list')]/li",
     "cateVodName":  "/a/@title",
     "cateVodId":    "/a/@href",
     "cateVodIdR":   "/(\\S+)/",
