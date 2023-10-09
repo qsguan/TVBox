@@ -1,6 +1,6 @@
 {
     "author": "Jimmy_Bytheway",
-    "ua": "",
+    "ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1",
     "homeUrl":   "https://www.qievod.com/",
     "dcPlayUrl": "true",
     "dcVipFlag": "true",
@@ -227,7 +227,7 @@
                     {"n": "韩国综艺","v": "38"},
                     {"n": "欧美综艺","v": "36"},
                     {"n": "日本综艺","v": "37"},
-                    {"n": "其他综艺","v": "42"}}]
+                    {"n": "其他综艺","v": "42"}]
             },
             {
                 "key": "year",
@@ -283,7 +283,7 @@
                     {"n": "欧美动漫","v": "43"},
                     {"n": "港台动漫","v": "48"},
                     {"n": "韩国动漫","v": "46"},
-                    {"n": "其他动漫","v": "49"}}]
+                    {"n": "其他动漫","v": "49"}]
             },
             {
                 "key": "year",
