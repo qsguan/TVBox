@@ -1,0 +1,96 @@
+{
+    "author": "Jimmy_Bytheway",
+    "ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1",
+    "homeUrl":   "https://www.qievod.com/",
+    "dcPlayUrl": "true",
+    "dcVipFlag": "true",
+    "cateNode":  "//div[@class='conch-nav']/div/ul/li/a[contains(@href,'qvc')]",
+    "cateName":  "/text()",
+    "cateId":    "/@href",
+    "cateIdR":   "/qvc/(\\S+)/",
+    "cateManual": {
+        "电影库":   "1",
+        "电视剧":   "2",
+        "综艺库":   "3",
+        "动漫库":   "4",
+        "纪录片":   "51",
+        "体育赛事": "50"
+    },
+    
+// Home Summary ================================================
+    "homeVodNode":  "//div[@class='hl-list-wrap hl-list-v6' or contains(@class,'hl-list-v12')]/ul/li",
+    "homeVodName":  "/a/@title",
+    "homeVodId":    "/a/@href",
+    "homeVodIdR":   "/(\\S+)/",
+    "homeVodImg":   "/a/@data-original",
+    "homeVodMark":  "concat(/div/div/span/text(),'/',/a/div[@class='hl-pic-text']/span/text())",
+    
+// Category Summary ================================================
+                   //https://www.qievod.com/qvf/11/area/大陆/by/score/page/2/year/2022/
+    "cateUrl":      "https://www.qievod.com/qvf/{cateId}{area}{by}/page/{catePg}{year}/",
+    "cateVodNode":  "//div[@class='hl-list-wrap']/ul/li",
+    "cateVodName":  "/a/@title",
+    "cateVodId":    "/a/@href",
+    "cateVodIdR":   "/(\\S+)/",
+    "cateVodImg":   "/a/@data-original",
+    "cateVodMark":  "concat(/div/div/span/text(),'/',/a/div[@class='hl-pic-text']/span/text())",
+    
+// Video Details ================================================
+    "dtUrl":        "https://www.qievod.com/{vid}/",
+    "dtNode":       "//body",
+    "dtName":       "//div[@class='hl-dc-content']/div/h1/text()",
+    "dtImg":        "//div[@class='hl-dc-pic']/span/@data-original",
+    "dtCate":       "concat(//em[contains(text(),'类型')]/parent::li//text())",
+    "dtCateR":      "^[类型]{2}：(\\S+)/",
+    "dtYear":       "//em[contains(text(),'年份')]/parent::li/text()",
+    "dtArea":       "//em[contains(text(),'地区')]/parent::li/text()",
+    "dtMark":       "//em[contains(text(),'状态')]/following-sibling::span/text()",
+    "dtDirector":   "concat(//em[contains(text(),'导演')]/parent::li//text())",
+    "dtDirectorR":  "^[导演]{2}：(\\S+)/",
+    "dtActor":      "concat(//em[contains(text(),'主演')]/parent::li//text())",
+    "dtActorR":     "^[主演]{2}：(\\S+)/",
+    "dtDesc":       "concat(//em[contains(text(),'简介')]/parent::li//text())",
+    "dtDescR":      "^[简介]{2}：(.*)",
+    
+// Video Playlist =====================================================
+    "dtFromNode":   "//div[contains(@class,'hl-play-source')]//div[contains(@class,'hl-plays-from')]/a",
+    "dtFromName":   "/@alt",
+    "dtUrlNode":    "//div[contains(@class,'hl-play-source')]//div[@class='hl-list-wrap']/ul",
+    "dtUrlSubNode": "/li/a",
+    "dtUrlId":      "/@href",
+    "dtUrlIdR":     "/(\\S+)/",
+    "dtUrlName":    "/text()",
+    "playUrl":      "https://www.qievod.com/{playUrl}/",
+    "playUa":       "",
+    
+// Search Results ================================================
+    "searchUrl":    "https://www.qievod.com/qvs/-/?wd={wd}",
+    "scVodNode":    "//div[@class='hl-list-wrap']/ul[contains(@class,'hl-one-list')]/li/div/div",
+    "scVodName":    "//div[contains(@class,'item-title')]/a/@title",
+    "scVodId":      "//div[contains(@class,'item-title')]/a/@href",
+    "scVodIdR":     "/(\\S+)/",
+    "scVodImg":     "//div[contains(@class,'item-pic')]/a/@data-original",
+    "scVodMark":    "concat(//div[contains(@class,'item-content')]/p/span/text(),'/',//div[contains(@class,'item-pic')]/a/div[@class='hl-pic-text']/span/text())",
+    
+// Filters =======================================================
+    "filter": {
+        "1": [
+
+        ],
+        "2": [
+
+        ],
+        "3": [
+
+        ],
+        "4": [
+
+        ],
+        "51": [
+
+        ],
+        "50": [
+
+        ]
+    }
+}
