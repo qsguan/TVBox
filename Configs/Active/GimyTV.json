@@ -43,8 +43,8 @@
     "dtYear":       "//div[contains(@class,'info-heading')]/div/div[2]//text()",
     "dtArea":       "//div[contains(@class,'info-heading')]/div/div[3]//text()",
     "dtMark":       "//span[contains(text(),'狀態')]/following-sibling::div/text()",
-    "dtDirector":   "concat(//span[contains(text(),'導演')]/following-sibling::div/a[position()<6]/text())",
-    "dtActor":      "concat(//span[contains(text(),'主演')]/following-sibling::div/a[position()<6]/text())",
+    "dtDirector":   "concat(//span[contains(text(),'導演')]/following-sibling::div/a[position()<7]/text())",
+    "dtActor":      "concat(//span[contains(text(),'主演')]/following-sibling::div/a[position()<7]/text())",
     "dtDesc":       "//div[contains(@class,'module-info-introduction-content')]",
     
 // Video Playlist =====================================================
