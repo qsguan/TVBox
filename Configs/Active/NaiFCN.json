@@ -22,8 +22,7 @@
     "homeVodIdR":   "/index.php/vod/detail/id/(\\S+).html",
     "homeVodImg":   "/div/div/img/@data-original",
     "homeVodImgR":  ".*(http\\S+)",
-    "homeVodMark":  "concat(/div/div[contains(@class,'douban')]/text(),'/',/div/div[contains(@class,'note')]/text())",
-    "homeVodMarkR": "\\S+:(\\S+)",
+    "homeVodMark":  "/div/div[contains(@class,'note')]/text()",
     
 // Category Summary ================================================
                    //https://naifeicn.com/index.php/vod/show/area/大陆/by/score/id/36/lang/国语/page/2/year/2021.html
@@ -42,19 +41,19 @@
     "dtName":       "//div[contains(@class,'heading')]/h1/text()",
     "dtImg":        "/div/div/div/div/img/@data-original",
     "dtImgR":       ".*(http\\S+)",
-    "dtCate":       "concat(//div[contains(@class,'heading')]/div/div[3]/a/text())",
+    "dtCate":       "concat(//div[contains(@class,'heading')]/div/div[3]/a[position()<5]/text())",
     "dtYear":       "//div[contains(@class,'heading')]/div/div[1]/a/text()",
     "dtArea":       "//div[contains(@class,'heading')]/div/div[2]/a/text()",
     "dtMark":       "//span[contains(text(),'集数') or contains(text(),'备注')]/following-sibling::div/text()",
-    "dtDirector":   "concat(//span[contains(text(),'导演')]/following-sibling::div/a[position()<6]/text())",
-    "dtActor":      "concat(//span[contains(text(),'主演')]/following-sibling::div/a[position()<6]/text())",
+    "dtDirector":   "concat(//span[contains(text(),'导演')]/following-sibling::div/a[position()<7]/text())",
+    "dtActor":      "concat(//span[contains(text(),'主演')]/following-sibling::div/a[position()<7]/text())",
     "dtDesc":       "//div[contains(@class,'module-info-introduction-content')]",
     
 // Video Playlist =====================================================
     "dtFromNode":   "//div[contains(@class,'module-tab-items-box')]/div",
     "dtFromName":   "/span/text()",
-    "dtUrlNode":    "//div[@class='module-play-list']",
-    "dtUrlSubNode": "/div/a",
+    "dtUrlNode":    "//div[@class='module-play-list']/div",
+    "dtUrlSubNode": "/a",
     "dtUrlId":      "/@href",
     "dtUrlIdR":     "/index.php/vod/play/id/(\\S+).html",
     "dtUrlName":    "/span/text()",
