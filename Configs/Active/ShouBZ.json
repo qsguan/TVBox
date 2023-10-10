@@ -22,8 +22,7 @@
     "homeVodId":    "/@href",
     "homeVodIdR":   "/voddetail/(\\S+).html",
     "homeVodImg":   "/div/div/img/@data-original",
-    "homeVodMark":  "concat(/div/div[contains(@class,'douban')]/text(),'/',/div/div[contains(@class,'note')]/text())",
-    "homeVodMarkR": "\\S+:(\\S+)",
+    "homeVodMark":  "/div/div[contains(@class,'note')]/text()",
     
 // Category Summary ================================================
                    //https://shoubozhan.com/vodshow/11-大陆-score-剧情-国语----2---2022.html
@@ -40,19 +39,19 @@
     "dtNode":       "//body",
     "dtName":       "//div[@class='module-info-heading']/h1/text()",
     "dtImg":        "//div[@class='module-info-poster']//div[@class='module-item-pic']/img/@data-original",
-    "dtCate":       "concat(//div[@class='module-info-heading']/div/div[3]/a/text())",
+    "dtCate":       "concat(//div[@class='module-info-heading']/div/div[3]/a[position()<5]/text())",
     "dtYear":       "//div[@class='module-info-heading']/div/div[1]/a/text()",
     "dtArea":       "//div[@class='module-info-heading']/div/div[2]/a/text()",
     "dtMark":       "//span[contains(text(),'集数') or contains(text(),'备注')]/following-sibling::div/text()",
-    "dtDirector":   "concat(//span[contains(text(),'导演')]/following-sibling::div/a[position()<6]/text())",
-    "dtActor":      "concat(//span[contains(text(),'主演')]/following-sibling::div/a[position()<6]/text())",
+    "dtDirector":   "concat(//span[contains(text(),'导演')]/following-sibling::div/a[position()<7]/text())",
+    "dtActor":      "concat(//span[contains(text(),'主演')]/following-sibling::div/a[position()<7]/text())",
     "dtDesc":       "//div[contains(@class,'module-info-introduction-content')]",
     
 // Video Playlist =====================================================
     "dtFromNode":   "//div[contains(@class,'module-tab-items-box')]/div",
     "dtFromName":   "/span/text()",
-    "dtUrlNode":    "//div[@class='module-play-list']",
-    "dtUrlSubNode": "/div/a",
+    "dtUrlNode":    "//div[@class='module-play-list']/div",
+    "dtUrlSubNode": "/a",
     "dtUrlId":      "/@href",
     "dtUrlIdR":     "/vodplay/(\\S+).html",
     "dtUrlName":    "/span/text()",
