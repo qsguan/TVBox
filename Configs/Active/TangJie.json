@@ -13,7 +13,7 @@
         "电视剧": "2",
         "综艺库": "3",
         "动漫库": "4",
-        "纪录片1": "28"
+        "纪录片": "28"
     },
     
 // Home Summary ================================================
@@ -43,10 +43,8 @@
     "dtYear":       "//li[@class='data']/span[contains(text(),'年份')]/following-sibling::a/text()",
     "dtArea":       "//li[@class='data']/span[contains(text(),'地区')]/following-sibling::a/text()",
     "dtMark":       "//li[@class='data']/span[contains(text(),'片源')]/following-sibling::span/b/text()",
-    "dtDirector":   "concat(//li[@class='data']/span[contains(text(),'导演')]/parent::li//text())",
-    "dtDirectorR":  "^[导演]{2}：(.*)",
-    "dtActor":      "concat(//li[@class='data']/span[contains(text(),'主演')]/parent::li//text())",
-    "dtActorR":     "^[主演]{2}：(.*)",
+    "dtDirector":   "concat(//li[@class='data']/span[contains(text(),'导演')]/following-sibling::a[position()<6]/text())",
+    "dtActor":      "concat(//li[@class='data']/span[contains(text(),'主演')]/following-sibling::a[position()<6]/text())",
     "dtDesc":       "concat(//div[@class='content']/section/font//text())", #/font/p中可能没有/p节点,用/font下所有文本作为剧情介绍
     
 // Video Playlist =====================================================
