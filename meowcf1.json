@@ -31,7 +31,7 @@
         },
         {
             "key": "csp_xpath_GimyTV", #搜索影片时需输繁体字才可搜索
-            "name": "剧迷影院",
+            "name": "剧迷影院1",
             "type": 3,
             "api": "csp_XPathMacFilter",
             "searchable": 1,

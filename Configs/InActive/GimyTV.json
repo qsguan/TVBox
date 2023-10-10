@@ -45,7 +45,7 @@
     "dtMark":       "//span[contains(text(),'狀態')]/following-sibling::div/text()",
     "dtDirector":   "concat(//span[contains(text(),'導演')]/following-sibling::div/a[position()<6]/text())",
     "dtActor":      "concat(//span[contains(text(),'主演')]/following-sibling::div/a[position()<6]/text())",
-    "dtDesc":       "//div[contains(@class,'text-collapse')]", #/div/p中可能没有/p节点,用/div下所有文本内容作为剧情介绍
+    "dtDesc":       "//div[contains(@class,'module-info-introduction-content')]",
     
 // Video Playlist =====================================================
     "dtFromNode":   "//div[contains(@class,'player-heading')]/div/div/div/div",
