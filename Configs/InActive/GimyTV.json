@@ -4,78 +4,78 @@
     "homeUrl":   "https://gimy.video/",
     "dcPlayUrl": "true",
     "dcVipFlag": "true",
-    "cateNode":  "//ul[contains(@class,'myui-header__menu')]/li/a",
-    "cateName":  "/text()",
+    "cateNode":  "//ul[contains(@class,'navbar-items')]/li/a[contains(@href,'channel')]",
+    "cateName":  "/@title",
     "cateId":    "/@href",
     "cateIdR":   "/channel/(\\w+).html",
     "cateManual": {
-        "电影库": "movies",
-        "电视剧": "tvseries",
-        "综艺库": "tv_show",
-        "动漫库": "anime",
-        "纪录片": "documentary+"
+        "电影库": "1",
+        "电视剧": "2",
+        "综艺库": "29",
+        "动漫库": "30",
+        "纪录片": "22"
     },
     
 // Home Summary ================================================
-    "homeVodNode":  "//ul[contains(@class,'myui-vodlist')]/li/div/a",
+    "homeVodNode":  "//div[contains(@class,'scroll-box') or contains(@class,'active')]/div/a",
     "homeVodName":  "/@title",
     "homeVodId":    "/@href",
     "homeVodIdR":   "/(\\S+).html",
-    "homeVodImg":   "/@data-original",
-    "homeVodMark":  "/span[contains(@class,'pic-text')]/text()",
+    "homeVodImg":   "//div[contains(@class,'item-pic')]/img/@data-original",
+    "homeVodMark":  "//div[contains(@class,'item-note')]/text()",
     
 // Category Summary ================================================
-                   //https://gimy.video/genre/drama-美國-2021-2/by/hits_month.html
-    "cateUrl":      "https://gimy.video/genre/{cateId}-{area}-{year}-{catePg}{by}.html",
-    "cateVodNode":  "//div[contains(@class,'myui-panel-box')]/div/ul/li/div/a",
+                   //https://gimy.video/genre/11-美國-2022-2/by/hits_month/class/劇情.html
+    "cateUrl":      "https://gimy.video/genre/{cateId}-{area}-{year}-{catePg}{by}{class}.html",
+    "cateVodNode":  "//div[contains(@class,'scroll-box')]/a",
     "cateVodName":  "/@title",
     "cateVodId":    "/@href",
     "cateVodIdR":   "/(\\S+).html",
-    "cateVodImg":   "/@data-original",
-    "cateVodMark":  "/span[contains(@class,'pic-text')]/text()",
+    "cateVodImg":   "//div[contains(@class,'item-pic')]/img/@data-original",
+    "cateVodMark":  "//div[contains(@class,'item-note')]/text()",
     
 // Video Details ================================================
     "dtUrl":        "https://gimy.video/{vid}.html",
-    "dtNode":       "//body",
-    "dtName":       "//div[contains(@class,'myui-content__thumb')]/a/@title",
-    "dtImg":        "//div[contains(@class,'myui-content__thumb')]/a/img/@data-original",
-    "dtCate":       "//p[@class='data']/span[contains(text(),'分類')]/following-sibling::*/text()",
-    "dtYear":       "//p[@class='data']/span[contains(text(),'年份')]/following-sibling::*/text()",
-    "dtArea":       "//p[@class='data']/span[contains(text(),'地區')]/following-sibling::*/text()",
-    "dtMark":       "//p[@class='data']/span[contains(text(),'狀態')]/parent::*/text()",
-    "dtDirector":   "concat(//p[@class='data']/span[contains(text(),'導演')]/following-sibling::a[position()<6]/text())",
-    "dtActor":      "concat(//p[@class='data']/span[contains(text(),'主演')]/following-sibling::a[position()<6]/text())",
+    "dtNode":       "//div[@class='module-main']",
+    "dtName":       "//div[contains(@class,'info-heading')]/h1/text()",
+    "dtImg":        "//div[contains(@class,'item-pic')]/img/@data-original",
+    "dtCate":       "//div[contains(@class,'info-heading')]/div/div[1]//text()",
+    "dtYear":       "//div[contains(@class,'info-heading')]/div/div[2]//text()",
+    "dtArea":       "//div[contains(@class,'info-heading')]/div/div[3]//text()",
+    "dtMark":       "//span[contains(text(),'狀態')]/following-sibling::div/text()",
+    "dtDirector":   "concat(//span[contains(text(),'導演')]/following-sibling::div/a[position()<6]/text())",
+    "dtActor":      "concat(//span[contains(text(),'主演')]/following-sibling::div/a[position()<6]/text())",
     "dtDesc":       "//div[contains(@class,'text-collapse')]", #/div/p中可能没有/p节点,用/div下所有文本内容作为剧情介绍
     
 // Video Playlist =====================================================
-    "dtFromNode":   "//div[contains(@class,'col-md-wide-7')]/div[contains(@class,'myui-panel') and not(@id='desc')]/div/div/div/h3/i",
-    "dtFromName":   "/parent::h3/text()[2]",
+    "dtFromNode":   "//div[contains(@class,'player-heading')]/div/div/div/div",
+    "dtFromName":   "/span/text()",
     "dtFromNameR":   "(\\S+線)",
-    "dtUrlNode":    "//ul[contains(@class,'myui-content__list')]",
-    "dtUrlSubNode": "/li/a",
+    "dtUrlNode":    "//div[@class='module-play-list']/div[contains(@class,'module-play-list-content')]",
+    "dtUrlSubNode": "/a",
     "dtUrlId":      "/@href",
     "dtUrlIdR":     "/(\\S+).html",
-    "dtUrlName":    "/text()",
+    "dtUrlName":    "/span/text()",
     "playUrl":      "https://gimy.video/{playUrl}.html",
     "playUa":       "",
     
 // Search Results ================================================
     "searchUrl":    "https://gimy.video/search/-------------.html?wd={wd}",
-    "scVodNode":    "//ul[contains(@class,'myui-vodlist__media')]/li/div/a",
-    "scVodName":    "/@title",
-    "scVodId":      "/@href",
+    "scVodNode":    "//div[@class='module-card-item module-item']",
+    "scVodName":    "//div[contains(@class,'item-title')]/a//text()",
+    "scVodId":      "//div[contains(@class,'item-title')]/a/@href",
     "scVodIdR":     "/(\\S+).html",
-    "scVodImg":     "/@data-original",
-    "scVodMark":    "/span[contains(@class,'pic-text')]/text()",
+    "scVodImg":     "/a/div/div/img/@data-original",
+    "scVodMark":    "concat(/div[contains(@class,'item-class')]/text(),'/',/span[contains(@class,'pic-text')]/text())",
     
 // Filters =======================================================
     "filter": {
-        "movies": [
+        "1": [
             {
                 "key": "cateId",
                 "name": "分类",
                 "value": [
-                    {"n": "全部","v": "movies"},
+                    {"n": "全部","v": "1"},
                     {"n": "剧情片","v": "drama"},
                     {"n": "动作片","v": "action"},
                     {"n": "科幻片","v": "scifi"},
@@ -145,12 +145,12 @@
                     {"n": "评分","v": "/by/score"}]
             }
         ],
-        "tvseries": [
+        "2": [
             {
                 "key": "cateId",
                 "name": "分类",
                 "value": [
-                    {"n": "全部","v": "tvseries"},
+                    {"n": "全部","v": "2"},
                     {"n": "国产剧","v": "cn"},
                     {"n": "韩国剧","v": "kr"},
                     {"n": "美国剧","v": "us"},
@@ -211,7 +211,7 @@
                     {"n": "评分","v": "/by/score"}]
             }
         ],
-        "tv_show": [
+        "29": [
             {
                 "key": "area",
                 "name": "地区",
@@ -262,7 +262,7 @@
                     {"n": "评分","v": "/by/score"}]
             }
         ],
-        "anime": [
+        "30": [
             {
                 "key": "area",
                 "name": "地区",
@@ -313,7 +313,7 @@
                     {"n": "评分","v": "/by/score"}]
             }
         ],
-        "documentary+": [
+        "22": [
             {
                 "key": "area",
                 "name": "地区",

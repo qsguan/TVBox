@@ -45,7 +45,7 @@
     "dtMark":       "//li[@class='data']/span[contains(text(),'片源')]/following-sibling::span/b/text()",
     "dtDirector":   "concat(//li[@class='data']/span[contains(text(),'导演')]/following-sibling::a[position()<6]/text())",
     "dtActor":      "concat(//li[@class='data']/span[contains(text(),'主演')]/following-sibling::a[position()<6]/text())",
-    "dtDesc":       "concat(//div[@class='content']/section)", #/section/font/p中可能没有/p节点,用/section下所有文本内容作为剧情介绍
+    "dtDesc":       "concat(//div[@class='content']/section/font//text())", #/font/p中可能没有/p节点,用/font下所有文本作为剧情介绍
     
 // Video Playlist =====================================================
     "dtFromNode":   "//div[contains(@class,'play_source_tab')]/a/b",
