@@ -199,6 +199,26 @@
             "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Active/NiVodTV.json"
         },
         {
+            "key": "csp_xpath_HiBaDY",
+            "name": "嘿叭电影",
+            "type": 3,
+            "api": "csp_XPathMacFilter",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Active/HiBaDY.json"
+        },
+        {
+            "key": "csp_xpath_首播站",
+            "name": "首播站TV",
+            "type": 3,
+            "api": "csp_XPathMacFilter",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Active/ShouBZ.json"
+        },
+        {
             "key": "csp_xpath_4KDYW",
             "name": "4K电影网",
             "type": 3,
@@ -217,26 +237,6 @@
             "quickSearch": 1,
             "filterable": 1,
             "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Active/NaiFCN.json"
-        },
-        {
-            "key": "csp_xpath_首播站",
-            "name": "首播站",
-            "type": 3,
-            "api": "csp_XPathMacFilter",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
-            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Active/ShouBZ.json"
-        },
-        {
-            "key": "csp_xpath_HiBaDY",
-            "name": "嘿叭电影",
-            "type": 3,
-            "api": "csp_XPathMacFilter",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
-            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Active/HiBaDY.json"
         },
         {
             "key": "csp_xpath_GimyTV",
