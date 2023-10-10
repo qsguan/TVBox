@@ -42,12 +42,12 @@
     "dtName":       "//div[@class='video-info-header']/h1/text()",
     "dtImg":        "//div[@class='video-cover']/div/div/img/@data-src",
     "dtImgR":       ".*(http\\S+)",
-    "dtCate":       "//div[contains(@class,'video-info-aux')]/div/a/text()",
+    "dtCate":       "concat(//div[contains(@class,'video-info-aux')]/div/a[position()<6]/text())",
     "dtYear":       "//div[contains(@class,'video-info-aux')]/a[2]/text()",
     "dtArea":       "//div[contains(@class,'video-info-aux')]/a[3]/text()",
     "dtMark":       "//span[contains(text(),'集数') or contains(text(),'连载')]/following-sibling::*/text()",
-    "dtDirector":   "concat(//span[contains(text(),'导演')]/following-sibling::div/a[position()<6]/text())",
-    "dtActor":      "concat(//span[contains(text(),'主演')]/following-sibling::div/a[position()<6]/text())",
+    "dtDirector":   "concat(//span[contains(text(),'导演')]/following-sibling::div/a[position()<7]/text())",
+    "dtActor":      "concat(//span[contains(text(),'主演')]/following-sibling::div/a[position()<7]/text())",
     "dtDesc":       "//span[contains(text(),'剧情')]/following-sibling::div/span/text()",
     
 // Video Playlist =====================================================
