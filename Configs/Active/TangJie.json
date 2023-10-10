@@ -43,15 +43,17 @@
     "dtYear":       "//li[@class='data']/span[contains(text(),'年份')]/following-sibling::a/text()",
     "dtArea":       "//li[@class='data']/span[contains(text(),'地区')]/following-sibling::a/text()",
     "dtMark":       "//li[@class='data']/span[contains(text(),'片源')]/following-sibling::span/b/text()",
-    "dtDirector":   "concat(//li[@class='data']/span[contains(text(),'导演')]/following-sibling::a[position()<6]/text())",
+    "dtDirector":   "concat(//li[@class='data']/span[contains(text(),'导演')]/parent::li//text())",
+    "dtDirectorR":  "^[导演]{2}：(.*)",
     "dtActor":      "concat(//li[@class='data']/span[contains(text(),'主演')]/parent::li//text())",
+    "dtActorR":     "^[主演]{2}：(.*)",
     "dtDesc":       "concat(//div[@class='content']/section/font//text())", #/font/p中可能没有/p节点,用/font下所有文本作为剧情介绍
     
 // Video Playlist =====================================================
-    "dtFromNode":   "//div[contains(@class,'play_source_tab')]/a/b",
-    "dtFromName":   "/text()",
-    "dtUrlNode":    "//div[@class='playlist_full']",
-    "dtUrlSubNode": "/ul/li/a",
+    "dtFromNode":   "//div[contains(@class,'play_source_tab')]/a",
+    "dtFromName":   "/b/text()",
+    "dtUrlNode":    "//div[@class='playlist_full']/ul",
+    "dtUrlSubNode": "/li/a",
     "dtUrlId":      "/@href",
     "dtUrlIdR":     "/vod/play/id/(\\S+).html",
     "dtUrlName":    "/text()",
