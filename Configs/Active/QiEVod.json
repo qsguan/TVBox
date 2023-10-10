@@ -23,7 +23,7 @@
     "homeVodId":    "/a/@href",
     "homeVodIdR":   "/(\\S+)/",
     "homeVodImg":   "/a/@data-original",
-    "homeVodMark":  "concat(/div/div/span/text(),'/',/a/div[@class='hl-pic-text']/span/text())",
+    "homeVodMark":  "/a/div[@class='hl-pic-text']/span/text()",
     
 // Category Summary ================================================
                    //https://www.qievod.com/qvf/11/area/大陆/by/score/page/2/year/2022/
@@ -33,7 +33,7 @@
     "cateVodId":    "/a/@href",
     "cateVodIdR":   "/(\\S+)/",
     "cateVodImg":   "/a/@data-original",
-    "cateVodMark":  "concat(/div/div/span/text(),'/',/a/div[@class='hl-pic-text']/span/text())",
+    "cateVodMark":  "/a/div[@class='hl-pic-text']/span/text()",
     
 // Video Details ================================================
     "dtUrl":        "https://www.qievod.com/{vid}/",
@@ -70,7 +70,7 @@
     "scVodId":      "//div[contains(@class,'item-title')]/a/@href",
     "scVodIdR":     "/(\\S+)/",
     "scVodImg":     "//div[contains(@class,'item-pic')]/a/@data-original",
-    "scVodMark":    "concat(//div[contains(@class,'item-content')]/p/span/text(),'/',//div[contains(@class,'item-pic')]/a/div[@class='hl-pic-text']/span/text())",
+    "scVodMark":    "concat(//div[contains(@class,'item-content')]/p/em/text(),'/',//div[contains(@class,'item-pic')]/a/div[@class='hl-pic-text']/span/text())",
     
 // Filters =======================================================
     "filter": {
