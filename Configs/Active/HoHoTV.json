@@ -9,11 +9,12 @@
     "cateId":    "/@href",
     "cateIdR":   "/vod/type/id/(\\S+).html",
     "cateManual": {
-        "电影库": "1",
-        "电视剧": "2",
-        "综艺库": "3",
-        "动漫库": "4",
-        "纪录片": "20"
+        "电影库":   "1",
+        "电视剧":   "2",
+        "综艺库":   "3",
+        "动漫库":   "4",
+        "纪录片":   "20",
+        "影视解说": "37"
     },
     
 // Home Summary ================================================
@@ -39,13 +40,13 @@
     "dtNode":       "//body",
     "dtName":       "//div[contains(@class,'video-info')]/div/h1/text()",
     "dtImg":        "//div[contains(@class,'video-cover')]/div/div/img/@data-src",
-    "dtCate":       "concat(//div[contains(@class,'video-info')]/div/div/div/div/a/text())",
+    "dtCate":       "concat(//div[contains(@class,'video-info')]/div/div/div/div/a[position()<5]/text())",
     "dtYear":       "//div[contains(@class,'video-info')]/div/div/div/a[@class='tag-link'][2]/text()",
     "dtArea":       "//div[contains(@class,'video-info')]/div/div/div/a[@class='tag-link'][3]/text()",
     "dtMark":       "//div[contains(@class,'video-info-main')]//span[contains(text(),'备注') or contains(text(),'集数') or contains(text(),'连载')]/following-sibling::*/text()",
-    "dtDirector":   "concat(//div[contains(@class,'video-info-main')]//span[contains(text(),'导演')]/following-sibling::*/a[position()<6]/text())",
-    "dtActor":      "concat(//div[contains(@class,'video-info-main')]//span[contains(text(),'主演')]/following-sibling::*/a[position()<6]/text())",
-    "dtDesc":       "//div[contains(@class,'video-info-main')]//span[contains(text(),'剧情')]/following-sibling::*/a/text()",
+    "dtDirector":   "concat(//div[contains(@class,'video-info-main')]//span[contains(text(),'导演')]/following-sibling::*/a[position()<7]/text())",
+    "dtActor":      "concat(//div[contains(@class,'video-info-main')]//span[contains(text(),'主演')]/following-sibling::*/a[position()<7]/text())",
+    "dtDesc":       "//div[contains(@class,'video-info-main')]//span[contains(text(),'剧情')]/following-sibling::*/a[1]/text()",
     "dtDescR":      "\\S+:\\s*(\\S+.*)",
     
 // Video Playlist =====================================================
@@ -264,7 +265,8 @@
                     {"n": "纪实","v": "/class/纪实"},
                     {"n": "曲艺","v": "/class/曲艺"},
                     {"n": "生活","v": "/class/生活"},
-                    {"n": "游戏","v": "/class/游戏"}]
+                    {"n": "游戏","v": "/class/游戏"},
+                    {"n": "其他","v": "/class/其他"}]
             },
             {
                 "key": "year",
@@ -376,6 +378,57 @@
             }
         ],
         "20": [
+            {
+                "key": "area",
+                "name": "地区",
+                "value": [
+                    {"n": "全部","v": ""},
+                    {"n": "中国","v": "/area/中国大陆"},
+                    {"n": "大陆","v": "/area/大陆"},
+                    {"n": "内地","v": "/area/内地"},
+                    {"n": "香港","v": "/area/香港"},
+                    {"n": "台湾","v": "/area/台湾"},
+                    {"n": "美国","v": "/area/美国"},
+                    {"n": "欧美","v": "/area/欧美"},
+                    {"n": "韩国","v": "/area/韩国"},
+                    {"n": "日本","v": "/area/日本"},
+                    {"n": "英国","v": "/area/英国"},
+                    {"n": "其它","v": "/area/其它"}]
+            },
+            {
+                "key": "year",
+                "name": "年份",
+                "value": [
+                    {"n": "全部","v": ""},
+                    {"n": "2023","v": "/year/2023"},
+                    {"n": "2022","v": "/year/2022"},
+                    {"n": "2021","v": "/year/2021"},
+                    {"n": "2020","v": "/year/2020"},
+                    {"n": "2019","v": "/year/2019"},
+                    {"n": "2018","v": "/year/2018"},
+                    {"n": "2017","v": "/year/2017"},
+                    {"n": "2016","v": "/year/2016"},
+                    {"n": "2015","v": "/year/2015"},
+                    {"n": "2014","v": "/year/2014"},
+                    {"n": "2013","v": "/year/2013"},
+                    {"n": "2012","v": "/year/2012"},
+                    {"n": "2011","v": "/year/2011"},
+                    {"n": "2010","v": "/year/2010"}]
+            },
+            {
+                "key": "by",
+                "name": "排序",
+                "value": [
+                    {"n": "全部","v": ""},
+                    {"n": "更新","v": "/by/time"},
+                    {"n": "日榜","v": "/by/hits_day"},
+                    {"n": "周榜","v": "/by/hits_week"},
+                    {"n": "月榜","v": "/by/hits_month"},
+                    {"n": "总榜","v": "/by/hits"},
+                    {"n": "评分","v": "/by/score"}]
+            }
+        ],
+        "37": [
             {
                 "key": "area",
                 "name": "地区",
