@@ -13,9 +13,9 @@
         "日韩剧": "15",
         "香港剧": "20",
         "台泰剧": "14",
-        "短剧":   "21",
-        "综艺":   "3",
-        "动漫":   "4"
+        "短剧库": "21",
+        "综艺库": "3",
+        "动漫库": "4"
     },
     
 // Home Summary ================================================
@@ -45,10 +45,10 @@
     "dtYear":       "//div[contains(@class,'myui-content__detail')]/p/span[contains(text(),'年份')]/following-sibling::*/text()",
     "dtArea":       "//div[contains(@class,'myui-content__detail')]/p/span[contains(text(),'地区')]/following-sibling::*/text()",
     "dtMark":       "//div[contains(@class,'myui-content__detail')]/p/span[contains(text(),'更新')]/following-sibling::*/text()",
-    "dtDirector":   "concat(//div[contains(@class,'myui-content__detail')]/p/span[contains(text(),'导演')]/following-sibling::a[position()<6]/text())",
-    "dtActor":      "concat(//div[contains(@class,'myui-content__detail')]/p/span[contains(text(),'主演')]/following-sibling::a[position()<6]/text())",
+    "dtDirector":   "concat(//div[contains(@class,'myui-content__detail')]/p/span[contains(text(),'导演')]/following-sibling::a[position()<7]/text())",
+    "dtActor":      "concat(//div[contains(@class,'myui-content__detail')]/p/span[contains(text(),'主演')]/following-sibling::a[position()<7]/text())",
     "dtDesc":       "//div[contains(@class,'text-collapse')]/span[@class='data']/p/text()",
-    "dtDescR":      "\\S+：(\\S+)",
+    "dtDescR":      "\\S+：(.*)",
     
 // Video Playlist =====================================================
     "dtFromNode":   "//ul[contains(@class,'nav-tabs')]/li/a",
