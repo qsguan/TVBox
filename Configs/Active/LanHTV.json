@@ -39,14 +39,13 @@
     "dtNode":       "//div[contains(@class,'hl-detail-content')]",
     "dtName":       "/div/span/@title",
     "dtImg":        "/div/span/@data-original",
-    "dtCate":       "concat(//em[contains(text(),'类型')]/following-sibling::a[position()<4]/text())",
+    "dtCate":       "concat(//em[contains(text(),'类型')]/following-sibling::a[position()<5]/text())",
     "dtYear":       "//em[contains(text(),'年份')]/parent::li/text()",
     "dtArea":       "//em[contains(text(),'地区')]/parent::li/text()",
     "dtMark":       "//em[contains(text(),'状态')]/following-sibling::span/text()",
-    "dtDirector":   "concat(//em[contains(text(),'导演')]/parent::li/a/text())",
-    "dtActor":      "concat(//em[contains(text(),'主演')]/parent::li/a[position()<6]/text())",
-    "dtDesc":       "concat(//em[contains(text(),'简介')]/parent::li//text())",
-    "dtDescR":      "^[简介]{2}：(\\S+)",
+    "dtDirector":   "concat(//em[contains(text(),'导演')]/parent::li/a[position()<7]/text())",
+    "dtActor":      "concat(//em[contains(text(),'主演')]/parent::li/a[position()<7]/text())",
+    "dtDesc":       "//em[contains(text(),'简介')]/parent::li",
     
 // Video Playlist =====================================================
     "dtFromNode":   "//div[contains(@class,'hl-play-source')]/div/div[not(@class='row')]/a",

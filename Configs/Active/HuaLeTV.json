@@ -46,8 +46,8 @@
     "dtYear":       "//span[contains(@class,'slide-info-remarks')][1]/a/text()",
     "dtArea":       "//span[contains(@class,'slide-info-remarks')][2]/a/text()",
     "dtMark":       "//strong[contains(text(),'备注')]/parent::div/text()",
-    "dtDirector":   "concat(//strong[contains(text(),'导演')]/following-sibling::a[position()<6]/text())",
-    "dtActor":      "concat(//strong[contains(text(),'演员')]/following-sibling::a[position()<6]/text())",
+    "dtDirector":   "concat(//strong[contains(text(),'导演')]/following-sibling::a[position()<7]/text())",
+    "dtActor":      "concat(//strong[contains(text(),'演员')]/following-sibling::a[position()<7]/text())",
     "dtDesc":       "//div[@id='height_limit']",
     
 // Video Playlist =====================================================
