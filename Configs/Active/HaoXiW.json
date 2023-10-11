@@ -12,7 +12,7 @@
         "电影库":   "1",
         "电视剧":   "2",
         "综艺库":   "3",
-        "动漫库2":   "4",
+        "动漫库":   "4",
         "影视解说": "43"
     },
     
@@ -46,13 +46,12 @@
     "dtDirector":   "concat(//strong[contains(text(),'导演')]/following-sibling::a[position()<7]/text())",
     "dtActor":      "concat(//strong[contains(text(),'演员')]/following-sibling::a[position()<7]/text())",
     "dtDesc":       "//em[contains(text(),'简介')]/parent::li",
-    "dtDescR":      "^[简介]{2}：(.*)",
     
 // Video Playlist =====================================================
     "dtFromNode":   "//div[contains(@class,'anthology-tab')]/div/a[not(contains(text(),'xunlei'))]",
     "dtFromName":   "/text()",
-    "dtUrlNode":    "//div[contains(@class,'anthology-list-box')]",
-    "dtUrlSubNode": "/div/ul/li/a",
+    "dtUrlNode":    "//div[contains(@class,'anthology-list-box')]/div/ul[contains(@class,'list-play')]",
+    "dtUrlSubNode": "/li/a",
     "dtUrlId":      "/@href",
     "dtUrlIdR":     "/vodplay/(\\S+)/",
     "dtUrlName":    "/text()",
