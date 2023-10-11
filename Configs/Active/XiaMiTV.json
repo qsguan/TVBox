@@ -42,12 +42,12 @@
     "dtName":       "/div/div/div/h3/text()",
     "dtImg":        "//div[@class='detail-pic']/img/@data-src",
     "dtImgR":       ".*(http\\S+)",
-    "dtCate":       "concat(//strong[contains(text(),'类型')]/following-sibling::a[position()<4]/text())",
+    "dtCate":       "concat(//strong[contains(text(),'类型')]/following-sibling::a[position()<5]/text())",
     "dtYear":       "//span[@class='slide-info-remarks'][2]/a/text()",
     "dtArea":       "//span[@class='slide-info-remarks'][3]/a/text()",
     "dtMark":       "//span[@class='slide-info-remarks'][1]/text()",
-    "dtDirector":   "concat(//strong[contains(text(),'导演')]/following-sibling::a[position()<6]/text())",
-    "dtActor":      "concat(//strong[contains(text(),'演员')]/following-sibling::a[position()<6]/text())",
+    "dtDirector":   "concat(//strong[contains(text(),'导演')]/following-sibling::a[position()<7]/text())",
+    "dtActor":      "concat(//strong[contains(text(),'演员')]/following-sibling::a[position()<7]/text())",
     "dtDesc":       "//div[@id='height_limit']",
     
 // Video Playlist =====================================================
@@ -75,6 +75,33 @@
     "filter": {
         "1": [
             {
+                "key": "area",
+                "name": "地区",
+                "value": [
+                    {"n": "全部","v": ""},
+                    {"n": "中国","v": "/area/大陆"},
+                    {"n": "内地","v": "/area/内地"},
+                    {"n": "大陆","v": "/area/中国大陆"},
+                    {"n": "香港","v": "/area/香港"},
+                    {"n": "台湾","v": "/area/台湾"},
+                    {"n": "美国","v": "/area/美国"},
+                    {"n": "欧美","v": "/area/欧美"},
+                    {"n": "韩国","v": "/area/韩国"},
+                    {"n": "日本","v": "/area/日本"},
+                    {"n": "英国","v": "/area/英国"},
+                    {"n": "泰国","v": "/area/泰国"},
+                    {"n": "印度","v": "/area/印度"},
+                    {"n": "法国","v": "/area/法国"},
+                    {"n": "西班牙","v": "/area/西班牙"},
+                    {"n": "加拿大","v": "/area/加拿大"},
+                    {"n": "意大利","v": "/area/意大利"},
+                    {"n": "俄罗斯","v": "/area/俄罗斯"},
+                    {"n": "新加坡","v": "/area/新加坡"},
+                    {"n": "马来西亚","v": "/area/马来西亚"},
+                    {"n": "澳大利亚","v": "/area/澳大利亚"},
+                    {"n": "其它","v": "/area/其它"}]
+            },
+            {
                 "key": "class",
                 "name": "类型",
                 "value": [
@@ -101,33 +128,6 @@
                     {"n": "运动","v": "/class/运动"},
                     {"n": "儿童","v": "/class/儿童"},
                     {"n": "网络","v": "/class/网络"}]
-            },
-            {
-                "key": "area",
-                "name": "地区",
-                "value": [
-                    {"n": "全部","v": ""},
-                    {"n": "中国","v": "/area/大陆"},
-                    {"n": "内地","v": "/area/内地"},
-                    {"n": "大陆","v": "/area/中国大陆"},
-                    {"n": "香港","v": "/area/香港"},
-                    {"n": "台湾","v": "/area/台湾"},
-                    {"n": "美国","v": "/area/美国"},
-                    {"n": "欧美","v": "/area/欧美"},
-                    {"n": "韩国","v": "/area/韩国"},
-                    {"n": "日本","v": "/area/日本"},
-                    {"n": "英国","v": "/area/英国"},
-                    {"n": "泰国","v": "/area/泰国"},
-                    {"n": "印度","v": "/area/印度"},
-                    {"n": "法国","v": "/area/法国"},
-                    {"n": "西班牙","v": "/area/西班牙"},
-                    {"n": "加拿大","v": "/area/加拿大"},
-                    {"n": "意大利","v": "/area/意大利"},
-                    {"n": "俄罗斯","v": "/area/俄罗斯"},
-                    {"n": "新加坡","v": "/area/新加坡"},
-                    {"n": "马来西亚","v": "/area/马来西亚"},
-                    {"n": "澳大利亚","v": "/area/澳大利亚"},
-                    {"n": "其它","v": "/area/其它"}]
             },
             {
                 "key": "year",
@@ -174,6 +174,25 @@
         ],
         "2": [
             {
+                "key": "area",
+                "name": "地区",
+                "value": [
+                    {"n": "全部","v": ""},
+                    {"n": "中国","v": "/area/大陆"},
+                    {"n": "内地","v": "/area/内地"},
+                    {"n": "大陆","v": "/area/中国大陆"},
+                    {"n": "香港","v": "/area/香港"},
+                    {"n": "台湾","v": "/area/台湾"},
+                    {"n": "美国","v": "/area/美国"},
+                    {"n": "欧美","v": "/area/欧美"},
+                    {"n": "韩国","v": "/area/韩国"},
+                    {"n": "日本","v": "/area/日本"},
+                    {"n": "英国","v": "/area/英国"},
+                    {"n": "泰国","v": "/area/泰国"},
+                    {"n": "西班牙","v": "/area/西班牙"},
+                    {"n": "其它","v": "/area/其它"}]
+            },
+            {
                 "key": "class",
                 "name": "类型",
                 "value": [
@@ -198,26 +217,8 @@
                     {"n": "惊悚","v": "/class/惊悚"},
                     {"n": "灾难","v": "/class/灾难"},
                     {"n": "歌舞","v": "/class/歌舞"},
-                    {"n": "音乐","v": "/class/音乐"}]
-            },
-            {
-                "key": "area",
-                "name": "地区",
-                "value": [
-                    {"n": "全部","v": ""},
-                    {"n": "中国","v": "/area/大陆"},
-                    {"n": "内地","v": "/area/内地"},
-                    {"n": "大陆","v": "/area/中国大陆"},
-                    {"n": "香港","v": "/area/香港"},
-                    {"n": "台湾","v": "/area/台湾"},
-                    {"n": "美国","v": "/area/美国"},
-                    {"n": "欧美","v": "/area/欧美"},
-                    {"n": "韩国","v": "/area/韩国"},
-                    {"n": "日本","v": "/area/日本"},
-                    {"n": "英国","v": "/area/英国"},
-                    {"n": "泰国","v": "/area/泰国"},
-                    {"n": "西班牙","v": "/area/西班牙"},
-                    {"n": "其它","v": "/area/其它"}]
+                    {"n": "音乐","v": "/class/音乐"},
+                    {"n": "其他","v": "/class/其他"}]
             },
             {
                 "key": "year",

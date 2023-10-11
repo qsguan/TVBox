@@ -38,12 +38,12 @@
     "dtNode":       "//body",
     "dtName":       "//div[contains(@class,'hl-dc-content')]/div/h2/text()",
     "dtImg":        "//div[contains(@class,'hl-dc-pic')]/span/@data-original",
-    "dtCate":       "concat(//em[contains(text(),'类型')]/following-sibling::a/text())",
+    "dtCate":       "concat(//em[contains(text(),'类型')]/following-sibling::a[position()<5]/text())",
     "dtYear":       "//em[contains(text(),'年份')]/parent::li/text()",
     "dtArea":       "//em[contains(text(),'地区')]/parent::li/text()",
     "dtMark":       "//em[contains(text(),'状态')]/following-sibling::span/text()",
-    "dtDirector":   "concat(//em[contains(text(),'导演')]/following-sibling::a[position()<6]/text())",
-    "dtActor":      "concat(//em[contains(text(),'主演')]/following-sibling::a[position()<6]/text())",
+    "dtDirector":   "concat(//em[contains(text(),'导演')]/following-sibling::a[position()<7]/text())",
+    "dtActor":      "concat(//em[contains(text(),'主演')]/following-sibling::a[position()<7]/text())",
     "dtDesc":       "//div[contains(@class,'hl-content-wrap')]/span",
     
 // Video Playlist =====================================================
