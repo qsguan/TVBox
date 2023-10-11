@@ -42,12 +42,12 @@
     "dtName":       "//div[@class='module-info-heading']/h1/text()",
     "dtImg":        "//div[@class='module-item-pic']/img/@data-original",
     "dtImgR":       ".*(http\\S+)",
-    "dtCate":       "concat(//div[@class='module-info-tag']/div[3]/a[position()<4]/text())",
+    "dtCate":       "concat(//div[@class='module-info-tag']/div[3]/a[position()<5]/text())",
     "dtYear":       "//div[@class='module-info-tag']/div[1]/a/text()",
     "dtArea":       "//div[@class='module-info-tag']/div[2]/a/text()",
     "dtMark":       "//span[contains(text(),'备注') or contains(text(),'集数') or contains(text(),'连载')]/following-sibling::div/text()",
-    "dtDirector":   "concat(//span[contains(text(),'导演')]/following-sibling::div/a[position()<6]/text())",
-    "dtActor":      "concat(//span[contains(text(),'主演')]/following-sibling::div/a[position()<6]/text())",
+    "dtDirector":   "concat(//span[contains(text(),'导演')]/following-sibling::div/a[position()<7]/text())",
+    "dtActor":      "concat(//span[contains(text(),'主演')]/following-sibling::div/a[position()<7]/text())",
     "dtDesc":       "//div[contains(@class,'module-info-introduction')]/div",
     
 // Video Playlist =====================================================
@@ -75,6 +75,21 @@
     "filter": {
         "1": [
             {
+                "key": "area",
+                "name": "地区",
+                "value": [
+                    {"n": "全部","v": ""},
+                    {"n": "大陆","v": "/area/大陆"},
+                    {"n": "香港","v": "/area/香港"},
+                    {"n": "台湾","v": "/area/台湾"},
+                    {"n": "欧美","v": "/area/欧美"},
+                    {"n": "韩国","v": "/area/韩国"},
+                    {"n": "日本","v": "/area/日本"},
+                    {"n": "泰国","v": "/area/泰国"},
+                    {"n": "新马","v": "/area/新马"},
+                    {"n": "其它","v": "/area/其它"}]
+            },
+            {
                 "key": "cateId",
                 "name": "分类",
                 "value": [
@@ -97,21 +112,6 @@
                     {"n": "同性","v": "29"},
                     {"n": "动画","v": "30"},
                     {"n": "网络","v": "31"}]
-            },
-            {
-                "key": "area",
-                "name": "地区",
-                "value": [
-                    {"n": "全部","v": ""},
-                    {"n": "大陆","v": "/area/大陆"},
-                    {"n": "香港","v": "/area/香港"},
-                    {"n": "台湾","v": "/area/台湾"},
-                    {"n": "欧美","v": "/area/欧美"},
-                    {"n": "韩国","v": "/area/韩国"},
-                    {"n": "日本","v": "/area/日本"},
-                    {"n": "泰国","v": "/area/泰国"},
-                    {"n": "新马","v": "/area/新马"},
-                    {"n": "其它","v": "/area/其它"}]
             },
             {
                 "key": "year",
