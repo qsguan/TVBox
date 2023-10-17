@@ -39,6 +39,26 @@
             "filterable": 1,
             "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Active/DMDao.json"
         },
+        {
+            "key": "csp_xpath_GimyTV",
+            "name": "剧迷影院",
+            "type": 3,
+            "api": "csp_XPathMacFilter",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/InActive/GimyTV.json"
+        },
+        {
+            "key": "csp_xpath_OuDiYY",
+            "name": "欧帝影院",
+            "type": 3,
+            "api": "csp_XPathMacFilter",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/InValid/OuDiYY.json"
+        },
 
         ## 自行配置但不太好用
         {"key":"pa1","name":"---------------","type":3,"api":"csp_PushAgent","searchable":0,"quickSearch":0,"filterable":0},
