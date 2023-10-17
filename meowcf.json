@@ -199,16 +199,6 @@
             "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Active/NiVodTV.json"
         },
         {
-            "key": "csp_xpath_IYiFan", #网页及内容与欧乐影院高度重合
-            "name": "爱壹帆TV",
-            "type": 3,
-            "api": "csp_XPathMacFilter",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
-            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Active/IYiFanTV.json"
-        },
-        {
             "key": "csp_xpath_HiBaDY",
             "name": "嘿叭电影",
             "type": 3,
@@ -217,6 +207,16 @@
             "quickSearch": 1,
             "filterable": 1,
             "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Active/HiBaDY.json"
+        },
+        {
+            "key": "csp_xpath_IYiFan", #网页及内容与欧乐影院高度重合
+            "name": "爱壹帆TV",
+            "type": 3,
+            "api": "csp_XPathMacFilter",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Active/IYiFanTV.json"
         },
         {
             "key": "csp_xpath_4KDYW",
@@ -229,16 +229,6 @@
             "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Active/DYW4K.json"
         },
         {
-            "key": "csp_xpath_NaiFCN",
-            "name": "奈飞中文",
-            "type": 3,
-            "api": "csp_XPathMacFilter",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
-            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Active/NaiFCN.json"
-        },
-        {
             "key": "csp_xpath_首播站",
             "name": "首播站TV",
             "type": 3,
@@ -247,6 +237,16 @@
             "quickSearch": 1,
             "filterable": 1,
             "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Active/ShouBZ.json"
+        },
+        {
+            "key": "csp_xpath_NaiFCN",
+            "name": "奈飞中文",
+            "type": 3,
+            "api": "csp_XPathMacFilter",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Active/NaiFCN.json"
         },
         {
             "key": "csp_xpath_动漫巴士",
