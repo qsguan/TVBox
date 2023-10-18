@@ -1,7 +1,7 @@
 {
     "author": "Jimmy_Bytheway",
     "ua": "",
-    "homeUrl":   "http://www.88dmw.com/", ##www.dmd86.com
+    "homeUrl":   "http://www.dmd86.com/",
     "dcPlayUrl": "true",
     "dcVipFlag": "true",
     "cateNode":  "//ul[@class='secNacUl']/li/a[contains(@href,'type')]",
@@ -12,7 +12,7 @@
         "新番连载": "1",
         "完结日漫": "3",
         "热门国漫": "4",
-        "剧场动漫": "16"
+        "剧场动漫1": "16"
     },
 
 // Home Summary ================================================
@@ -24,8 +24,8 @@
     "homeVodMark":  "/p[@class='time']/font/text()",
 
 // Category Summary ================================================
-                   //http://www.88dmw.com/vod-list-id-3-pg-1-order--by-hits-class-36-year-2022-letter--area--lang-.html
-    "cateUrl":      "http://www.88dmw.com/vod-list-id-{cateId}-pg-{catePg}-order--by-{by}-class-{class}-year-{year}-letter--area--lang-.html",
+                   //http://www.dmd86.com/vod-list-id-3-pg-1-order--by-hits-class-36-year-2022-letter--area--lang-.html
+    "cateUrl":      "http://www.dmd86.com/vod-list-id-{cateId}-pg-{catePg}-order--by-{by}-class-{class}-year-{year}-letter--area--lang-.html",
     "cateVodNode":  "//div[@class='list3_cn_box']/div[@class='cn_box2']",
     "cateVodName":  "/div/div/a/@title",
     "cateVodId":    "/div/div/a/@href",
@@ -34,7 +34,7 @@
     "cateVodMark":  "/ul[@class='list_20']/li[2]/span/font/text()",
 
 // Video Details ================================================
-    "dtUrl":        "http://www.88dmw.com/detail/{vid}.html",
+    "dtUrl":        "http://www.dmd86.com/detail/{vid}.html",
     "dtNode":       "//div[(@class='warp')]",
     "dtName":       "//div[@class='info-title']/h1/text()",
     "dtImg":        "//div[@class='info-box']/div[@class='o_list']/div[@class='o_big_img_bg_b']/img/@src",
@@ -57,11 +57,11 @@
     "dtUrlId":      "@href",
     "dtUrlIdR":     "/play/(\\S+).html",
     "dtUrlName":    "/text()",
-    "playUrl":      "http://www.88dmw.com/play/{playUrl}.html",
+    "playUrl":      "http://www.dmd86.com/play/{playUrl}.html",
     "playUa":       "",
 
 // Search Results ================================================
-    "searchUrl":    "http://www.88dmw.com/index.php?m=vod-search-wd-{wd}",
+    "searchUrl":    "http://www.dmd86.com/index.php?m=vod-search-wd-{wd}",
     "scVodNode":    "//div[@class='list3_cn_box']/div[@class='cn_box2']",
     "scVodName":    "/div/div/a/@title",
     "scVodId":      "/div/div/a/@href",
