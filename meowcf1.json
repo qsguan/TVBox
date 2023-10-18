@@ -20,6 +20,16 @@
     "sites": [
         ## 自行配置可正常使用
         {
+            "key": "csp_xpath_IYiFan", #网页及内容与欧乐影院高度重合
+            "name": "爱壹帆TV",
+            "type": 3,
+            "api": "csp_XPathMacFilter",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Active/IYiFanTV.json"
+        },
+        {
             "key": "csp_xpath_GimyTV", #网页地址虽不变但其代码经常变
             "name": "剧迷影院",
             "type": 3,
@@ -37,7 +47,7 @@
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1,
-            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Active/DMDao.json"
+            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/InActive/DMDao.json"
         },
 
         ## 自行配置但不太好用
@@ -115,16 +125,6 @@
 
         ## 自行配置无法使用的
         {"key":"pa2","name":"---------------","type":3,"api":"csp_PushAgent","searchable":0,"quickSearch":0,"filterable":0},
-        {
-            "key": "csp_xpath_HaiTuYY", #节点名字有重复,只能获取单一节点
-            "name": "海兔影院",
-            "type": 3,
-            "api": "csp_XPathMacFilter",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
-            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/InActive/HaiTuYY.json"
-        },
         {
             "key": "csp_xpath_555DYY", #无法获取影片详情页面(不可使用)
             "name": "555电影院",
