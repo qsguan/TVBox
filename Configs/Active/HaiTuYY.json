@@ -13,7 +13,7 @@
         "电视剧": "2",
         "综艺库": "3",
         "动漫库": "4",
-        "纪录片": "20"
+        "纪录片1": "20"
     },
     
 // Home Summary ================================================
@@ -22,7 +22,6 @@
     "homeVodId":    "/div[contains(@class,'box')]/a/@href",
     "homeVodIdR":   "/vod/detail/id/(\\S+).html",
     "homeVodImg":   "/div[contains(@class,'cover')]/div/img/@data-src",
-    "homeVodImgR":  ".*(http\\S+)",
     "homeVodMark":  "concat(//div[contains(@class,'caption')]/span[1]/text(),'/',/div[contains(@class,'text')]/text())",
     
 // Category Summary ================================================
@@ -33,7 +32,6 @@
     "cateVodId":    "/div[contains(@class,'box')]/a/@href",
     "cateVodIdR":   "/vod/detail/id/(\\S+).html",
     "cateVodImg":   "/div[contains(@class,'cover')]/div/img/@data-src",
-    "cateVodImgR":  ".*(http\\S+)",
     "cateVodMark":  "concat(//div[contains(@class,'caption')]/span[1]/text(),'/',/div[contains(@class,'text')]/text())",
     
 // Video Details ================================================
@@ -41,27 +39,16 @@
     "dtNode":       "//div[@class='box view-heading']",
     "dtName":       "//h1[@class='page-title']/text()",
     "dtImg":        "//div[@class='video-cover']/div/div/img/@data-src",
-    "dtImgR":       ".*(http\\S+)",
     "dtCate":       "concat(//div[contains(@class,'video-info-aux')]/div/a/text())",
     "dtYear":       "//div[contains(@class,'video-info-aux')]/a[2]/text()",
     "dtArea":       "//div[contains(@class,'video-info-aux')]/a[3]/text()",
-    "dtMark":       "//span[contains(text(),'集数')]/following-sibling::div/text()",
-    "dtDirector":   "concat(//span[contains(text(),'导演')]/following-sibling::div/a[position()<6]/text())",
-    "dtActor":      "concat(//span[contains(text(),'主演')]/following-sibling::div/a[position()<6]/text())",
+    "dtMark":       "//span[contains(text(),'集数') or contains(text(),'备注')]/following-sibling::div/text()",
+    "dtDirector":   "concat(//span[contains(text(),'导演')]/following-sibling::div/a[position()<7]/text())",
+    "dtActor":      "concat(//span[contains(text(),'主演')]/following-sibling::div/a[position()<7]/text())",
     "dtDesc":       "//span[contains(text(),'剧情')]/following-sibling::div/span/text()",
     
 // Video Playlist =====================================================
-    #"dtFromNode":   "//div[contains(@class,'module-player-tab')]/div/div/div[last()]",
-    #"dtFromName":   "/span/text()",
-    #"dtUrlNode":    "//div[contains(@class,'module-player-list')][last()]",
-    #"dtUrlSubNode": "/div[contains(@class,'box')]/div/a",
-    #"dtUrlId":      "/@href",
-    #"dtUrlIdR":     "/vod/play/id/(\\S+).html",
-    #"dtUrlName":    "/span/text()",
-    #"playUrl":      "https://haituu.tv/vod/play/id/{playUrl}.html",
-    #"playUa":       "",
-    
-    "dtFromNode":   "//div[contains(@class,'module-player-tab')]/div/div/div",
+    "dtFromNode":   "//div[contains(@class,'module-player-tab')]/div/div/div[contains(@class,'module-tab-item')]",
     "dtFromName":   "concat('播放源',count(preceding::div[contains(@class,'module-tab-item')])+1)",
     "dtFromNameR":  "(\\S+).0",
     "dtUrlNode":    "//div[contains(@class,'module-player-list')]/div[contains(@class,'box')]/div",
@@ -75,11 +62,10 @@
 // Search Results ================================================
     "searchUrl":    "https://haituu.tv/vod/search.html?wd={wd}",
     "scVodNode":    "//div[@class='content']/div[contains(@class,'module')]//div[@class='module-search-item']",
-    "scVodName":    "//div[contains(@class,'info-header')]/a/@title",
-    "scVodId":      "//div[contains(@class,'info-header')]/a/@href",
+    "scVodName":    "//h3/a/@title",
+    "scVodId":      "//h3/a/@href",
     "scVodIdR":     "/vod/detail/id/(\\S+).html",
     "scVodImg":     "//div[contains(@class,'cover')]/div/img/@data-src",
-    "scVodImgR":    ".*(http\\S+)",
     "scVodMark":    "concat(//div[contains(@class,'video-info-aux')]/div[1]//a/text(),'/',//div[@class='video-info-header']/a/text())",
     
 // Filters =======================================================
