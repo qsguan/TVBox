@@ -15,7 +15,7 @@
         "泰剧": "19",
         "电影": "20",
         "综艺": "4",
-        "动漫": "3"
+        "动漫2": "3"
     },
     
 // Home Summary ================================================
@@ -29,7 +29,7 @@
 // Category Summary ================================================
                    //https://www.97han.cc/list-select-id-20-type-剧情-area-韩国-letter--year-2021-star--state--language--order-hits-p-2.html
     "cateUrl":      "https://www.97han.cc/list-select-id-{cateId}-type-{type}-area-{area}-letter--year-{year}-star--state--language--order-{by}-p-{catePg}.html",
-    "cateVodNode":  "//ul[contains(@class,'stui-vodlist')]/li/a",
+    "cateVodNode":  "//div[@class='row']/div[contains(@class,'stui-pannel')]/ul[contains(@class,'stui-vodlist')]/li/a",
     "cateVodName":  "/@title",
     "cateVodId":    "/@href",
     "cateVodIdR":   "/(\\S+).html",
