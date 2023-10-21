@@ -7,7 +7,7 @@
     "cateNode":  "//nav[contains(@class,'stui-header__menu')]/ul/li/a",
     "cateName":  "/text()",
     "cateId":    "/@href",
-    "cateIdR":   "/(\\w+).html",
+    "cateIdR":   "/(\\S+).html",
     "cateManual": {
         "韩剧": "hanju",
         "日剧": "riju",
@@ -15,7 +15,7 @@
         "泰剧": "taiju",
         "电影": "dianying",
         "综艺": "zongyi",
-        "动漫": "dongman"
+        "动漫1": "dongman"
     },
     
 // Home Summary ================================================
