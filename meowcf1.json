@@ -64,7 +64,7 @@
         },
         {
             "key": "csp_xpath_韩剧网", #库分类页面中无限循环显示影片
-            "name": "97韩剧网1",
+            "name": "97韩剧网",
             "type": 3,
             "api": "csp_XPathMacFilter",
             "searchable": 1,

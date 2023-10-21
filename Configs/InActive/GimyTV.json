@@ -4,20 +4,20 @@
     "homeUrl":   "https://gimy.video/",
     "dcPlayUrl": "true",
     "dcVipFlag": "true",
-    "cateNode":  "//ul[contains(@class,'myui-header__menu')]/li/a[contains(@href,'channel')]",
+    "cateNode":  "//div[contains(@class,'stui-header__menu')]/ul/li/a[contains(@href,'channel')]",
     "cateName":  "/text()",
     "cateId":    "/@href",
-    "cateIdR":   "/channel/(\\w+).html",
+    "cateIdR":   "/channel/(\\S+).html",
     "cateManual": {
         "电影库": "1",
         "电视剧": "2",
         "综艺库": "29",
         "动漫库": "30",
-        "纪录片": "22"
+        "纪录片1": "22"
     },
     
 // Home Summary ================================================
-    "homeVodNode":  "//ul[contains(@class,'myui-vodlist')]/li/div/a",
+    "homeVodNode":  "//div[contains(@class,'stui-pannel__head')]/ul[contains(@class,'stui-vodlist')]/li/a",
     "homeVodName":  "/@title",
     "homeVodId":    "/@href",
     "homeVodIdR":   "/(\\S+).html",
@@ -27,7 +27,7 @@
 // Category Summary ================================================
                    //https://gimy.video/genre/11-美國-2022-2/by/hits_month/class/劇情.html
     "cateUrl":      "https://gimy.video/genre/{cateId}-{area}-{year}-{catePg}/by/{by}/class/{class}.html",
-    "cateVodNode":  "//div[contains(@class,'myui-panel-box')]/div/ul/li/div/a",
+    "cateVodNode":  "//div[contains(@class,'stui-pannel')]/ul[contains(@class,'stui-vodlist')]/li/a",
     "cateVodName":  "/@title",
     "cateVodId":    "/@href",
     "cateVodIdR":   "/(\\S+).html",
@@ -37,21 +37,21 @@
 // Video Details ================================================
     "dtUrl":        "https://gimy.video/{vid}.html",
     "dtNode":       "//body",
-    "dtName":       "//div[contains(@class,'myui-content__thumb')]/a/@title",
-    "dtImg":        "//div[contains(@class,'myui-content__thumb')]/a/img/@data-original",
-    "dtCate":       "//p[@class='data']/span[contains(text(),'分類')]/following-sibling::a[1]/text()",
-    "dtYear":       "//p[@class='data']/span[contains(text(),'年份')]/following-sibling::a[1]/text()",
+    "dtName":       "//div[contains(@class,'stui-content__thumb')]/div/@title",
+    "dtImg":        "//div[contains(@class,'stui-content__thumb')]/div/img/@data-original",
+    "dtCate":       "//p[@class='data']/span[contains(text(),'類別')]/following-sibling::a[1]/text()",
+    "dtYear":       "//p[@class='data']/span[contains(text(),'年份')]/parent::p/text()[last()]",
     "dtArea":       "//p[@class='data']/span[contains(text(),'地區')]/following-sibling::a[1]/text()",
-    "dtMark":       "//p[@class='data']/span[contains(text(),'狀態')]/parent::*/text()",
-    "dtDirector":   "concat(//p[@class='data']/span[contains(text(),'導演')]/following-sibling::a[position()<7]/text())",
-    "dtActor":      "concat(//p[@class='data']/span[contains(text(),'主演')]/following-sibling::a[position()<7]/text())",
-    "dtDesc":       "//div[contains(@class,'text-collapse')]", #/div/p中可能没有/p节点,用/div下所有文本内容作为剧情介绍
+    "dtMark":       "//p[@class='data']/span[contains(text(),'狀態')]/parent::p/text()[last()]",
+    "dtDirector":   "concat(//p[contains(@class,'data')]/span[contains(text(),'導演')]/following-sibling::a[position()<7]/text())",
+    "dtActor":      "concat(//p[contains(@class,'data')]/span[contains(text(),'主演')]/following-sibling::a[position()<7]/text())",
+    "dtDesc":       "//div[contains(@class,'stui-content__desc')]", #/div/p中可能没有/p节点,用/div下所有文本内容作为剧情介绍
     
 // Video Playlist =====================================================
-    "dtFromNode":   "//div[contains(@class,'col-md-wide-7')]/div[contains(@class,'myui-panel') and not(@id='desc')]/div/div/div/h3/i",
-    "dtFromName":   "/parent::h3/text()[2]",
+    "dtFromNode":   "//div[contains(@class,'stui-pannel') and not(@id='desc')]/div[contains(@class,'stui-pannel__head')]/h4",
+    "dtFromName":   "/text()",
     "dtFromNameR":   "(\\S+線)",
-    "dtUrlNode":    "//ul[contains(@class,'myui-content__list')]",
+    "dtUrlNode":    "//ul[contains(@class,'stui-content__playlist')]",
     "dtUrlSubNode": "/li/a",
     "dtUrlId":      "/@href",
     "dtUrlIdR":     "/(\\S+).html",
@@ -61,12 +61,12 @@
     
 // Search Results ================================================
     "searchUrl":    "https://gimy.video/search/-------------.html?wd={wd}",
-    "scVodNode":    "//ul[contains(@class,'myui-vodlist__media') and @id='searchList']/li",
-    "scVodName":    "/div/a/@title",
-    "scVodId":      "/div/a/@href",
+    "scVodNode":    "//div[contains(@class,'stui-pannel')]/ul[contains(@class,'stui-vodlist')]/li/a",
+    "scVodName":    "/@title",
+    "scVodId":      "/@href",
     "scVodIdR":     "/(\\S+).html",
-    "scVodImg":     "/div/a/@data-original",
-    "scVodMark":    "concat(/div/p/span[contains(text(),'分類')]/parent::p/text()[1],'/',/div/a/span[contains(@class,'pic-text')]/text())",
+    "scVodImg":     "/@data-original",
+    "scVodMark":    "/span[contains(@class,'pic-text')]/text()",
     
 // Filters =======================================================
     "filter": {
