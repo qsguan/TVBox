@@ -13,7 +13,7 @@
         "电视剧": "2",
         "综艺库": "3",
         "动漫库": "4",
-        "纪录片1": "22"
+        "纪录片": "22"
     },
     
 // Home Summary ================================================
@@ -26,13 +26,13 @@
     
 // Category Summary ================================================
                    //https://wolongzy.cc/index.php/vod/type/area/美国/by/score/id/1/page/1/year/2000.html
-    "cateUrl":      "",
-    "cateVodNode":  "",
-    "cateVodName":  "",
-    "cateVodId":    "",
-    "cateVodIdR":   "",
-    "cateVodImg":   "",
-    "cateVodMark":  "",
+    "cateUrl":      "https://wolongzy.cc/index.php/vod/type{area}{by}/id/{cateId}/page/{catePg}{year}.html",
+    "cateVodNode":  "//div[@class='addition-content']/ul/li",
+    "cateVodName":  "/a[@class='videoName']/text()[1]",
+    "cateVodId":    "/a[@class='videoName']/@href",
+    "cateVodIdR":   "/index.php/vod/detail/id/(\\S+).html",
+    "cateVodImg":   "/a[@class='videoName']/text()[1]", #无影片预览图片,随便填写
+    "cateVodMark":  "concat(/span[@class='category']/text(),'/',/a[@class='videoName']/b/text())",
     
 // Video Details ================================================
     "dtUrl":        "https://wolongzy.cc/index.php/vod/detail/id/{vid}.html",
