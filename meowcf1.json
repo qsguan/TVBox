@@ -20,6 +20,16 @@
     "sites": [
         ## 自行配置可正常使用
         {
+            "key": "csp_xpath_FeiSuZY", #网页及内容与欧乐影院高度重合
+            "name": "飞速资源",
+            "type": 3,
+            "api": "csp_XPathMacFilter",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Active/FeiSuZY.json"
+        },
+        {
             "key": "csp_xpath_IYiFan", #网页及内容与欧乐影院高度重合
             "name": "爱壹帆TV",
             "type": 3,
