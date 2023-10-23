@@ -13,7 +13,7 @@
         "电视剧": "2",
         "综艺库": "3",
         "动漫库": "4",
-        "纪录片2": "22"
+        "纪录片1": "22"
     },
     
 // Home Summary ================================================
@@ -25,7 +25,7 @@
     "homeVodMark":  "concat(/span[@class='category']/text(),'/',/a[@class='videoName']/b/text())",
     
 // Category Summary ================================================
-                   //
+                   //https://wolongzy.cc/index.php/vod/type/area/美国/by/score/id/1/page/1/year/2000.html
     "cateUrl":      "",
     "cateVodNode":  "",
     "cateVodName":  "",
@@ -55,7 +55,7 @@
     
 // Video Playlist =====================================================
     "dtFromNode":   "//p[contains(text(),'播放类型')]/parent::*/div/h4/div",
-    "dtFromName":   "concat(卧龙资源,':',/text())",
+    "dtFromName":   "concat('卧龙资源',':',/text())",
     "dtFromNameR":  "(\\S+):\\S+",
     "dtUrlNode":    "//div[@class='playlist wbox']/ul",
     "dtUrlSubNode": "/li",
