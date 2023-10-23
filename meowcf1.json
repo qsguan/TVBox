@@ -21,7 +21,7 @@
         ## 自行配置可正常使用
         {
             "key": "csp_xpath_FeiSuZY",
-            "name": "飞速资源1",
+            "name": "飞速资源2",
             "type": 3,
             "api": "csp_XPathMacFilter",
             "searchable": 1,

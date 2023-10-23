@@ -21,7 +21,7 @@
     "homeVodName":  "/h3/a/@title",
     "homeVodId":    "/h3/a/@href",
     "homeVodIdR":   "/vod/detail/id/(\\S+)/",
-    "homeVodImg":   "",
+    "homeVodImg":   "/h3/a/@title", #无影片预览图片,随便填写
     "homeVodMark":  "/h3/a/em/text()",
     //"homeVodMarkR": "\\[(.*)\\]",
     
@@ -61,14 +61,14 @@
     "playUa":       "",
     
 // Search Results ================================================
-    "searchUrl":    "",
-    "scVodNode":    "",
-    "scVodName":    "",
-    "scVodId":      "",
-    "scVodIdR":     "",
-    "scVodImg":     "",
-    "scVodMark":    "",
-    "scVodMarkR":   "",
+    "searchUrl":    "https://feisuzy.com/vod/search/wd/{wd}",
+    "scVodNode":    "//div[contains(@class,'stui-pannel')]/ul[contains(@class,'stui-vodlist')]/li[@class='clearfix']",
+    "scVodName":    "/h3/a/@title",
+    "scVodId":      "/h3/a/@href",
+    "scVodIdR":     "/vod/detail/id/(\\S+)/",
+    "scVodImg":     "/h3/a/@title", #无影片预览图片,随便填写
+    "scVodMark":    "/h3/a/em/text()",
+    //"scVodMarkR":   "\\[(.*)\\]",
     
 // Filters =======================================================
     "filter": {
