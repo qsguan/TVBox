@@ -23,7 +23,7 @@
     "homeVodIdR":   "/vod/detail/id/(\\S+)/",
     "homeVodImg":   "",
     "homeVodMark":  "/h3/a/em/text()",
-    "homeVodMarkR": "\\[(.*)\\]",
+    //"homeVodMarkR": "\\[(.*)\\]",
     
 // Category Summary ================================================
                    //
