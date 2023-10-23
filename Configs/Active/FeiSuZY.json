@@ -13,7 +13,7 @@
         "电视剧":   "2",
         "综艺库":   "3",
         "动漫库":   "4",
-        "影视解说": "29"
+        "影视解说1": "29"
     },
     
 // Home Summary ================================================
@@ -23,7 +23,7 @@
     "homeVodIdR":   "/vod/detail/id/(\\S+)/",
     "homeVodImg":   "/h3/a/@title", #无影片预览图片,随便填写
     "homeVodMark":  "/h3/a/em/text()",
-    //"homeVodMarkR": "\\[(.*)\\]",
+    "homeVodMarkR": "\\[(.*)\\]",
     
 // Category Summary ================================================
                    //
@@ -68,7 +68,7 @@
     "scVodIdR":     "/vod/detail/id/(\\S+)/",
     "scVodImg":     "/h3/a/@title", #无影片预览图片,随便填写
     "scVodMark":    "/h3/a/em/text()",
-    //"scVodMarkR":   "\\[(.*)\\]",
+    "scVodMarkR":   "\\[(.*)\\]",
     
 // Filters =======================================================
     "filter": {
