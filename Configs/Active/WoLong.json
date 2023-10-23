@@ -1,0 +1,94 @@
+{
+    "author": "Jimmy_Bytheway",
+    "ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1",
+    "homeUrl":   "https://wolongzy.cc/",
+    "dcPlayUrl": "true",
+    "dcVipFlag": "true",
+    "cateNode":  "//div[@class='nav width1200']/div/ul/li/div/a[contains(@href,'type')]",
+    "cateName":  "/text()",
+    "cateId":    "/@href",
+    "cateIdR":   "/index.php/vod/type/id/(\\S+).html",
+    "cateManual": {
+        "电影库": "1",
+        "电视剧": "2",
+        "综艺库": "3",
+        "动漫库": "4",
+        "纪录片": "22"
+    },
+    
+// Home Summary ================================================
+    "homeVodNode":  "//div[@class='addition-content']/ul/li",
+    "homeVodName":  "/a[@class='videoName']/text()[1]",
+    "homeVodId":    "/a[@class='videoName']/@href",
+    "homeVodIdR":   "/index.php/vod/detail/id/(\\S+).html",
+    "homeVodImg":   "/a[@class='videoName']/text()[1]", #无影片预览图片,随便填写
+    "homeVodMark":  "concat(/span[@class='category']/text(),'/',/a[@class='videoName']/b/text())",
+    
+// Category Summary ================================================
+                   //
+    "cateUrl":      "",
+    "cateVodNode":  "",
+    "cateVodName":  "",
+    "cateVodId":    "",
+    "cateVodIdR":   "",
+    "cateVodImg":   "",
+    "cateVodMark":  "",
+    
+// Video Details ================================================
+    "dtUrl":        "https://wolongzy.cc/index.php/vod/detail/id/{vid}.html",
+    "dtNode":       "//body",
+    "dtName":       "//p[contains(text(),'名称') and not(@class='whitetitle')]/text()",
+    "dtNameR":      "\\S+：(\\S+)",
+    "dtImg":        "//p[@class='whitetitle']/following-sibling::div[@class='people']/div/img/@src",
+    "dtCate":       "//p[contains(text(),'类型')]/a/text()",
+    "dtYear":       "//p[contains(text(),'年份')]/text()",
+    "dtYearR":      "\\S+：(\\S+)",
+    "dtArea":       "//p[contains(text(),'地区')]/text()",
+    "dtAreaR":      "\\S+：(\\S+)",
+    "dtMark":       "//p[contains(text(),'备注')]/text()",
+    "dtMarkR":      "\\S+：(\\S+)",
+    "dtDirector":   "//p[contains(text(),'导演')]/text()",
+    "dtDirectorR":  "\\S+：(\\S+)",
+    "dtActor":      "//p[contains(text(),'演员')]/text()",
+    "dtActorR":     "\\S+：(\\S+)",
+    "dtDesc":       "//p[contains(text(),'剧情介绍')]/following-sibling::div",
+    
+// Video Playlist =====================================================
+    "dtFromNode":   "//p[contains(text(),'播放类型')]/parent::*/div/h4/div",
+    "dtFromName":   "卧龙资源",
+    "dtUrlNode":    "//div[@class='playlist wbox']/ul",
+    "dtUrlSubNode": "/li",
+    "dtUrlId":      "/a[contains(text(),'播放')]/@href",
+    "dtUrlIdR":     "\\S+(https.*m3u8)",
+    "dtUrlName":    "/a[contains(@class,'copy_text')]/@title",
+    "playUrl":      "https://jx.wolongm3u8.com:65/m3u8.php?url={playUrl}",
+    "playUa":       "",
+    
+// Search Results ================================================
+    "searchUrl":    "https://wolongzy.cc/index.php/vod/search.html?wd={wd}",
+    "scVodNode":    "//div[@class='addition-content']/ul/li",
+    "scVodName":    "/a[@class='videoName']/text()[1]",
+    "scVodId":      "/a[@class='videoName']/@href",
+    "scVodIdR":     "/index.php/vod/detail/id/(\\S+).html",
+    "scVodImg":     "/a[@class='videoName']/text()[1]", #无影片预览图片,随便填写
+    "scVodMark":    "/span[@class='category']/text()",
+    
+// Filters =======================================================
+    "filter": {
+        "1": [
+
+        ],
+        "2": [
+
+        ],
+        "3": [
+
+        ],
+        "4": [
+
+        ],
+        "22": [
+
+        ]
+    }
+}

@@ -255,8 +255,28 @@
             "api": "csp_XPathFilter",
             "searchable": 1,
             "quickSearch": 1,
-            "filterable": 0,
+            "filterable": 1,
             "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Active/DM84.json"
+        },
+        {
+            "key": "csp_xpath_FeiSuZY",
+            "name": "飞速资源",
+            "type": 3,
+            "api": "csp_XPathMacFilter",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Active/FeiSuZY.json"
+        },
+        {
+            "key": "csp_xpath_WoLongZY",
+            "name": "卧龙资源1",
+            "type": 3,
+            "api": "csp_XPathMacFilter",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Active/WoLong.json"
         }
     ],
 
