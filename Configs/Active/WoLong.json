@@ -13,7 +13,7 @@
         "电视剧": "2",
         "综艺库": "3",
         "动漫库": "4",
-        "纪录片1": "22"
+        "纪录片2": "22"
     },
     
 // Home Summary ================================================
@@ -55,7 +55,8 @@
     
 // Video Playlist =====================================================
     "dtFromNode":   "//p[contains(text(),'播放类型')]/parent::*/div/h4/div",
-    "dtFromName":   "/text()",
+    "dtFromName":   "concat(卧龙资源,':',/text())",
+    "dtFromNameR":  "(\\S+):\\S+",
     "dtUrlNode":    "//div[@class='playlist wbox']/ul",
     "dtUrlSubNode": "/li",
     "dtUrlId":      "/a[contains(text(),'播放')]/@href",
