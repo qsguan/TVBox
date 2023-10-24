@@ -2,6 +2,8 @@
     "author": "Jimmy_Bytheway",
     "ua": "",
     "homeUrl":   "https://hibady.com/",
+    "pCfgJs":    "https://hibady.com/static/js/playerconfig.js",
+    "pCfgJsR":   "[\\W|\\S|.]*?MacPlayerConfig.player_list[\\W|\\S|.]*?=([\\W|\\S|.]*?),MacPlayerConfig.downer_list",
     "dcPlayUrl": "true",
     "dcVipFlag": "true",
     "cateNode":  "//div[contains(@class,'ecnav-nav')]/div/a",

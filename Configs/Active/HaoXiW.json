@@ -2,6 +2,8 @@
     "author": "Jimmy_Bytheway",
     "ua": "",
     "homeUrl":   "https://haoxi.vip/",
+    "pCfgJs":    "https://haoxi.vip/static/js/playerconfig.js",
+    "pCfgJsR":   "[\\W|\\S|.]*?MacPlayerConfig.player_list[\\W|\\S|.]*?=([\\W|\\S|.]*?),MacPlayerConfig.downer_list",
     "dcPlayUrl": "true",
     "dcVipFlag": "true",
     "cateNode":  "//div[contains(@class,'head-nav')]/ul/li/a[contains(@href,'vodtype')]",
