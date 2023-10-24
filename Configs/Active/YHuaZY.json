@@ -1,0 +1,92 @@
+{
+    "author": "Jimmy_Bytheway",
+    "ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1",
+    "homeUrl":   "https://huyazy.com/",
+    "dcPlayUrl": "true",
+    "dcVipFlag": "true",
+    "cateNode":  "//ul[contains(@class,'stui-header__menu')]/li/a[contains(@href,'type')]",
+    "cateName":  "/text()",
+    "cateId":    "/@href",
+    "cateIdR":   "/vod/type/id/(\\S+)/",
+    "cateManual": {
+        "电影库": "1",
+        "电视剧": "2",
+        "综艺库": "3",
+        "动漫库": "4",
+        "纪录片": "20"
+    },
+    
+// Home Summary ================================================
+    "homeVodNode":  "",
+    "homeVodName":  "",
+    "homeVodId":    "",
+    "homeVodIdR":   "",
+    "homeVodImg":   "", #无影片预览图片,随便填写
+    "homeVodMark":  "",
+    "homeVodMarkR": "",
+    
+// Category Summary ================================================
+                   //
+    "cateUrl":      "",
+    "cateVodNode":  "",
+    "cateVodName":  "",
+    "cateVodId":    "",
+    "cateVodIdR":   "",
+    "cateVodImg":   "", #无影片预览图片,随便填写
+    "cateVodMark":  "",
+    
+// Video Details ================================================
+    "dtUrl":        "",
+    "dtNode":       "",
+    "dtName":       "",
+    "dtImg":        "",
+    "dtCate":       "",
+    "dtYear":       "",
+    "dtArea":       "",
+    "dtMark":       "",
+    "dtDirector":   "",
+    "dtActor":      "",
+    "dtDesc":       "",
+    "dtDescR":      "",
+    
+// Video Playlist =====================================================
+    "dtFromNode":   "",
+    "dtFromName":   "",
+    "dtFromNameR":  "",
+    "dtUrlNode":    "",
+    "dtUrlSubNode": "",
+    "dtUrlId":      "",
+    "dtUrlIdR":     "",
+    "dtUrlName":    "",
+    "playUrl":      "",
+    "playUa":       "",
+    
+// Search Results ================================================
+    "searchUrl":    "",
+    "scVodNode":    "",
+    "scVodName":    "",
+    "scVodId":      "",
+    "scVodIdR":     "",
+    "scVodImg":     "", #无影片预览图片,随便填写
+    "scVodMark":    "",
+    "scVodMarkR":   "",
+    
+// Filters =======================================================
+    "filter": {
+        "1": [
+
+        ],
+        "2": [
+
+        ],
+        "3": [
+
+        ],
+        "4": [
+
+        ],
+        "5": [
+
+        ]
+    }
+}
