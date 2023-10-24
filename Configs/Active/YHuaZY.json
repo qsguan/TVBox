@@ -1,29 +1,29 @@
 {
     "author": "Jimmy_Bytheway",
     "ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1",
-    "homeUrl":   "https://huyazy.com/",
+    "homeUrl":   "https://ikunzy.com/",
     "dcPlayUrl": "true",
     "dcVipFlag": "true",
-    "cateNode":  "//ul[contains(@class,'stui-header__menu')]/li/a[contains(@href,'type')]",
+    "cateNode":  "//div[@class='logonav']/div/div/div/a[contains(@href,'vodtype')]",
     "cateName":  "/text()",
     "cateId":    "/@href",
-    "cateIdR":   "/vod/type/id/(\\S+)/",
+    "cateIdR":   "/vodtype/(\\S+).html",
     "cateManual": {
         "电影库": "1",
         "电视剧": "2",
         "综艺库": "3",
         "动漫库": "4",
-        "纪录片": "20"
+        "伦理片": "5"
     },
     
 // Home Summary ================================================
-    "homeVodNode":  "",
-    "homeVodName":  "",
-    "homeVodId":    "",
-    "homeVodIdR":   "",
-    "homeVodImg":   "", #无影片预览图片,随便填写
-    "homeVodMark":  "",
-    "homeVodMarkR": "",
+    "homeVodNode":  "//table/tbody/tr",
+    "homeVodName":  "/td/a/text()",
+    "homeVodNameR": "\\S{1}(\\S+)",
+    "homeVodId":    "/td/a/@href",
+    "homeVodIdR":   "/voddetail/(\\S+).html",
+    "homeVodImg":   "/td/a/text()", #无影片预览图片,随便填写
+    "homeVodMark":  "concat(/td[2]/text(),'/',/td/span/text())",
     
 // Category Summary ================================================
                    //
@@ -62,14 +62,14 @@
     "playUa":       "",
     
 // Search Results ================================================
-    "searchUrl":    "",
-    "scVodNode":    "",
-    "scVodName":    "",
-    "scVodId":      "",
-    "scVodIdR":     "",
-    "scVodImg":     "", #无影片预览图片,随便填写
-    "scVodMark":    "",
-    "scVodMarkR":   "",
+    "searchUrl":    "https://ikunzy.com/vodsearch/-------------.html?wd=",
+    "scVodNode":    "//table/tbody/tr",
+    "scVodName":    "/td/a/text()",
+    "scVodNameR":   "\\S{1}(\\S+)",
+    "scVodId":      "/td/a/@href",
+    "scVodIdR":     "/voddetail/(\\S+).html",
+    "scVodImg":     "/td/a/text()", #无影片预览图片,随便填写
+    "scVodMark":    "concat(/td[2]/text(),'/',/td/span/text())",
     
 // Filters =======================================================
     "filter": {
