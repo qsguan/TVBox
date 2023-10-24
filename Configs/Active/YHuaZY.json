@@ -13,7 +13,7 @@
         "电视剧": "2",
         "综艺库": "3",
         "动漫库": "4",
-        "伦理片": "5"
+        "伦理片1": "5"
     },
     
 // Home Summary ================================================
@@ -62,7 +62,7 @@
     "playUa":       "",
     
 // Search Results ================================================
-    "searchUrl":    "https://ikunzy.com/vodsearch/-------------.html?wd=",
+    "searchUrl":    "https://ikunzy.com/vodsearch/-------------.html?wd={wd}",
     "scVodNode":    "//table/tbody/tr",
     "scVodName":    "/td/a/text()",
     "scVodNameR":   "\\S{1}(\\S+)",
