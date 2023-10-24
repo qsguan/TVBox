@@ -57,9 +57,8 @@
     
 // Video Playlist =====================================================
     "dtFromNode":   "//p[contains(text(),'播放类型')]/parent::*/div/h4/div",
-    "dtFromName":   "/text()",
-    #"dtFromName":   "concat('卧龙资源',':',/text())",
-    #"dtFromNameR":  "(\\S+):\\S+",
+    "dtFromName":   "concat('卧龙资源',':',/text())",
+    "dtFromNameR":  "(\\S+):\\S+",
     "dtUrlNode":    "//div[@class='playlist wbox']/ul",
     "dtUrlSubNode": "/li",
     "dtUrlId":      "/a[contains(text(),'播放')]/@href",
