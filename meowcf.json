@@ -280,7 +280,7 @@
         },
         {
             "key": "csp_xpath_WuJinZY",
-            "name": "无尽资源1",
+            "name": "无尽资源",
             "type": 3,
             "api": "csp_XPathMacFilter",
             "searchable": 1,

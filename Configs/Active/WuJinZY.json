@@ -67,7 +67,7 @@
     "scVodId":      "/span[@class='xing_vb4']/a/@href",
     "scVodIdR":     "/voddetail/(\\S+).html",
     "scVodImg":     "/span[@class='xing_vb4']/a/text()", #无影片预览图片,随便填写
-    "scVodMark":    "concat(/span[@class='xing_vb5']/text(),'/',/span[@class='xing_vb4']/a/font/text())",
+    "scVodMark":    "/span[@class='xing_vb5']/text()",
     
 // Filters =======================================================
     "filter": {
