@@ -277,26 +277,6 @@
             "quickSearch": 1,
             "filterable": 1,
             "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Active/WoLong.json"
-        },
-        {
-            "key": "csp_xpath_WuJinZY",
-            "name": "无尽资源",
-            "type": 3,
-            "api": "csp_XPathMacFilter",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
-            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Active/WuJinZY.json"
-        },
-        {
-            "key": "csp_xpath_HuYaZY",
-            "name": "虎牙资源1",
-            "type": 3,
-            "api": "csp_XPathMacFilter",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
-            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Active/HuYa.json"
         }
     ],
 
