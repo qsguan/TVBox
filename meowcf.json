@@ -39,16 +39,6 @@
             "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Active/TangJie.json"
         },
         {
-            "key": "csp_xpath_独播库",
-            "name": "独播库",
-            "type": 3,
-            "api": "csp_XPathMacFilter",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
-            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Active/DuBoKu.json"
-        },
-        {
             "key": "csp_xpath_欧乐影院",
             "name": "欧乐影院",
             "type": 3,
@@ -57,156 +47,6 @@
             "quickSearch": 1,
             "filterable": 1,
             "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Active/OleVod.json"
-        },
-        {
-            "key": "csp_xpath_HaoXiW",
-            "name": "好戏影视",
-            "type": 3,
-            "api": "csp_XPathMacFilter",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
-            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Active/HaoXiW.json"
-        },
-        {
-            "key": "csp_xpath_PianKYS",
-            "name": "片刻影视",
-            "type": 3,
-            "api": "csp_XPathMacFilter",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
-            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Active/PianKYS.json"
-        },
-        {
-            "key": "csp_xpath_吼吼影院",
-            "name": "吼吼影院",
-            "type": 3,
-            "api": "csp_XPathMacFilter",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
-            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Active/HoHoTV.json"
-        },
-        {
-            "key": "csp_xpath_多瑙影视",
-            "name": "多瑙影视",
-            "type": 3,
-            "api": "csp_XPathMacFilter",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
-            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Active/DuoNYS.json"
-        },
-        {
-            "key": "csp_xpath_QiXiYY",
-            "name": "七喜影院",
-            "type": 3,
-            "api": "csp_XPathMacFilter",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
-            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Active/QiXiYY.json"
-        },
-        {
-            "key": "csp_xpath_OuDiYY",
-            "name": "欧帝影院",
-            "type": 3,
-            "api": "csp_XPathMacFilter",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
-            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Active/OuDiYY.json"
-        },
-        {
-            "key": "csp_xpath_LanHTV",
-            "name": "兰花影院",
-            "type": 3,
-            "api": "csp_XPathMacFilter",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
-            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Active/LanHTV.json"
-        },
-        {
-            "key": "csp_xpath_飞兔影视",
-            "name": "飞兔影视",
-            "type": 3,
-            "api": "csp_XPathMacFilter",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
-            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Active/FeiTuYS.json"
-        },
-        {
-            "key": "csp_xpath_QiEVod",
-            "name": "企鹅影院",
-            "type": 3,
-            "api": "csp_XPathMacFilter",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
-            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Active/QiEVod.json"
-        },
-        {
-            "key": "csp_xpath_HaiTuYY",
-            "name": "海兔影院",
-            "type": 3,
-            "api": "csp_XPathMacFilter",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
-            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Active/HaiTuYY.json"
-        },
-        {
-            "key": "csp_xpath_HuaLeTV",
-            "name": "华乐影院",
-            "type": 3,
-            "api": "csp_XPathMacFilter",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
-            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Active/HuaLeTV.json"
-        },
-        {
-            "key": "csp_xpath_XiaoBTV",
-            "name": "小宝影院",
-            "type": 3,
-            "api": "csp_XPathMacFilter",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
-            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Active/XiaoBTV.json"
-        },
-        {
-            "key": "csp_xpath_虾米影院",
-            "name": "虾米影院",
-            "type": 3,
-            "api": "csp_XPathMacFilter",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
-            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Active/XiaMiTV.json"
-        },
-        {
-            "key": "csp_xpath_泥巴影院",
-            "name": "泥巴影院",
-            "type": 3,
-            "api": "csp_XPathMacFilter",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
-            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Active/NiBaTVS.json"
-        },
-        {
-            "key": "csp_xpath_NiVodTV",
-            "name": "泥视频TV",
-            "type": 3,
-            "api": "csp_XPathMacFilter",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
-            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Active/NiVodTV.json"
         },
         {
             "key": "csp_xpath_HiBaDY",
@@ -219,16 +59,6 @@
             "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Active/HiBaDY.json"
         },
         {
-            "key": "csp_xpath_首播站",
-            "name": "首播站TV",
-            "type": 3,
-            "api": "csp_XPathMacFilter",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
-            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Active/ShouBZ.json"
-        },
-        {
             "key": "csp_xpath_4KDYW",
             "name": "4K电影网",
             "type": 3,
@@ -237,26 +67,6 @@
             "quickSearch": 1,
             "filterable": 1,
             "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Active/DYW4K.json"
-        },
-        {
-            "key": "csp_xpath_NaiFCN",
-            "name": "奈飞中文",
-            "type": 3,
-            "api": "csp_XPathMacFilter",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
-            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Active/NaiFCN.json"
-        },
-        {
-            "key": "csp_xpath_动漫巴士",
-            "name": "动漫巴士",
-            "type": 3,
-            "api": "csp_XPathFilter",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
-            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Active/DM84.json"
         },
         {
             "key": "csp_xpath_FeiSuZY",
