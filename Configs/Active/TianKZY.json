@@ -50,15 +50,15 @@
     "dtDesc":       "//div[@class='warp']/div[@class='ibox playBox'][1]//div[@class='vodplayinfo']",
     
 // Video Playlist =====================================================
-    "dtFromNode":   "//h3[contains(text(),'来源：tkm3u8')]/parent::div",
-    "dtFromName":   "/h3/text()",
-    #"dtFromNameR":  "(\\S+):\\S+",
-    "dtUrlNode":    "//h3[contains(text(),'来源：tkm3u8')]/parent::div/ul",
-    "dtUrlSubNode": "/li/a",
-    "dtUrlId":      "/@href",
-    "dtUrlIdR":     "(http.*m3u8)",
-    "dtUrlName":    "/text()",
-    "playUrl":      "https://jx.huishij.com/yun/?url={playUrl}",
+    "dtFromNode":   "",
+    "dtFromName":   "",
+    "dtFromNameR":  "",
+    "dtUrlNode":    "",
+    "dtUrlSubNode": "",
+    "dtUrlId":      "",
+    "dtUrlIdR":     "",
+    "dtUrlName":    "",
+    "playUrl":      "",
     "playUa":       "",
     
 // Search Results ================================================
