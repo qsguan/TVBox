@@ -12,7 +12,7 @@
         "电影库":   "1",
         "电视剧":   "11",
         "综艺库":   "25",
-        "动漫库":   "20",
+        "动漫库2":   "20",
         "体育赛事": "33"
     },
     
@@ -22,7 +22,7 @@
     "homeVodId":    "/a[@class='videoName']/@href",
     "homeVodIdR":   "/index.php/vod/detail/id/(\\S+).html",
     "homeVodImg":   "/a[@class='videoName']/text()", #无影片预览图片,随便填写
-    "homeVodMark":  "/a[@class='videoName']/i/text()",
+    "homeVodMark":  "concat(/span[contains(@class,'category')]/text(),'/',/a[@class='videoName']/i/text())",
     
 // Category Summary ================================================
                    //
@@ -61,14 +61,13 @@
     "playUa":       "",
     
 // Search Results ================================================
-    "searchUrl":    "",
-    "scVodNode":    "",
-    "scVodName":    "",
-    "scVodNameR":   "",
-    "scVodId":      "",
-    "scVodIdR":     "",
-    "scVodImg":     "", #无影片预览图片,随便填写
-    "scVodMark":    "",
+    "searchUrl":    "https://kuaichezy.com/index.php/vod/search.html?wd={wd}",
+    "scVodNode":    "//div[@class='container']//ul[@class='videoContent']/li",
+    "scVodName":    "/a[@class='videoName']/text()",
+    "scVodId":      "/a[@class='videoName']/@href",
+    "scVodIdR":     "/index.php/vod/detail/id/(\\S+).html",
+    "scVodImg":     "/a[@class='videoName']/text()", #无影片预览图片,随便填写
+    "scVodMark":    "concat(/span[contains(@class,'category')]/text(),'/',/a[@class='videoName']/i/text())",
     
 // Filters =======================================================
     "filter": {
