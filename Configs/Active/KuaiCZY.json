@@ -1,0 +1,91 @@
+{
+    "author": "Jimmy_Bytheway",
+    "ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1",
+    "homeUrl":   "https://kuaichezy.com/",
+    "dcPlayUrl": "true",
+    "dcVipFlag": "true",
+    "cateNode":  "//div[@class='nav']/div/ul/li/div/a[contains(@href,'type')]",
+    "cateName":  "/text()",
+    "cateId":    "/@href",
+    "cateIdR":   "/index.php/vod/type/id/(\\S+).html",
+    "cateManual": {
+        "电影库":   "1",
+        "电视剧":   "11",
+        "综艺库":   "25",
+        "动漫库":   "20",
+        "体育赛事": "33"
+    },
+    
+// Home Summary ================================================
+    "homeVodNode":  "//div[@class='container']//ul[@class='videoContent']/li",
+    "homeVodName":  "/a[@class='videoName']/text()",
+    "homeVodId":    "/a[@class='videoName']/@href",
+    "homeVodIdR":   "/index.php/vod/detail/id/(\\S+).html",
+    "homeVodImg":   "/a[@class='videoName']/text()", #无影片预览图片,随便填写
+    "homeVodMark":  "/a[@class='videoName']/i/text()",
+    
+// Category Summary ================================================
+                   //
+    "cateUrl":      "",
+    "cateVodNode":  "",
+    "cateVodName":  "",
+    "cateVodId":    "",
+    "cateVodIdR":   "",
+    "cateVodImg":   "", #无影片预览图片,随便填写
+    "cateVodMark":  "",
+    
+// Video Details ================================================
+    "dtUrl":        "",
+    "dtNode":       "",
+    "dtName":       "",
+    "dtImg":        "",
+    "dtCate":       "",
+    "dtYear":       "",
+    "dtArea":       "",
+    "dtMark":       "",
+    "dtDirector":   "",
+    "dtActor":      "",
+    "dtDesc":       "",
+    "dtDescR":      "",
+    
+// Video Playlist =====================================================
+    "dtFromNode":   "",
+    "dtFromName":   "",
+    "dtFromNameR":  "",
+    "dtUrlNode":    "",
+    "dtUrlSubNode": "",
+    "dtUrlId":      "",
+    "dtUrlIdR":     "",
+    "dtUrlName":    "",
+    "playUrl":      "",
+    "playUa":       "",
+    
+// Search Results ================================================
+    "searchUrl":    "",
+    "scVodNode":    "",
+    "scVodName":    "",
+    "scVodNameR":   "",
+    "scVodId":      "",
+    "scVodIdR":     "",
+    "scVodImg":     "", #无影片预览图片,随便填写
+    "scVodMark":    "",
+    
+// Filters =======================================================
+    "filter": {
+        "1": [
+
+        ],
+        "11": [
+
+        ],
+        "25": [
+
+        ],
+        "20": [
+
+        ],
+        "33": [
+
+        ]
+    }
+}
