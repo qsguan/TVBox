@@ -1,7 +1,7 @@
 {
     "author": "Jimmy_Bytheway",
     "ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1",
-    "homeUrl":   "https://www.qsclub.cn/",
+    "homeUrl":   "https://4kdyw.qsclub.cn/",
     "dcPlayUrl": "true",
     "dcVipFlag": "true",
     "cateNode":  "//ul[@class='nav-menu-items']/li/a[contains(@href,'type')]",
@@ -26,8 +26,8 @@
     "homeVodMark":  "concat(//div[@class='module-item-caption']/span[1]/text(),'/',/div[@class='module-item-text']/text())",
     
 // Category Summary ================================================
-                   //https://www.qsclub.cn/vodshow/11-大陆-score-剧情-国语----2---2021.html
-    "cateUrl":      "https://www.qsclub.cn/vodshow/{cateId}-{area}-{by}-{catelog}-{lang}----{catePg}---{year}.html",
+                   //https://4kdyw.qsclub.cn/vodshow/11-大陆-score-剧情-国语----2---2021.html
+    "cateUrl":      "https://4kdyw.qsclub.cn/vodshow/{cateId}-{area}-{by}-{catelog}-{lang}----{catePg}---{year}.html",
     "cateVodNode":  "//div[@class='module-item']",
     "cateVodName":  "/div[@class='module-item-titlebox']/a/@title",
     "cateVodId":    "/div[@class='module-item-titlebox']/a/@href",
@@ -37,7 +37,7 @@
     "cateVodMark":  "concat(//div[@class='module-item-caption']/span[1]/text(),'/',/div[@class='module-item-text']/text())",
     
 // Video Details ================================================
-    "dtUrl":        "https://www.qsclub.cn/voddetail/{vid}.html",
+    "dtUrl":        "https://4kdyw.qsclub.cn/voddetail/{vid}.html",
     "dtNode":       "//main[@id='main']/div[@class='content']",
     "dtName":       "//div[@class='video-info-header']/h1/text()",
     "dtImg":        "//div[@class='video-cover']/div/div/img/@data-src",
@@ -58,11 +58,11 @@
     "dtUrlId":      "/@href",
     "dtUrlIdR":     "/vodplay/(\\S+).html",
     "dtUrlName":    "/span/text()",
-    "playUrl":      "https://www.qsclub.cn/vodplay/{playUrl}.html",
+    "playUrl":      "https://4kdyw.qsclub.cn/{playUrl}.html",
     "playUa":       "",
     
 // Search Results ================================================
-    "searchUrl":    "https://www.qsclub.cn/vodsearch/-------------.html?wd={wd}",
+    "searchUrl":    "https://4kdyw.qsclub.cn/vodsearch/-------------.html?wd={wd}",
     "scVodNode":    "//div[@class='module-search-item']",
     "scVodName":    "//div[@class='video-info-header']/a/@title",
     "scVodId":      "//div[@class='video-info-header']/a/@href",
@@ -193,21 +193,6 @@
                     {"n": "泰国","v": "泰国"},
                     {"n": "西班牙","v": "西班牙"},
                     {"n": "其它","v": "其它"}]
-            },
-            {
-                "key": "catelog",
-                "name": "类型",
-                "value": [
-                    {"n": "全部","v": ""},
-                    {"n": "古装","v": "古装"},
-                    {"n": "战争","v": "战争"},
-                    {"n": "喜剧","v": "喜剧"},
-                    {"n": "家庭","v": "家庭"},
-                    {"n": "犯罪","v": "犯罪"},
-                    {"n": "动作","v": "动作"},
-                    {"n": "奇幻","v": "奇幻"},
-                    {"n": "剧情","v": "剧情"},
-                    {"n": "历史","v": "历史"}]
             },
             {
                 "key": "year",
