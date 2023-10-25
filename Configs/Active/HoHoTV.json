@@ -15,7 +15,7 @@
         "电视剧":   "2",
         "综艺库":   "3",
         "动漫库":   "4",
-        "纪录片1":   "20",
+        "纪录片":   "20",
         "影视解说": "37"
     },
     
@@ -49,7 +49,7 @@
     "dtDirector":   "concat(//span[contains(text(),'导演')]/following-sibling::div/a[position()<7]/text())",
     "dtActor":      "concat(//span[contains(text(),'主演')]/following-sibling::div/a[position()<7]/text())",
     "dtDesc":       "//div[contains(@class,'module-info-introduction')]/div",
-    "dtDescR":      "\\S+:\\s*(\\S+.*)",
+    "dtDescR":      "\\S+：\\s*(\\S+.*)[华人影院]{4}.*[视频高清]{4}.*",
     
 // Video Playlist =====================================================
     "dtFromNode":   "//div[contains(@class,'player-heading')]/div[@class='module-tab']//div[contains(@id,'play')]/div",
