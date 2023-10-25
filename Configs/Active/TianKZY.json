@@ -58,7 +58,6 @@
     "dtUrlId":      "/@href",
     "dtUrlIdR":     "\\S+(http.*m3u8)",
     "dtUrlName":    "/text()",
-    "dtUrlNameR":   "(.*)\\$http.*m3u8",
     "playUrl":      "https://jx.huishij.com/yun/?url={playUrl}",
     "playUa":       "",
     
