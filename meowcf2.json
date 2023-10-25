@@ -18,75 +18,205 @@
 
     ## video on-demand
     "sites": [
+        ## 自行配置可正常使用
         {
-            "key": "豆瓣推荐",
-            "name": "豆瓣推荐",
+            "key": "csp_xpath_IYiFan", #网页及内容与欧乐影院高度重合
+            "name": "爱壹帆TV",
             "type": 3,
-            "api": "csp_DouDou",
-            "searchable": 0,
-            "quickSearch": 0,
-            "filterable": 0,
-            "jar": "https://github.com/qsguan/TVBox/raw/master/Spiders/xhdwc.tk_modified.jar"
+            "api": "csp_XPathMacFilter",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Active/IYiFanTV.json"
         },
+        {
+            "key": "csp_xpath_GimyTV", #网页地址虽不变但其代码经常变
+            "name": "剧迷影院",
+            "type": 3,
+            "api": "csp_XPathMacFilter",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/InActive/GimyTV.json"
+        },
+        {
+            "key": "csp_xpath_动漫岛", #动漫库内容杂乱且播放速度较慢
+            "name": "动漫岛",
+            "type": 3,
+            "api": "csp_XPathMacFilter",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/InActive/DMDao.json"
+        },
+
+        ## 自行配置但不太好用
+        {"key":"pa1","name":"---------------","type":3,"api":"csp_PushAgent","searchable":0,"quickSearch":0,"filterable":0},
+        {
+            "key": "csp_xpath_YingS199", #某些影片的缩略图标无法加载
+            "name": "199影视",
+            "type": 3,
+            "api": "csp_XPathMacFilter",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/InActive/YShi199.json"
+        },
+        {
+            "key": "csp_xpath_韩剧网", #库分类页面中无限循环显示影片
+            "name": "97韩剧网",
+            "type": 3,
+            "api": "csp_XPathMacFilter",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/InActive/HanJuW.json"
+        },
+        {
+            "key": "csp_xpath_厂长资源", #搜片时需输验证,播放速度较慢
+            "name": "厂长资源",
+            "type": 3,
+            "api": "csp_XPathMacFilter",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/InActive/CZZiY.json"
+        },
+        {
+            "key": "csp_xpath_555DYW",
+            "name": "555电影网", #提取Netflix标签失败,搜片时需输验证
+            "type": 3,
+            "api": "csp_XPathMacFilter",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/InActive/DYW555.json"
+        },
+        {
+            "key": "csp_xpath_奈飞影院", #播放节点太多而有效的节点少
+            "name": "奈飞影院",
+            "type": 3,
+            "api": "csp_XPathMacFilter",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/InActive/NaifeiYY.json"
+        },
+        {
+            "key": "csp_xpath_电影先生", #播放节点太多而有效的节点少
+            "name": "电影先生",
+            "type": 3,
+            "api": "csp_XPathMacFilter",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/InActive/DYXianS.json"
+        },
+        {
+            "key": "csp_xpath_歪片星球", #播放节点太多而有效的节点少
+            "name": "歪片星球",
+            "type": 3,
+            "api": "csp_XPathMacFilter",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/InActive/WaiPXQ.json"
+        },
+
+        ## 自行配置无法使用的
+        {"key":"pa2","name":"---------------","type":3,"api":"csp_PushAgent","searchable":0,"quickSearch":0,"filterable":0},
+        {
+            "key": "csp_xpath_555DYY", #无法获取影片详情页面(不可使用)
+            "name": "555电影院",
+            "type": 3,
+            "api": "csp_XPathMacFilter",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/InActive/DYY555.json"
+        },
+        {
+            "key": "csp_xpath_M1949W", #无法获取影片播放节点(不可使用)
+            "name": "电影天堂",
+            "type": 3,
+            "api": "csp_XPathMacFilter",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/InActive/DianYTT.json"
+        },
+        {
+            "key": "csp_xpath_NuNuYY", #无法获取影片播放节点(不可使用)
+            "name": "努努影院",
+            "type": 3,
+            "api": "csp_XPathMacFilter",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/InActive/NuNuYY.json"
+        },
+
+        ## 能够加载并播放(XPath系列)
+        {"key":"pa3","name":"---------------","type":3,"api":"csp_PushAgent","searchable":0,"quickSearch":0,"filterable":0},
         {
             "key": "csp_xpath_唐人街",
-            "name": "唐人街影院",
+            "name": "唐人街(XPMF)",
             "type": 3,
             "api": "csp_XPathMacFilter",
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1,
-            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Active/TangJie.json"
+            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Obsolete/TangJie.json"
         },
         {
-            "key": "csp_xpath_欧乐影院",
-            "name": "欧乐影院",
+            "key": "csp_xpath_美剧网",
+            "name": "美剧网(XPF)",
             "type": 3,
-            "api": "csp_XPathMacFilter",
+            "api": "csp_XPathFilter",
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1,
-            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Active/OleVod.json"
+            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Obsolete/MeiJuW.json"
         },
         {
-            "key": "csp_xpath_HiBaDY",
-            "name": "嘿叭电影",
+            "key": "csp_xpath_乐猪TV",
+            "name": "乐猪TV(XPM)",
             "type": 3,
-            "api": "csp_XPathMacFilter",
+            "api": "csp_XPathMac",
             "searchable": 1,
             "quickSearch": 1,
-            "filterable": 1,
-            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Active/HiBaDY.json"
+            "filterable": 0,
+            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Obsolete/LeZhuTV.json"
         },
         {
-            "key": "csp_xpath_4KDYW",
-            "name": "4K电影网",
+            "key": "csp_xpath_在线电影",
+            "name": "在线电影(XP)",
             "type": 3,
-            "api": "csp_XPathMacFilter",
+            "api": "csp_XPath",
             "searchable": 1,
             "quickSearch": 1,
-            "filterable": 1,
-            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Active/DYW4K.json"
+            "filterable": 0,
+            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Obsolete/ZaiXDY8.json"
         },
         {
-            "key": "csp_xpath_FeiSuZY",
-            "name": "飞速资源",
+            "key": "csp_xpath_奇优影院",
+            "name": "奇优影院(XPM)",
             "type": 3,
-            "api": "csp_XPathMacFilter",
+            "api": "csp_XPathMac",
             "searchable": 1,
             "quickSearch": 1,
-            "filterable": 1,
-            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Active/FeiSuZY.json"
+            "filterable": 0,
+            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Obsolete/QiYouYY.json"
         },
         {
-            "key": "csp_xpath_WoLongZY",
-            "name": "卧龙资源",
+            "key": "csp_xpath_VIP电影",
+            "name": "VIP电影(XP)",
             "type": 3,
-            "api": "csp_XPathMacFilter",
+            "api": "csp_XPath",
             "searchable": 1,
             "quickSearch": 1,
-            "filterable": 1,
-            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Active/WLongZY.json"
+            "filterable": 0,
+            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Obsolete/VIP1080.json"
         }
     ],
 
