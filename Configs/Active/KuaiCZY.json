@@ -12,7 +12,7 @@
         "电影库":   "1",
         "电视剧":   "11",
         "综艺库":   "25",
-        "动漫库1":   "20",
+        "动漫库11":   "20",
         "体育赛事": "33"
     },
     
@@ -55,15 +55,14 @@
     "dtDesc":       "//p[contains(text(),'剧情介绍')]/following-sibling::div",
     
 // Video Playlist =====================================================
-    "dtFromNode":   "",
-    "dtFromName":   "",
-    "dtFromNameR":  "",
-    "dtUrlNode":    "",
-    "dtUrlSubNode": "",
-    "dtUrlId":      "",
-    "dtUrlIdR":     "",
-    "dtUrlName":    "",
-    "playUrl":      "",
+    "dtFromNode":   "//p[contains(text(),'视频采集')]/following-sibling::div//h4/div",
+    "dtFromName":   "/text()",
+    "dtUrlNode":    "//p[contains(text(),'视频采集')]/following-sibling::div/div[contains(@class,'playlist')]//ul",
+    "dtUrlSubNode": "/li/a[@target='_blank']",
+    "dtUrlId":      "/@href",
+    "dtUrlIdR":     "/index.php/vod/play/id/(\\S+).html",
+    "dtUrlName":    "/@title",
+    "playUrl":      "https://kuaichezy.com/index.php/vod/play/id/{playUrl}.html",
     "playUa":       "",
     
 // Search Results ================================================
