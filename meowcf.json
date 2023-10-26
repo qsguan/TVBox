@@ -89,16 +89,7 @@
             "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Active/WLongZY.json"
         },
 
-        {
-            "key": "csp_xpath_GuangSY",
-            "name": "光速资源2",
-            "type": 3,
-            "api": "csp_XPathMacFilter",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
-            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Active/GuangSY.json"
-        },
+
         {
             "key": "csp_xpath_KuaKeZY",
             "name": "夸克资源1",
