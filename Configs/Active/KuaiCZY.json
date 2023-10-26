@@ -12,7 +12,7 @@
         "电影库":   "1",
         "电视剧":   "11",
         "综艺库":   "25",
-        "动漫库1":   "20",
+        "动漫库2":   "20",
         "体育赛事": "33"
     },
     
@@ -40,7 +40,8 @@
     "dtName":       "//p[contains(text(),'名称')]/text()",
     "dtNameR":      "\\S+：(\\S+)",
     "dtImg":        "//div[@class='people']/div/img/@src",
-    "dtCate":       "",
+    "dtCate":       "//p[contains(text(),'类型')]/text()",
+    "dtCateR":      "\\S+：(\\S+)",
     "dtYear":       "",
     "dtArea":       "",
     "dtMark":       "",
