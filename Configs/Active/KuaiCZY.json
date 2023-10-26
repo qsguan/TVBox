@@ -407,12 +407,10 @@
                 "name": "排序",
                 "value": [
                     {"n": "全部","v": ""},
-                    {"n": "更新","v": "/by/time"},
                     {"n": "日榜","v": "/by/hits_day"},
                     {"n": "周榜","v": "/by/hits_week"},
                     {"n": "月榜","v": "/by/hits_month"},
-                    {"n": "总榜","v": "/by/hits"},
-                    {"n": "评分","v": "/by/score"}]
+                    {"n": "总榜","v": "/by/hits"}]
             }
         ]
     }
