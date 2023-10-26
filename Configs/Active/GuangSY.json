@@ -4,26 +4,25 @@
     "homeUrl":   "https://guangsuzy.com/",
     "dcPlayUrl": "true",
     "dcVipFlag": "true",
-    "cateNode":  "//div[@class='logonav']/div/div/div/a[contains(@href,'vodtype')]",
+    "cateNode":  "//div[@class='nav-menu']/ul/li/a[contains(@href,'type')]",
     "cateName":  "/text()",
     "cateId":    "/@href",
-    "cateIdR":   "/vodtype/(\\S+).html",
+    "cateIdR":   "/index.php/vod/type/id/(\\S+).html",
     "cateManual": {
-        "电影库": "1",
-        "电视剧": "2",
-        "综艺库": "3",
-        "动漫库": "4",
-        "纪录片": "5"
+        "电影库":   "1",
+        "电视剧":   "2",
+        "综艺库":   "3",
+        "动漫库":   "4",
+        "体育赛事": "30"
     },
     
 // Home Summary ================================================
-    "homeVodNode":  "",
-    "homeVodName":  "",
-    "homeVodNameR": "",
-    "homeVodId":    "",
-    "homeVodIdR":   "",
-    "homeVodImg":   "", #无影片预览图片,随便填写
-    "homeVodMark":  "",
+    "homeVodNode":  "//div[@class='dy-list']/div/table/tbody/tr",
+    "homeVodName":  "/td[1]/a/text()",
+    "homeVodId":    "/td[1]/a/@href",
+    "homeVodIdR":   "/index.php/vod/detail/id/(\\S+).html",
+    "homeVodImg":   "/td[1]/a/text()", #无影片预览图片,随便填写
+    "homeVodMark":  "concat(/td[3]/text(),'/',/td[1]/a/span/text())",
     
 // Category Summary ================================================
                    //
@@ -62,14 +61,13 @@
     "playUa":       "",
     
 // Search Results ================================================
-    "searchUrl":    "",
-    "scVodNode":    "",
-    "scVodName":    "",
-    "scVodNameR":   "",
-    "scVodId":      "",
-    "scVodIdR":     "",
-    "scVodImg":     "", #无影片预览图片,随便填写
-    "scVodMark":    "",
+    "searchUrl":    "https://guangsuzy.com/index.php/vod/search.html?wd={wd}",
+    "scVodNode":    "//div[@class='dy-list']/div/table/tbody/tr",
+    "scVodName":    "/td[1]/a/text()",
+    "scVodId":      "/td[1]/a/@href",
+    "scVodIdR":     "/index.php/vod/detail/id/(\\S+).html",
+    "scVodImg":     "/td[1]/a/text()", #无影片预览图片,随便填写
+    "scVodMark":    "concat(/td[3]/text(),'/',/td[1]/a/span/text())",
     
 // Filters =======================================================
     "filter": {
@@ -85,7 +83,7 @@
         "4": [
 
         ],
-        "5": [
+        "30": [
 
         ]
     }

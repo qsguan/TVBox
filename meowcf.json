@@ -91,7 +91,7 @@
 
         {
             "key": "csp_xpath_GuangSY",
-            "name": "光速资源1",
+            "name": "光速资源2",
             "type": 3,
             "api": "csp_XPathMacFilter",
             "searchable": 1,
