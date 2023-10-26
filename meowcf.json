@@ -90,7 +90,7 @@
         },
         {
             "key": "csp_xpath_KuaiCZY",
-            "name": "快车资源2",
+            "name": "快车资源3",
             "type": 3,
             "api": "csp_XPathMacFilter",
             "searchable": 1,
