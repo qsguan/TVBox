@@ -49,14 +49,14 @@
             "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Active/HiBaDY.json"
         },
         {
-            "key": "csp_xpath_PianKYS",
-            "name": "片刻影视",
+            "key": "csp_xpath_HaoXiW",
+            "name": "好戏影视",
             "type": 3,
             "api": "csp_XPathMacFilter",
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1,
-            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Active/PianKYS.json"
+            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Active/HaoXiW.json"
         },
         {
             "key": "csp_xpath_多瑙影视",
