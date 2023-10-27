@@ -129,14 +129,14 @@
             "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Active/KuaiCZY.json"
         },
         {
-            "key": "csp_xpath_XXXXZY",
-            "name": "XX资源",
+            "key": "csp_xpath_YingHZY",
+            "name": "樱花资源",
             "type": 3,
             "api": "csp_XPathMacFilter",
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1,
-            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Active/KuaiCZY.json"
+            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Active/YingHZY.json"
         }
     ],
 

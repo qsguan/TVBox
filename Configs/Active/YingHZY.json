@@ -1,0 +1,91 @@
+{
+    "author": "Jimmy_Bytheway",
+    "ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1",
+    "homeUrl":   "https://yhzy.cc/",
+    "dcPlayUrl": "true",
+    "dcVipFlag": "true",
+    "cateNode":  "//div[@class='sddm']/ul[@id='sddm']/li/a[contains(@href,'type')]",
+    "cateName":  "/text()",
+    "cateId":    "/@href",
+    "cateIdR":   "/index.php/vod/type/id/(\\S+).html",
+    "cateManual": {
+        "电影库": "1",
+        "电视剧": "2",
+        "综艺库": "3",
+        "动漫库": "4",
+        "纪录片": "21"
+    },
+    
+// Home Summary ================================================
+    "homeVodNode":  "//div[@class='xing_vb']/ul/li/span[@class='tt']/parent::li",
+    "homeVodName":  "/span[@class='xing_vb4']/a/text()",
+    "homeVodId":    "/span[@class='xing_vb4']/a/@href",
+    "homeVodIdR":   "/index.php/vod/detail/id/(\\S+).html",
+    "homeVodImg":   "/span[@class='xing_vb4']/a/text()", #无影片预览图片,随便填写
+    "homeVodMark":  "concat(/span[@class='xing_vb5']/text(),'/',/span[@class='xing_vb4']/a/font/text())",
+    
+// Category Summary ================================================
+                   //https://yhzy.cc/index.php/vod/type/area/大陆/by/score/id/1/page/1/year/2020.html
+    "cateUrl":      "https://yhzy.cc/index.php/vod/type{area}{by}/id/{cateId}/page/{catePg}{year}.html",
+    "cateVodNode":  "//div[@class='xing_vb']/ul/li/span[@class='tt']/parent::li",
+    "cateVodName":  "/span[@class='xing_vb4']/a/text()",
+    "cateVodId":    "/span[@class='xing_vb4']/a/@href",
+    "cateVodIdR":   "/index.php/vod/detail/id/(\\S+).html",
+    "cateVodImg":   "/span[@class='xing_vb4']/a/text()", #无影片预览图片,随便填写
+    "cateVodMark":  "concat(/span[@class='xing_vb5']/text(),'/',/span[@class='xing_vb4']/a/font/text())",
+    
+// Video Details ================================================
+    "dtUrl":        "https://yhzy.cc/index.php/vod/detail/id/{vid}.html",
+    "dtNode":       "//div[@class='warp']",
+    "dtName":       "//div[@class='vodInfo']/div/h2/text()",
+    "dtImg":        "//div[@class='vodImg']/img/@src",
+    "dtCate":       "//div[@class='vodinfobox']/ul/li[contains(text(),'类型')]/span/text()",
+    "dtYear":       "//div[@class='vodinfobox']/ul/li[contains(text(),'上映')]/span/text()",
+    "dtArea":       "//div[@class='vodinfobox']/ul/li[contains(text(),'地区')]/span/text()",
+    "dtMark":       "//div[@class='vodInfo']/div/span/text()",
+    "dtDirector":   "//div[@class='vodinfobox']/ul/li[contains(text(),'导演')]/span/text()",
+    "dtActor":      "//div[@class='vodinfobox']/ul/li[contains(text(),'主演')]/span/text()",
+    "dtDesc":       "//div[@class='ibox playBox']/div[@class='vodplayinfo']",
+    
+// Video Playlist =====================================================
+    "dtFromNode":   "//h3[contains(text(),'来源')]/parent::div",
+    "dtFromName":   "concat('樱花资源',':',/h3/text())",
+    "dtFromNameR":  "(\\S+):\\S+",
+    "dtUrlNode":    "//h3[contains(text(),'来源')]/parent::div/ul",
+    "dtUrlSubNode": "/li",
+    "dtUrlId":      "/text()",
+    "dtUrlIdR":     ".*(http.*m3u8)",
+    "dtUrlName":    "/text()",
+    "dtUrlNameR":   "(.*)\\$http.*m3u8",
+    "playUrl":      "https://jx.yhzybf.com/player/jx.php?url={playUrl}",
+    "playUa":       "",
+    
+// Search Results ================================================
+    "searchUrl":    "https://yhzy.cc/index.php/vod/search.html?wd={wd}",
+    "scVodNode":    "//div[@class='xing_vb']/ul/li/span[@class='tt']/parent::li",
+    "scVodName":    "/span[@class='xing_vb4']/a/text()",
+    "scVodId":      "/span[@class='xing_vb4']/a/@href",
+    "scVodIdR":     "/index.php/vod/detail/id/(\\S+).html",
+    "scVodImg":     "/span[@class='xing_vb4']/a/text()", #无影片预览图片,随便填写
+    "scVodMark":    "/span[@class='xing_vb4']/a/text()",
+    "scVodMarkR":   ".*\\s{1}(\\S+)$",
+    
+// Filters =======================================================
+    "filter": {
+        "1": [
+
+        ],
+        "2": [
+
+        ],
+        "3": [
+
+        ],
+        "4": [
+
+        ],
+        "21": [
+
+        ]
+    }
+}
