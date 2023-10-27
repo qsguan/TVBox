@@ -19,7 +19,6 @@
     ## video on-demand
     "sites": [
         ## 自行配置可正常使用
-
         {
             "key": "csp_xpath_IYiFan", #网页及内容与欧乐影院高度重合
             "name": "爱壹帆TV",
