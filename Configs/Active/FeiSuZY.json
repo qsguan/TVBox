@@ -26,7 +26,7 @@
     
 // Category Summary ================================================
                    //https://feisuzy.com/vod/show/area/大陆/by/score/id/1/page/1/year/2001/
-    "cateUrl":      "https://feisuzy.com/vod/show{area}{by}/id/{cateId}/page/{catePg}{year}/",
+    "cateUrl":      "https://feisuzy.com/vod/show/id/{cateId}/page/{catePg}{area}{by}{year}/",
     "cateVodNode":  "//div[contains(@class,'stui-pannel')]/ul[contains(@class,'stui-vodlist')]/li[@class='clearfix']",
     "cateVodName":  "/h3/a/@title",
     "cateVodId":    "/h3/a/@href",
@@ -84,7 +84,6 @@
                     {"n": "剧情片","v": "11"},
                     {"n": "战争片","v": "12"},
                     {"n": "动画片","v": "21"},
-                    {"n": "影视解说","v": "29"},
                     {"n": "其他片","v": "35"}]
             },
             {
