@@ -61,7 +61,7 @@
     "dtUrlId":      "/a[contains(text(),'播放')]/@href",
     "dtUrlIdR":     "\\S+(https.*m3u8)",
     "dtUrlName":    "/a[contains(@class,'copy_text')]/@title",
-    "playUrl":      "https://jx.wolongm3u8.com:65/m3u8.php?url={playUrl}",
+    "playUrl":      "{playUrl}",
     "playUa":       "",
     
 // Search Results ================================================
