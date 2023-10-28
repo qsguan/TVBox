@@ -13,7 +13,7 @@
         "电视剧": "3",
         "综艺库": "25",
         "动漫库": "24",
-        "纪录片": "2"
+        "纪录片1": "2"
     },
     
 // Home Summary ================================================
@@ -27,14 +27,16 @@
     "homeVodMarkR": ".*\\s{1}(\\S+)$",
     
 // Category Summary ================================================
-                   //
-    "cateUrl":      "",
-    "cateVodNode":  "",
-    "cateVodName":  "",
-    "cateVodId":    "",
-    "cateVodIdR":   "",
-    "cateVodImg":   "",
-    "cateVodMark":  "",
+                   //https://tiankongzy.com/vod/type/area/大陆/by/score/id/1/page/1/year/2022/
+    "cateUrl":      "https://tiankongzy.com/vod/type{area}{by}/id/{cateId}/page/{catePg}{year}/",
+    "cateVodNode":  "//div[@class='xing_vb']/ul/li/span[@class='tt']/parent::li",
+    "cateVodName":  "/span[@class='xing_vb4']/a/text()",
+    "cateVodNameR": "^(.*)\\s{1}\\S+$",
+    "cateVodId":    "/span[@class='xing_vb4']/a/@href",
+    "cateVodIdR":   "/vod/detail/id/(\\S+)/",
+    "cateVodImg":   "/span[@class='xing_vb4']/a/text()", #无影片预览图片,随便填写
+    "cateVodMark":  "/span[@class='xing_vb4']/a/text()",
+    "cateVodMarkR": ".*\\s{1}(\\S+)$",
     
 // Video Details ================================================
     "dtUrl":        "",
@@ -63,14 +65,15 @@
     "playUa":       "",
     
 // Search Results ================================================
-    "searchUrl":    "",
-    "scVodNode":    "",
-    "scVodName":    "",
-    "scVodId":      "",
-    "scVodIdR":     "",
-    "scVodImg":     "",
-    "scVodMark":    "",
-    "scVodMarkR":   "",
+    "searchUrl":    "https://tiankongzy.com/vod/search/?wd={wd}",
+    "scVodNode":    "//div[@class='xing_vb']/ul/li/span[@class='tt']/parent::li",
+    "scVodName":    "/span[@class='xing_vb4']/a/text()",
+    "scVodNameR":   "^(.*)\\s{1}\\S+$",
+    "scVodId":      "/span[@class='xing_vb4']/a/@href",
+    "scVodIdR":     "/vod/detail/id/(\\S+)/",
+    "scVodImg":     "/span[@class='xing_vb4']/a/text()",
+    "scVodMark":    "/span[@class='xing_vb4']/a/text()",
+    "scVodMarkR":   ".*\\s{1}(\\S+)",
     
 // Filters =======================================================
     "filter": {
