@@ -24,7 +24,7 @@
     "homeVodIdR":   "/index.php/vod/detail/id/(\\S+).html",
     "homeVodImg":   "/div/a/div/@data-original",
     "homeVodImgR":  ".*(http\\S+)",
-    "homeVodMark":  "concat(/div/span/em[1]/text(),'/',/div/span/em[2]/text(),'/',/div/a/span//text())",
+    "homeVodMark":  "concat(/div/span/em[1]/text(),'/',/div/a/span//text())",
     
 // Category Summary ================================================
                    //https://hibady.com/index.php/vod/show/area/大陆/by/hits/class/剧情/id/1/page/2/year/2022.html
