@@ -139,16 +139,6 @@
             "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Active/FeiTuYS.json"
         },
         {
-            "key": "csp_xpath_QiEVod",
-            "name": "企鹅影院",
-            "type": 3,
-            "api": "csp_XPathMacFilter",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
-            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Active/QiEVod.json"
-        },
-        {
             "key": "csp_xpath_HaiTuYY",
             "name": "海兔影院",
             "type": 3,
@@ -249,6 +239,16 @@
             "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Active/NaiFCN.json"
         },
         {
+            "key": "csp_xpath_GimyTV", #网页地址虽不变但其代码经常变
+            "name": "剧迷影院",
+            "type": 3,
+            "api": "csp_XPathMacFilter",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Active/GimyTV.json"
+        },
+        {
             "key": "csp_xpath_动漫巴士",
             "name": "动漫巴士",
             "type": 3,
@@ -257,26 +257,6 @@
             "quickSearch": 1,
             "filterable": 1,
             "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Active/DM84.json"
-        },
-        {
-            "key": "csp_xpath_FeiSuZY",
-            "name": "飞速资源",
-            "type": 3,
-            "api": "csp_XPathMacFilter",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
-            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Active/FeiSuZY.json"
-        },
-        {
-            "key": "csp_xpath_WoLongZY",
-            "name": "卧龙资源",
-            "type": 3,
-            "api": "csp_XPathMacFilter",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
-            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Active/WLongZY.json"
         }
     ],
 
