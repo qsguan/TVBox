@@ -99,16 +99,6 @@
             "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Active/DuoNYS.json"
         },
         {
-            "key": "csp_xpath_QiXiYY",
-            "name": "七喜影院",
-            "type": 3,
-            "api": "csp_XPathMacFilter",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
-            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Active/QiXiYY.json"
-        },
-        {
             "key": "csp_xpath_OuDiYY",
             "name": "欧帝影院",
             "type": 3,
@@ -237,16 +227,6 @@
             "quickSearch": 1,
             "filterable": 1,
             "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Active/NaiFCN.json"
-        },
-        {
-            "key": "csp_xpath_GimyTV", #网页地址虽不变但其代码经常变
-            "name": "剧迷影院",
-            "type": 3,
-            "api": "csp_XPathMacFilter",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
-            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Active/GimyTV.json"
         },
         {
             "key": "csp_xpath_动漫巴士",
