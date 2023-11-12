@@ -13,7 +13,7 @@
         "电视剧":   "2",
         "综艺库":   "3",
         "动漫库":   "4",
-        "纪录片1":   "20",
+        "纪录片2":   "20",
         "体育赛事": "36"
     },
     
@@ -56,7 +56,7 @@
     "dtDesc":       "//div[@class='width1200 white' and @id='content']/p[contains(text(),'剧情介绍')]/following-sibling::div",
     
 // Video Playlist =====================================================
-    "dtFromNode":   "//div[@class='width1200 white' and @id='content']/div/h4",
+    "dtFromNode":   "//div[@class='width1200 white' and @id='content']/div/div[@class='playlist wbox liangzi']/parent::div//h4",
     "dtFromName":   "/div/text()",
     "dtFromNameR":  "(\\S+)[地址]{2}",
     "dtUrlNode":    "//div[@class='width1200 white' and @id='content']/div/h4/parent::div//div[contains(@class,'playlist') and not(contains(@class,'http'))]",
