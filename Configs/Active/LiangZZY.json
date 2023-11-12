@@ -1,0 +1,95 @@
+{
+    "author": "Jimmy_Bytheway",
+    "ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1",
+    "homeUrl":   "https://cj.lziapi.com/",
+    "dcPlayUrl": "true",
+    "dcVipFlag": "true",
+    "cateNode":  "//div[@class='nav']/div/ul/li/div/a[contains(@href,'type')]",
+    "cateName":  "/@title",
+    "cateId":    "/@href",
+    "cateIdR":   "/index.php/vod/type/id/(\\S+).html",
+    "cateManual": {
+        "电影库":   "1",
+        "电视剧":   "2",
+        "综艺库":   "3",
+        "动漫库":   "4",
+        "纪录片1":   "20",
+        "体育赛事": "36"
+    },
+    
+// Home Summary ================================================
+    "homeVodNode":  "//ul[@class='videoContent']/li",
+    "homeVodName":  "/a[@class='videoName']/text()",
+    "homeVodId":    "/a[@class='videoName']/@href",
+    "homeVodIdR":   "/index.php/vod/detail/id/(\\S+).html",
+    "homeVodImg":   "/a[@class='videoName']/text()", #无影片预览图片,随便填写
+    "homeVodMark":  "concat(/span[contains(@class,'category')]/text(),'/',/a[@class='videoName']/i/text())",
+    
+// Category Summary ================================================
+                   //https://cj.lziapi.com/index.php/vod/type/area/美国/by/score/id/8/page/1/year/2020.html
+    "cateUrl":      "https://cj.lziapi.com/index.php/vod/type{area}{by}/id/{cateId}/page/{catePg}{year}.html",
+    "cateVodNode":  "//ul[@class='videoContent']/li",
+    "cateVodName":  "/a[@class='videoName']/text()",
+    "cateVodId":    "/a[@class='videoName']/@href",
+    "cateVodIdR":   "/index.php/vod/detail/id/(\\S+).html",
+    "cateVodImg":   "/a[@class='videoName']/text()", #无影片预览图片,随便填写
+    "cateVodMark":  "concat(/span[contains(@class,'category')]/text(),'/',/a[@class='videoName']/i/text())",
+    
+// Video Details ================================================
+    "dtUrl":        "",
+    "dtNode":       "",
+    "dtName":       "",
+    "dtImg":        "",
+    "dtImgR":       ".*(http\\S+)",
+    "dtCate":       "",
+    "dtYear":       "",
+    "dtArea":       "",
+    "dtMark":       "",
+    "dtDirector":   "",
+    "dtActor":      "",
+    "dtDesc":       "",
+    "dtDescR":      "",
+    
+// Video Playlist =====================================================
+    "dtFromNode":   "",
+    "dtFromName":   "",
+    "dtFromNameR":  "",
+    "dtUrlNode":    "",
+    "dtUrlSubNode": "",
+    "dtUrlId":      "",
+    "dtUrlIdR":     "",
+    "dtUrlName":    "",
+    "playUrl":      "",
+    "playUa":       "",
+    
+// Search Results ================================================
+    "searchUrl":    "https://cj.lziapi.com/index.php/vod/search.html?wd={wd}",
+    "scVodNode":    "//ul[@class='videoContent']/li",
+    "scVodName":    "/a[@class='videoName']/text()",
+    "scVodId":      "/a[@class='videoName']/@href",
+    "scVodIdR":     "/index.php/vod/detail/id/(\\S+).html",
+    "scVodImg":     "/a[@class='videoName']/text()", #无影片预览图片,随便填写
+    "scVodMark":    "concat(/span[contains(@class,'category')]/text(),'/',/a[@class='videoName']/i/text())",
+    
+// Filters =======================================================
+    "filter": {
+        "1": [
+
+        ],
+        "2": [
+
+        ],
+        "3": [
+
+        ],
+        "4": [
+
+        ],
+        "20": [
+
+        ],
+        "36": [
+
+        ]
+    }
+}
