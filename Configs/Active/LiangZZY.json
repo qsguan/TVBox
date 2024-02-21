@@ -1,7 +1,7 @@
 {
     "author": "Jimmy_Bytheway",
     "ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1",
-    "homeUrl":   "https://cj.lziapi.com/",
+    "homeUrl":   "http://www.lzzy.tv/",
     "dcPlayUrl": "true",
     "dcVipFlag": "true",
     "cateNode":  "//div[@class='nav']/div/ul/li/div/a[contains(@href,'type')]",
@@ -26,8 +26,8 @@
     "homeVodMark":  "concat(/span[contains(@class,'category')]/text(),'/',/a[@class='videoName']/i/text())",
     
 // Category Summary ================================================
-                   //https://cj.lziapi.com/index.php/vod/type/area/美国/by/score/id/8/page/1/year/2020.html
-    "cateUrl":      "https://cj.lziapi.com/index.php/vod/type{area}{by}/id/{cateId}/page/{catePg}{year}.html",
+                   //http://www.lzzy.tv/index.php/vod/type/area/美国/by/score/id/8/page/1/year/2020.html
+    "cateUrl":      "http://www.lzzy.tv/index.php/vod/type{area}{by}/id/{cateId}/page/{catePg}{year}.html",
     "cateVodNode":  "//ul[@class='videoContent']/li",
     "cateVodName":  "/a[@class='videoName']/text()",
     "cateVodId":    "/a[@class='videoName']/@href",
@@ -36,7 +36,7 @@
     "cateVodMark":  "concat(/span[contains(@class,'category')]/text(),'/',/a[@class='videoName']/i/text())",
     
 // Video Details ================================================
-    "dtUrl":        "https://cj.lziapi.com/index.php/vod/detail/id/{vid}.html",
+    "dtUrl":        "http://www.lzzy.tv/index.php/vod/detail/id/{vid}.html",
     "dtNode":       "//body",
     "dtName":       "//div[@class='width1200 white']/div[@class='people']//p[contains(text(),'片名')]/text()",
     "dtNameR":      "\\S+：(.*)",
@@ -68,7 +68,7 @@
     "playUa":       "",
     
 // Search Results ================================================
-    "searchUrl":    "https://cj.lziapi.com/index.php/vod/search.html?wd={wd}",
+    "searchUrl":    "http://www.lzzy.tv/index.php/vod/search.html?wd={wd}",
     "scVodNode":    "//ul[@class='videoContent']/li",
     "scVodName":    "/a[@class='videoName']/text()",
     "scVodId":      "/a[@class='videoName']/@href",
