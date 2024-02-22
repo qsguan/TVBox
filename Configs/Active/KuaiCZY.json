@@ -9,7 +9,7 @@
     "cateId":    "/@href",
     "cateIdR":   "/index.php/vod/type/id/(\\S+).html",
     "cateManual": {
-        "电影库2":   "1",
+        "电影库0":   "1",
         "电视剧":   "11",
         "综艺库":   "25",
         "动漫库":   "20"
@@ -63,7 +63,6 @@
     "dtUrlName":    "/font/text()",
     "dtUrlNameR":   "(.*)\\$http.*",
     "playUrl":      "{playUrl}",
-    #"playUrl":      "https://jiexi.kczyapi.com/m3u8/?url={playUrl}",
     "playUa":       "",
     
 // Search Results ================================================
