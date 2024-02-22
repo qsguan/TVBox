@@ -53,6 +53,17 @@
     "dtDescR":      "",
     
 // Video Playlist =====================================================
+    "dtFromNode":   "//p[contains(text(),'视频采集')]/following-sibling::div//h4/div",
+    "dtFromName":   "/text()",
+    "dtUrlNode":    "//p[contains(text(),'视频采集')]/following-sibling::div/div[contains(@class,'playlist')]//ul",
+    "dtUrlSubNode": "/li/a[@target='_blank']",
+    "dtUrlId":      "/@href",
+    "dtUrlIdR":     "/index.php/vod/play/id/(\\S+).html",
+    "dtUrlName":    "/font/text()",
+    "dtUrlNameR":   "(.*)\\$http.*",
+    "playUrl":      "https://kuaichezy.com/index.php/vod/play/id/{playUrl}.html",
+    "playUa":       "",
+
     "dtFromNode":   "",
     "dtFromName":   "",
     "dtFromNameR":  "",
@@ -65,6 +76,14 @@
     "playUa":       "",
     
 // Search Results ================================================
+    "searchUrl":    "https://kuaichezy.com/index.php/vod/search.html?wd={wd}",
+    "scVodNode":    "//div[@class='container']//ul[@class='videoContent']/li",
+    "scVodName":    "/a[@class='videoName']/text()",
+    "scVodId":      "/a[@class='videoName']/@href",
+    "scVodIdR":     "/index.php/vod/detail/id/(\\S+).html",
+    "scVodImg":     "/a[@class='videoName']/text()", #无影片预览图片,随便填写
+    "scVodMark":    "concat(/span[contains(@class,'category')]/text(),'/',/a[@class='videoName']/i/text())",
+
     "searchUrl":    "",
     "scVodNode":    "",
     "scVodName":    "",

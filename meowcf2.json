@@ -38,6 +38,16 @@
             "filterable": 1,
             "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/InActive/KuaiCZY.json"
         },
+        {
+            "key": "csp_xpath_KuaiKZY",
+            "name": "快看资源",
+            "type": 3,
+            "api": "csp_XPathMacFilter",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/InActive/KuaiKZY.json"
+        },
         ## 自行配置可正常使用
         {
             "key": "csp_xpath_IYiFan", #网页及内容与欧乐影院高度重合
