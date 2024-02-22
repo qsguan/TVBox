@@ -1,6 +1,5 @@
 {
     "author": "Jimmy_Bytheway",
-    "ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1",
     "homeUrl":   "https://kuaikanzy.net/",
     "dcPlayUrl": "true",
     "dcVipFlag": "true",
@@ -9,7 +8,7 @@
     "cateId":    "/@href",
     "cateIdR":   "/index.php/vod/type/id/(\\S+).html",
     "cateManual": {
-        "电影库":   "1",
+        "电影库1":   "1",
         "电视剧":   "2",
         "综艺库":   "3",
         "动漫库":   "4",
@@ -19,7 +18,7 @@
 // Home Summary ================================================
     "homeVodNode":  "//div[@class='container']//div[contains(@class,'tablecount')]/table/tbody/tr",
     "homeVodName":  "/td/a/@title",
-    "homeVodId":    "/td/a/@href",
+    "homeVodId":    "/td/a/@title/parent::a/@href",
     "homeVodIdR":   "/index.php/vod/detail/id/(\\S+).html",
     "homeVodImg":   "/td/a/@title", #无影片预览图片,随便填写
     "homeVodMark":  "concat(/td[2]/text(),'/',/td/span/text())",
@@ -29,7 +28,7 @@
     "cateUrl":      "https://kuaikanzy.net/index.php/vod/type{area}{by}/id/{cateId}/page/{catePg}{year}.html",
     "cateVodNode":  "//div[@class='container']//div[contains(@class,'tablecount')]/table/tbody/tr",
     "cateVodName":  "/td/a/@title",
-    "cateVodId":    "/td/a/@href",
+    "cateVodId":    "/td/a/@title/parent::a/@href",
     "cateVodIdR":   "/index.php/vod/detail/id/(\\S+).html",
     "cateVodImg":   "/td/a/@title", #无影片预览图片,随便填写
     "cateVodMark":  "concat(/td[2]/text(),'/',/td/span/text())",
