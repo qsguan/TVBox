@@ -9,7 +9,7 @@
     "cateId":    "/@href",
     "cateIdR":   "/index.php/vod/type/id/(\\S+).html",
     "cateManual": {
-        "电影库1":   "1",
+        "电影库2":   "1",
         "电视剧":   "11",
         "综艺库":   "25",
         "动漫库":   "20"
@@ -58,11 +58,11 @@
     "dtFromName":   "/text()",
     "dtUrlNode":    "//p[contains(text(),'视频采集')]/following-sibling::div/div[contains(@class,'playlist')]//ul",
     "dtUrlSubNode": "/li/a[@target='_blank']",
-    "dtUrlId":      "/@href",
-    "dtUrlIdR":     "/index.php/vod/play/id/(\\S+).html",
+    "dtUrlId":      "/font/text()",
+    "dtUrlIdR":     ".*(http.*)",
     "dtUrlName":    "/font/text()",
     "dtUrlNameR":   "(.*)\\$http.*",
-    "playUrl":      "https://kuaichezy.com/index.php/vod/play/id/{playUrl}.html",
+    "playUrl":      "{playUrl}",
     "playUa":       "",
     
 // Search Results ================================================
