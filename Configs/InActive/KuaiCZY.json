@@ -9,7 +9,7 @@
     "cateId":    "/@href",
     "cateIdR":   "/index.php/vod/type/id/(\\S+).html",
     "cateManual": {
-        "电影库":   "1",
+        "电影库1":   "1",
         "电视剧":   "11",
         "综艺库":   "25",
         "动漫库":   "20"
