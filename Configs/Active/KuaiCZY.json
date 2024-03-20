@@ -57,11 +57,12 @@
     "dtFromNode":   "//p[contains(text(),'视频采集')]/following-sibling::div//h4/div",
     "dtFromName":   "/text()",
     "dtUrlNode":    "//p[contains(text(),'视频采集')]/following-sibling::div/div[contains(@class,'playlist')]//ul",
-    "dtUrlSubNode": "/li/a[@target='_blank']",
-    "dtUrlId":      "@href",
-    "dtUrlIdR":     "/index.php/vod/play/id/(\\S+).html",
-    "dtUrlName":    "@title",
-    "playUrl":      "https://kuaichezy.com/index.php/vod/play/id/{playUrl}.html",
+    "dtUrlSubNode": "/li/a[@target='_blank']/font",
+    "dtUrlId":      "/text()",
+    "dtUrlIdR":     ".*(http.*)",
+    "dtUrlName":    "/text()",
+    "dtUrlNameR":   "(.*)\\$http.*",
+    "playUrl":      "https://jiexi.kczyapi.com/m3u8/?url={playUrl}",
     "playUa":       "",
     
 // Search Results ================================================
