@@ -39,14 +39,14 @@
             "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Active/OleVod.json"
         },
         {
-            "key": "csp_xpath_XiaoBTV",
-            "name": "小宝影院",
+            "key": "csp_xpath_IYiFan",
+            "name": "爱壹帆TV",
             "type": 3,
             "api": "csp_XPathMacFilter",
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1,
-            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Active/XiaoBTV.json"
+            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Active/IYiFanTV.json"
         },
         {
             "key": "csp_xpath_HiBaDY",

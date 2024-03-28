@@ -9,7 +9,7 @@
     "cateId":    "/@href",
     "cateIdR":   "/index.php/vod/type/id/(\\w+).html",
     "cateManual": {
-        "电影库3": "1",
+        "电影库1": "1",
         "电视剧": "2",
         "综艺库": "3",
         "动漫库": "4",
@@ -17,23 +17,24 @@
     },
     
 // Home Summary ================================================
-    "homeVodNode":  "//ul[contains(@class,'vodlist') and not(@id='conch_history')]/li[contains(@class,'vodlist_item') and not(contains(@class,'zbvodlist_item'))]/a",
+    "homeVodNode":  "//div[@class='cbox1']//ul[contains(@class,'vodlist')]/li[contains(@class,'vodlist_item') and not(contains(@class,'zbvodlist_item'))]/a",
     "homeVodName":  "/@title",
     "homeVodId":    "/@href",
     "homeVodIdR":   "/index.php/vod/detail/id/(\\w+).html",
     "homeVodImg":   "/@data-original",
     "homeVodImgR":  ".*(http\\S+)",
-    "homeVodMark":  "/span[contains(@class,'pic_text')]/em/text()",
+    "homeVodMark":  "concat(/span[@class='vodlist_top']/em/text(),'/',/span[contains(@class,'pic_text')]/em/text())",
     
 // Category Summary ================================================
+                   //https://www.olevod.com/index.php/vod/show/area/大陆/by/hits/id/202/page/2/year/2023.html
     "cateUrl":      "https://www.olevod.com/index.php/vod/show/area/{area}/by/{by}/id/{cateId}/page/{catePg}/year/{year}.html",
     "cateVodNode":  "//ul[contains(@class,'vodlist') and not(@id='conch_history')]/li[contains(@class,'vodlist_item')]",
     "cateVodName":  "/a/@title",
     "cateVodId":    "/a/@href",
     "cateVodIdR":   "/index.php/vod/detail/id/(\\w+).html",
-    "cateVodImg":   "/a/@data-original", ## 无法获取央视图片: (/a/span | /a[not(child::*[contains(@class,'zbvodlist_thumb')])])/@data-original
+    "cateVodImg":   "/a//@data-original", ## 无法获取央视图片: (/a/span | /a[not(child::*[contains(@class,'zbvodlist_thumb')])])/@data-original
     "cateVodImgR":  ".*(http\\S+)",
-    "cateVodMark":  "/a/span[contains(@class,'pic_text')]/em/text()",
+    "cateVodMark":  "concat(/a/span[@class='vodlist_top']/em/text(),'',/a/span[contains(@class,'pic_text')]/em/text())",
     
 // Category Details ================================================
     "dtUrl":        "https://www.olevod.com/index.php/vod/detail/id/{vid}.html",
@@ -45,8 +46,8 @@
     "dtYear":       "//li[@class='data']/span[contains(text(),'年份')]/following-sibling::*/text()",
     "dtArea":       "//li[@class='data']/span[contains(text(),'地区')]/following-sibling::*/text()",
     "dtMark":       "//li[@class='data']/span[contains(text(),'状态')]/following-sibling::*/text()",
-    "dtDirector":   "concat(//li[@class='data']/span[contains(text(),'导演')]/following-sibling::a[position()<7]/text())",
-    "dtActor":      "concat(//li[@class='data']/span[contains(text(),'主演')]/following-sibling::a[position()<7]/text())",
+    "dtDirector":   "concat(//li[@class='data']/span[contains(text(),'导演')]/following-sibling::a[position()<20]/text())",
+    "dtActor":      "concat(//li[@class='data']/span[contains(text(),'主演')]/following-sibling::a[position()<20]/text())",
     "dtDesc":       "//div[@class='content']/section/div[contains(@class, 'full_text')]/span/text()",
     
 // Playlist =====================================================
@@ -68,7 +69,7 @@
     "scVodIdR":     "/index.php/vod/detail/id/(\\w+).html",
     "scVodImg":     "/@data-original",
     "scVodImg":     ".*(http\\S+)",
-    "scVodMark":    "/span[contains(@class,'pic_text')]/em/text()",
+    "scVodMark":    "/span[contains(@class,'pic_text')]//text()",
     
 // Filters =======================================================
     "filter": {
@@ -77,7 +78,7 @@
                 "key": "cateId",
                 "name": "分类",
                 "value": [
-                    {"n": "全部",  "v": "1"},
+                    {"n": "全部","v": "1"},
                     {"n": "动作片","v": "101"},
                     {"n": "喜剧片","v": "102"},
                     {"n": "爱情片","v": "103"},
@@ -121,6 +122,7 @@
                 "name": "年份",
                 "value": [
                     {"n": "全部","v": ""},
+                    {"n": "2024","v": "2024"},
                     {"n": "2023","v": "2023"},
                     {"n": "2022","v": "2022"},
                     {"n": "2021","v": "2021"},
@@ -166,7 +168,8 @@
                     {"n": "国产剧","v": "202"},
                     {"n": "欧美剧","v": "201"},
                     {"n": "港台剧","v": "203"},
-                    {"n": "日韩剧","v": "204"}]
+                    {"n": "日韩剧","v": "204"},
+                    {"n": "日韩剧","v": "1207"}]
             },
             {
                 "key": "area",
@@ -196,6 +199,7 @@
                 "name": "年份",
                 "value": [
                     {"n": "全部","v": ""},
+                    {"n": "2024","v": "2024"},
                     {"n": "2023","v": "2023"},
                     {"n": "2022","v": "2022"},
                     {"n": "2021","v": "2021"},
@@ -272,6 +276,7 @@
                 "name": "年份",
                 "value": [
                     {"n": "全部","v": ""},
+                    {"n": "2024","v": "2024"},
                     {"n": "2023","v": "2023"},
                     {"n": "2022","v": "2022"},
                     {"n": "2021","v": "2021"},
@@ -346,6 +351,7 @@
                 "name": "年份",
                 "value": [
                     {"n": "全部","v": ""},
+                    {"n": "2024","v": "2024"},
                     {"n": "2023","v": "2023"},
                     {"n": "2022","v": "2022"},
                     {"n": "2021","v": "2021"},
