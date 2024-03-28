@@ -9,7 +9,7 @@
     "cateId":    "/@href",
     "cateIdR":   "/index.php/vod/type/id/(\\w+).html",
     "cateManual": {
-        "电影库1": "1",
+        "电影库": "1",
         "电视剧": "2",
         "综艺库": "3",
         "动漫库": "4",
@@ -32,9 +32,9 @@
     "cateVodName":  "/a/@title",
     "cateVodId":    "/a/@href",
     "cateVodIdR":   "/index.php/vod/detail/id/(\\w+).html",
-    "cateVodImg":   "/a//@data-original", ## 无法获取央视图片: (/a/span | /a[not(child::*[contains(@class,'zbvodlist_thumb')])])/@data-original
+    "cateVodImg":   "/a//@data-original",  ## 获取央视网的图片
     "cateVodImgR":  ".*(http\\S+)",
-    "cateVodMark":  "concat(/a/span[@class='vodlist_top']/em/text(),'',/a/span[contains(@class,'pic_text')]/em/text())",
+    "cateVodMark":  "concat(/a/span[@class='vodlist_top']/em/text(),'/',/a/span[contains(@class,'pic_text')]/em/text())",
     
 // Category Details ================================================
     "dtUrl":        "https://www.olevod.com/index.php/vod/detail/id/{vid}.html",
