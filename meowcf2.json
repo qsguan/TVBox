@@ -29,17 +29,6 @@
             "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/InActive/LiangZZY.json"
         },
         {
-            "key": "csp_xpath_WoLongZY",
-            "name": "卧龙资源",
-            "type": 3,
-            "api": "csp_XPathMacFilter",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
-            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/InActive/WLongZY.json"
-        },
-        ## 自行配置可正常使用
-        {
             "key": "csp_xpath_欧乐影院", #首次访问时需等待五秒才刷新
             "name": "欧乐影院",
             "type": 3,
@@ -49,6 +38,7 @@
             "filterable": 1,
             "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Active/OleVod.json"
         },
+        ## 自行配置可正常使用
         {
             "key": "csp_xpath_GimyTV", #网页地址虽不变但其代码经常变
             "name": "剧迷影院",
