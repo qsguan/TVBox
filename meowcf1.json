@@ -29,14 +29,24 @@
             "jar": "https://github.com/qsguan/TVBox/raw/master/Spiders/xhdwc.tk_modified.jar"
         },
         {
-            "key": "csp_xpath_唐人街",
-            "name": "唐人街",
+            "key": "csp_xpath_欧乐影院",
+            "name": "欧乐影院",
             "type": 3,
             "api": "csp_XPathMacFilter",
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1,
-            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Active/TangJie.json"
+            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Active/OleVod.json"
+        },
+        {
+            "key": "csp_xpath_IYiFan",
+            "name": "爱壹帆TV",
+            "type": 3,
+            "api": "csp_XPathMacFilter",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Active/IYiFanTV.json"
         },
         {
             "key": "csp_xpath_独播库",
@@ -47,16 +57,6 @@
             "quickSearch": 1,
             "filterable": 1,
             "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Active/DuBoKu.json"
-        },
-        {
-            "key": "csp_xpath_欧乐影院",
-            "name": "欧乐影院",
-            "type": 3,
-            "api": "csp_XPathMacFilter",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
-            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Active/OleVod.json"
         },
         {
             "key": "csp_xpath_HaoXiW",
