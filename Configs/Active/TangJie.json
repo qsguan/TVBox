@@ -1,28 +1,27 @@
 {
     "author": "Jimmy_Bytheway",
     "ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1",
-    "homeUrl":   "https://www.tangrenjie.tv/",
-    "pCfgJs":    "https://www.tangrenjie.tv/static/js/playerconfig.js",
+    "homeUrl":   "https://www.tangrenjie.one/",
+    "pCfgJs":    "https://www.tangrenjie.one/static/js/playerconfig.js",
     "pCfgJsR":   "[\\W|\\S|.]*?MacPlayerConfig.player_list[\\W|\\S|.]*?=([\\W|\\S|.]*?),MacPlayerConfig.downer_list",
     "dcPlayUrl": "true",
     "dcVipFlag": "true",
-    "cateNode":  "//ul[contains(@class,'top_nav')]/li/a[contains(@href,'type') and not(contains(@href,'5'))]",
+    "cateNode":  "//ul[contains(@class,'top_nav')]/li/a[contains(@href,'type')]",
     "cateName":  "/b/text()",
     "cateId":    "/@href",
-    "cateIdR":   "/vod/type/id/(\\S+).html",
+    "cateIdR":   "/index.php/vod/type/id/(\\S+).html",
     "cateManual": {
-        "电影库": "1",
+        "电影库1": "1",
         "电视剧": "2",
-        "综艺库": "3",
-        "动漫库": "4",
-        "纪录片": "28"
+        "动漫库": "3",
+        "综艺库": "4"
     },
     
 // Home Summary ================================================
     "homeVodNode":  "//div[@class='cbox1']/ul/li[contains(@class,'vodlist_item')]/a",
     "homeVodName":  "/@title",
     "homeVodId":    "/@href",
-    "homeVodIdR":   "/vod/detail/id/(\\S+).html",
+    "homeVodIdR":   "/index.php/vod/detail/id/(\\S+).html",
     "homeVodImg":   "/@data-original",
     "homeVodMark":  "concat(/span/em[2]/text(),'/',/span[contains(@class,'pic_text')]/b/text())",
     
@@ -270,60 +269,6 @@
             }
         ],
         "4": [
-            {
-                "key": "area",
-                "name": "地区",
-                "value": [
-                    {"n": "全部","v": ""},
-                    {"n": "中国","v": "/area/中国大陆"},
-                    {"n": "大陆","v": "/area/大陆"},
-                    {"n": "内地","v": "/area/内地"},
-                    {"n": "香港","v": "/area/香港"},
-                    {"n": "台湾","v": "/area/台湾"},
-                    {"n": "美国","v": "/area/美国"},
-                    {"n": "欧美","v": "/area/欧美"},
-                    {"n": "韩国","v": "/area/韩国"},
-                    {"n": "日本","v": "/area/日本"},
-                    {"n": "英国","v": "/area/英国"},
-                    {"n": "其它","v": "/area/其它"}]
-            },
-            {
-                "key": "year",
-                "name": "年份",
-                "value": [
-                    {"n": "全部","v": ""},
-                    {"n": "2024","v": "/year/2024"},
-                    {"n": "2023","v": "/year/2023"},
-                    {"n": "2022","v": "/year/2022"},
-                    {"n": "2021","v": "/year/2021"},
-                    {"n": "2020","v": "/year/2020"},
-                    {"n": "2019","v": "/year/2019"},
-                    {"n": "2018","v": "/year/2018"},
-                    {"n": "2017","v": "/year/2017"},
-                    {"n": "2016","v": "/year/2016"},
-                    {"n": "2015","v": "/year/2015"},
-                    {"n": "2014","v": "/year/2014"},
-                    {"n": "2013","v": "/year/2013"},
-                    {"n": "2012","v": "/year/2012"},
-                    {"n": "2011","v": "/year/2011"},
-                    {"n": "2010-2000","v": "/year/2000-2010"},
-                    {"n": "1999-1990","v": "/year/1990-1999"},
-                    {"n": "1989-1900","v": "/year/1900-1989"}]
-            },
-            {
-                "key": "by",
-                "name": "排序",
-                "value": [
-                    {"n": "全部","v": ""},
-                    {"n": "更新","v": "/by/time"},
-                    {"n": "日榜","v": "/by/hits_day"},
-                    {"n": "周榜","v": "/by/hits_week"},
-                    {"n": "月榜","v": "/by/hits_month"},
-                    {"n": "总榜","v": "/by/hits"},
-                    {"n": "评分","v": "/by/score"}]
-            }
-        ],
-        "28": [
             {
                 "key": "area",
                 "name": "地区",
