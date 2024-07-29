@@ -11,7 +11,7 @@
     "cateId":    "/@href",
     "cateIdR":   "/index.php/vod/type/id/(\\S+).html",
     "cateManual": {
-        "电影库1": "1",
+        "电影库2": "1",
         "电视剧": "2",
         "动漫库": "3",
         "综艺库": "4"
@@ -26,27 +26,27 @@
     "homeVodMark":  "concat(/span/em[2]/text(),'/',/span[contains(@class,'pic_text')]/b/text())",
     
 // Category Summary ================================================
-                   //https://www.tangrenjie.tv/vod/show/area/大陆/by/score/id/11/lang/国语/page/2/year/2022.html
-    "cateUrl":      "https://www.tangrenjie.tv/vod/show{area}{by}/id/{cateId}{lang}/page/{catePg}{year}.html",
+                   //https://www.tangrenjie.one/index.php/vod/show/area/欧美/by/score/id/105/page/2/year/2022.html
+    "cateUrl":      "https://www.tangrenjie.one/index.php/vod/show{area}{by}/id/{cateId}/page/{catePg}{year}.html",
     "cateVodNode":  "//ul[contains(@class,'vodlist') and not(contains(@id,'conch_history'))]/li/a",
     "cateVodName":  "/@title",
     "cateVodId":    "/@href",
-    "cateVodIdR":   "/vod/detail/id/(\\S+).html",
+    "cateVodIdR":   "/index.php/vod/detail/id/(\\S+).html",
     "cateVodImg":   "/@data-original",
-    "cateVodMark":  "concat(/span/em[2]/text(),'/',/span[contains(@class,'pic_text')]/b/text())",
+    "cateVodMark":  "concat(/span[@class='vodlist_top']/em/text(),'/',/span[contains(@class,'pic_text')]/em/text())",
     
 // Video Details ================================================
-    "dtUrl":        "https://www.tangrenjie.tv/vod/detail/id/{vid}.html",
+    "dtUrl":        "https://www.tangrenjie.one/index.php/vod/detail/id/{vid}.html",
     "dtNode":       "//body",
     "dtName":       "//div[contains(@class,'content_thumb')]/a/@title",
     "dtImg":        "//div[contains(@class,'content_thumb')]/a/@data-original",
-    "dtCate":       "//li[@class='data']/span[contains(text(),'类型')]/parent::li/text()[1]",
-    "dtYear":       "//li[@class='data']/span[contains(text(),'年份')]/following-sibling::a/text()",
-    "dtArea":       "//li[@class='data']/span[contains(text(),'地区')]/following-sibling::a/text()",
-    "dtMark":       "//li[@class='data']/span[contains(text(),'片源')]/following-sibling::span/b/text()",
+    "dtCate":       "//li[@class='data']/span[contains(text(),'类型')]/following-sibling::a[1]/text()",
+    "dtYear":       "//div[contains(@class,'content_detail content_top')]/div/h2/span[@class='year']/text()",
+    "dtArea":       "//li[@class='data']/span[contains(text(),'地区')]/following-sibling::a[1]/text()",
+    "dtMark":       "//li[@class='data']/span[contains(text(),'状态')]/following-sibling::span/text()",
     "dtDirector":   "concat(//li[@class='data']/span[contains(text(),'导演')]/following-sibling::a[position()<7]/text())",
     "dtActor":      "concat(//li[@class='data']/span[contains(text(),'主演')]/following-sibling::a[position()<7]/text())",
-    "dtDesc":       "concat(//div[@class='content']/section/font//text())", #/font/p中可能没有/p节点,用/font下所有文本作为剧情介绍
+    "dtDesc":       "concat(//div[@class='content']/section/div[contains(@class,'full_text')]/span//text())", #用/div/span下所有文本作为剧情介绍
     
 // Video Playlist =====================================================
     "dtFromNode":   "//div[contains(@class,'play_source_tab')]/a",
@@ -54,17 +54,17 @@
     "dtUrlNode":    "//div[@class='playlist_full']/ul",
     "dtUrlSubNode": "/li/a",
     "dtUrlId":      "/@href",
-    "dtUrlIdR":     "/vod/play/id/(\\S+).html",
+    "dtUrlIdR":     "/index.php/vod/play/id/(\\S+).html",
     "dtUrlName":    "/text()",
-    "playUrl":      "https://www.tangrenjie.tv/vod/play/id/{playUrl}.html",
+    "playUrl":      "https://www.tangrenjie.one/index.php/vod/play/id/{playUrl}.html",
     "playUa":       "",
     
 // Search Results ================================================
-    "searchUrl":    "https://www.tangrenjie.tv/vod/search.html?wd={wd}",
+    "searchUrl":    "https://www.tangrenjie.one/index.php/vod/search.html?wd={wd}",
     "scVodNode":    "//div[contains(@class,'search_box')]/ul/li",
     "scVodName":    "/div/a/@title",
     "scVodId":      "/div/a/@href",
-    "scVodIdR":     "/vod/detail/id/(\\S+).html",
+    "scVodIdR":     "/index.php/vod/detail/id/(\\S+).html",
     "scVodImg":     "/div/a/@data-original",
     "scVodMark":    "concat(/div/h4/a/span/text(),'/',/div/a/span[contains(@class,'pic_text')]/text())",
     
