@@ -6,8 +6,8 @@
     "pCfgJsR":   "[\\W|\\S|.]*?MacPlayerConfig.player_list[\\W|\\S|.]*?=([\\W|\\S|.]*?),MacPlayerConfig.downer_list",
     "dcPlayUrl": "true",
     "dcVipFlag": "true",
-    "cateNode":  "//div[contains(@class,'ecnav-nav')]/div/a",
-    "cateName":  "/text()",
+    "cateNode":  "//div[@class='nav']/ul[@class='nav-menu-items']/li/a[contains(@href,'html')]",
+    "cateName":  "/@title",
     "cateId":    "/@href",
     "cateIdR":   "/index.php/vod/type/id/(\\S+).html",
     "cateManual": {
@@ -18,13 +18,13 @@
     },
     
 // Home Summary ================================================
-    "homeVodNode":  "//div[@class='hotgrow eclist listdh' and not(@style='display:none')]/div",
-    "homeVodName":  "/div/div/a/text()",
-    "homeVodId":    "/div/div/a/@href",
+    "homeVodNode":  "//div[contains(@class,'module')]/div[contains(@class,'module-lines-list')]//div[@class='module-item']",
+    "homeVodName":  "/div/a/text()",
+    "homeVodId":    "/div/a/@href",
     "homeVodIdR":   "/index.php/vod/detail/id/(\\S+).html",
-    "homeVodImg":   "/div/a/div/@data-original",
+    "homeVodImg":   "//div[@class='module-item-pic']/img/@data-src",
     "homeVodImgR":  ".*(http\\S+)",
-    "homeVodMark":  "concat(/div/span/em[1]/text(),'/',/div/a/span//text())",
+    "homeVodMark":  "concat(//span[@class='video-class']/text(),'/',//div[contains(@class,'titlebox')]/following-sibling::div/text())",
     
 // Category Summary ================================================
                    //https://hibady.com/index.php/vod/show/area/大陆/by/hits/class/剧情/id/1/page/2/year/2022.html
@@ -64,13 +64,13 @@
     
 // Search Results ================================================
     "searchUrl":    "https://hibady.com/index.php/vod/search.html?wd={wd}",
-    "scVodNode":    "//div[@class='ec-search']/ul/li",
-    "scVodName":    "/div/a[contains(@class,'ecitem-name')]/text()",
-    "scVodId":      "/div/a[contains(@class,'ecitem-name')]/@href",
+    "scVodNode":    "//div[@class='module-search-item']",
+    "scVodName":    "//div[@class='video-info-header']/a/@title",
+    "scVodId":      "//div[@class='video-info-header']/a/@href",
     "scVodIdR":     "/index.php/vod/detail/id/(\\S+).html",
-    "scVodImg":     "/div/a/div/@data-original",
+    "scVodImg":     "//div[@class='module-item-pic']/img/@data-src",
     "scVodImgR":    ".*(http\\S+)",
-    "scVodMark":    "//span[contains(text(),'状态')]/following-sibling::span[1]/text()",
+    "scVodMark":    "concat(//div[@class='video-info-aux']/a/@title,'/',//div[@class='video-info-header']/a/text())",
     
 // Filters =======================================================
     "filter": {

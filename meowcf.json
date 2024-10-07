@@ -38,16 +38,7 @@
             "filterable": 1,
             "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Active/TangJie.json"
         },
-        {
-            "key": "csp_xpath_独播库",
-            "name": "独播库",
-            "type": 3,
-            "api": "csp_XPathMacFilter",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
-            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Active/DuBoKu.json"
-        },
+
         {
             "key": "csp_xpath_HiBaDY",
             "name": "嘿叭电影",
