@@ -11,7 +11,7 @@
     "cateId":    "/a/@href",
     "cateIdR":   "/vodtype/(\\S+).html",
     "cateManual": {
-        "电影库1": "1",
+        "电影库": "1",
         "电视剧": "2",
         "综艺库": "3",
         "动漫库": "4"
@@ -26,47 +26,47 @@
     "homeVodMark":  "concat(//span[contains(@class,'score')]/text(),'/',//span[contains(@class,'remarks')]/text())",
     
 // Category Summary ================================================
-                   //https://www.tangrenjie.one/index.php/vod/show/area/欧美/by/score/id/105/page/2/year/2022.html
-    "cateUrl":      "https://www.tangrenjie.one/index.php/vod/show{area}{by}/id/{cateId}/page/{catePg}{year}.html",
-    "cateVodNode":  "//ul[contains(@class,'vodlist') and not(contains(@id,'conch_history'))]/li/a",
-    "cateVodName":  "/@title",
-    "cateVodId":    "/@href",
-    "cateVodIdR":   "/index.php/vod/detail/id/(\\S+).html",
-    "cateVodImg":   "/@data-original",
-    "cateVodMark":  "concat(/span[@class='vodlist_top']/em/text(),'/',/span[contains(@class,'pic_text')]/em/text())",
+                   //https://www.chinatownfilm.com/vodshow/9-欧美-score------2---2023.html
+    "cateUrl":      "https://www.chinatownfilm.com/vodshow/{cateId}-{area}-{by}------{catePg}---{year}.html",
+    "cateVodNode":  "//ul[contains(@class,'hl-vod-list')]/li",
+    "cateVodName":  "/a/@title",
+    "cateVodId":    "/a/@href",
+    "cateVodIdR":   "/voddetail/(\\S+).html",
+    "cateVodImg":   "/a/@data-original",
+    "cateVodMark":  "concat(//span[contains(@class,'score')]/text(),'/',//span[contains(@class,'remarks')]/text())",
     
 // Video Details ================================================
-    "dtUrl":        "https://www.tangrenjie.one/index.php/vod/detail/id/{vid}.html",
+    "dtUrl":        "https://www.chinatownfilm.com/voddetail/{vid}.html",
     "dtNode":       "//body",
-    "dtName":       "//div[contains(@class,'content_thumb')]/a/@title",
-    "dtImg":        "//div[contains(@class,'content_thumb')]/a/@data-original",
-    "dtCate":       "//li[@class='data']/span[contains(text(),'类型')]/following-sibling::a[1]/text()",
-    "dtYear":       "//div[contains(@class,'content_detail content_top')]/div/h2/span[@class='year']/text()",
-    "dtArea":       "//li[@class='data']/span[contains(text(),'地区')]/following-sibling::a[1]/text()",
-    "dtMark":       "//li[@class='data']/span[contains(text(),'状态')]/following-sibling::span/text()",
-    "dtDirector":   "concat(//li[@class='data']/span[contains(text(),'导演')]/following-sibling::a[position()<7]/text())",
-    "dtActor":      "concat(//li[@class='data']/span[contains(text(),'主演')]/following-sibling::a[position()<7]/text())",
-    "dtDesc":       "concat(//div[@class='content']/section/div[contains(@class,'full_text')]/span//text())", #用/div/span下所有文本作为剧情介绍
+    "dtName":       "//div[contains(@class,'hl-detail-content')]//h2[contains(@class,'hl-dc-title')]/text()",
+    "dtImg":        "//div[contains(@class,'hl-detail-content')]/div[@class='hl-dc-pic']/span/@data-original",
+    "dtCate":       "//div[contains(@class,'hl-full-box')]//em[contains(text(),'类型')]/following-sibling::a[1]/text()",
+    "dtYear":       "//div[contains(@class,'hl-full-box')]//em[contains(text(),'年份')]/parent::li/text()",
+    "dtArea":       "//div[contains(@class,'hl-full-box')]//em[contains(text(),'地区')]/parent::li/text()",
+    "dtMark":       "//div[contains(@class,'hl-full-box')]//em[contains(text(),'状态')]/following-sibling::span/text()",
+    "dtDirector":   "concat(//div[contains(@class,'hl-full-box')]//em[contains(text(),'导演')]/following-sibling::a[position()<7]/text())",
+    "dtActor":      "concat(//div[contains(@class,'hl-full-box')]//em[contains(text(),'主演')]/following-sibling::a[position()<7]/text())",
+    "dtDesc":       "//span[contains(@class,'hl-content-text')]", #用/div/span下所有文本作为剧情介绍
     
 // Video Playlist =====================================================
-    "dtFromNode":   "//div[contains(@class,'play_source_tab')]/a",
-    "dtFromName":   "/b/text()",
-    "dtUrlNode":    "//div[@class='playlist_full']/ul",
+    "dtFromNode":   "//div[contains(@class,'hl-play-source')]/div/div/a",
+    "dtFromName":   "/@alt",
+    "dtUrlNode":    "//div[contains(@class,'hl-play-source')]//ul[contains(@class,'hl-plays-list')]",
     "dtUrlSubNode": "/li/a",
     "dtUrlId":      "/@href",
-    "dtUrlIdR":     "/index.php/vod/play/id/(\\S+).html",
+    "dtUrlIdR":     "/vodplay/(\\S+).html",
     "dtUrlName":    "/text()",
-    "playUrl":      "https://www.tangrenjie.one/index.php/vod/play/id/{playUrl}.html",
+    "playUrl":      "https://www.chinatownfilm.com/vodplay/{playUrl}.html",
     "playUa":       "",
     
 // Search Results ================================================
-    "searchUrl":    "https://www.tangrenjie.one/index.php/vod/search.html?wd={wd}",
-    "scVodNode":    "//div[contains(@class,'search_box')]/ul/li",
-    "scVodName":    "/div/a/@title",
-    "scVodId":      "/div/a/@href",
-    "scVodIdR":     "/index.php/vod/detail/id/(\\S+).html",
-    "scVodImg":     "/div/a/@data-original",
-    "scVodMark":    "concat(/div/h4/a/span/text(),'/',/div/a/span[contains(@class,'pic_text')]/text())",
+    "searchUrl":    "https://www.chinatownfilm.com/vodsearch/-------------.html?wd={wd}",
+    "scVodNode":    "//div[contains(@class,'hl-row-box')]//ul[contains(@class,'hl-one-list')]/li",
+    "scVodName":    "//div[@class='hl-item-content']/div/a/@title",
+    "scVodId":      "//div[@class='hl-item-content']/div/a/@href",
+    "scVodIdR":     "/voddetail/(\\S+).html",
+    "scVodImg":     "//div[@class='hl-item-pic']/a/@data-original",
+    "scVodMark":    "concat(//div[@class='hl-item-content']//span[contains(@class,'score')]/text(),'/',//div[@class='hl-item-pic']//span[contains(@class,'remarks')]/text())",
     
 // Filters =======================================================
     "filter": {
