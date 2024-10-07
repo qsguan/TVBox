@@ -1,29 +1,29 @@
 {
     "author": "Jimmy_Bytheway",
     "ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1",
-    "homeUrl":   "https://www.tangrenjie.one/",
-    "pCfgJs":    "https://www.tangrenjie.one/static/js/playerconfig.js",
+    "homeUrl":   "https://www.chinatownfilm.com/",
+    "pCfgJs":    "https://www.chinatownfilm.com/static/js/playerconfig.js",
     "pCfgJsR":   "[\\W|\\S|.]*?MacPlayerConfig.player_list[\\W|\\S|.]*?=([\\W|\\S|.]*?),MacPlayerConfig.downer_list",
     "dcPlayUrl": "true",
     "dcVipFlag": "true",
-    "cateNode":  "//ul[contains(@class,'top_nav')]/li/a[contains(@href,'type')]",
-    "cateName":  "/b/text()",
-    "cateId":    "/@href",
-    "cateIdR":   "/index.php/vod/type/id/(\\S+).html",
+    "cateNode":  "//div[contains(@class,'hl-home-nano')]//li[contains(@class,'hl-smnav-item')]",
+    "cateName":  "/a/span/text()",
+    "cateId":    "/a/@href",
+    "cateIdR":   "/vodtype/(\\S+).html",
     "cateManual": {
-        "电影库": "1",
+        "电影库1": "1",
         "电视剧": "2",
-        "综艺库": "4",
-        "动漫库": "3"
+        "综艺库": "3",
+        "动漫库": "4"
     },
     
 // Home Summary ================================================
-    "homeVodNode":  "//div[@class='cbox1']/ul/li[contains(@class,'vodlist_item')]/a",
-    "homeVodName":  "/@title",
-    "homeVodId":    "/@href",
-    "homeVodIdR":   "/index.php/vod/detail/id/(\\S+).html",
-    "homeVodImg":   "/@data-original",
-    "homeVodMark":  "concat(/span/em[2]/text(),'/',/span[contains(@class,'pic_text')]/b/text())",
+    "homeVodNode":  "//div[contains(@class,'hl-home-nano')]/parent::div//div[@class='container']//li[contains(@class,'hl-list-item')]",
+    "homeVodName":  "/a/@title",
+    "homeVodId":    "/a/@href",
+    "homeVodIdR":   "/voddetail/(\\S+).html",
+    "homeVodImg":   "/a/@data-original",
+    "homeVodMark":  "concat(//span[contains(@class,'score')]/text(),'/',//span[contains(@class,'remarks')]/text())",
     
 // Category Summary ================================================
                    //https://www.tangrenjie.one/index.php/vod/show/area/欧美/by/score/id/105/page/2/year/2022.html
