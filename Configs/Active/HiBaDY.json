@@ -11,7 +11,7 @@
     "cateId":    "/@href",
     "cateIdR":   "/index.php/vod/type/id/(\\S+).html",
     "cateManual": {
-        "电影库": "1",
+        "电影库1": "1",
         "电视剧": "2",
         "综艺库": "3",
         "动漫库": "4"
@@ -27,38 +27,38 @@
     "homeVodMark":  "concat(//span[@class='video-class']/text(),'/',//div[contains(@class,'titlebox')]/following-sibling::div/text())",
     
 // Category Summary ================================================
-                   //https://hibady.com/index.php/vod/show/area/大陆/by/hits/class/剧情/id/1/page/2/year/2022.html
+                   //https://hibady.com/index.php/vod/show/area/美国/by/hits/class/剧情/id/1/page/2/year/2022.html
     "cateUrl":      "https://hibady.com/index.php/vod/show{area}{by}{class}/id/{cateId}/page/{catePg}{year}.html",
-    "cateVodNode":  "//div[contains(@class,'hotgrow eclist listdh')]/div",
-    "cateVodName":  "/div/div/a/text()",
-    "cateVodId":    "/div/div/a/@href",
+    "cateVodNode":  "//div[contains(@class,'module')]/div[contains(@class,'module-list')]//div[@class='module-item']",
+    "cateVodName":  "/div/a/text()",
+    "cateVodId":    "/div/a/@href",
     "cateVodIdR":   "/index.php/vod/detail/id/(\\S+).html",
-    "cateVodImg":   "/div/a/div/@data-original",
+    "cateVodImg":   "//div[@class='module-item-pic']/img/@data-src",
     "cateVodImgR":  ".*(http\\S+)",
-    "cateVodMark":  "/div/a/span//text()",
+    "cateVodMark":  "concat(//span[@class='video-class']/text(),'/',//div[contains(@class,'titlebox')]/following-sibling::div/text())",
     
 // Video Details ================================================
     "dtUrl":        "https://hibady.com/index.php/vod/detail/id/{vid}.html",
     "dtNode":       "//body",
     "dtName":       "//h1/text()",
-    "dtImg":        "//div[@class='detail']/div/div/div/a/img/@src",
+    "dtImg":        "//div[contains(@class,'view-heading')]//div[@class='video-cover']/div/div/img/@data-src",
     "dtImgR":       ".*(http\\S+)",
-    "dtCate":       "concat(//p[contains(text(),'类型')]/a[position()<5]/text())",
-    "dtYear":       "//p[contains(text(),'年代')]/a/text()",
-    "dtArea":       "//p[contains(text(),'地区')]/a/text()",
-    "dtMark":       "//p[contains(text(),'状态')]/text()",
-    "dtDirector":   "concat(//p[contains(text(),'导演')]/a[position()<7]/text())",
-    "dtActor":      "concat(//p[contains(text(),'演员')]/a[position()<7]/text())",
-    "dtDesc":       "//div[contains(@class,'desc_txt')]",
+    "dtCate":       "concat(//span[contains(text(),'分类')]/following-sibling::div[position()<5]/text())",
+    "dtYear":       "//span[contains(text(),'年代')]/following-sibling::div/text()",
+    "dtArea":       "//span[contains(text(),'地区')]/following-sibling::div/text()",
+    "dtMark":       "//span[contains(text(),'备注')]/following-sibling::div/text()",
+    "dtDirector":   "concat(//span[contains(text(),'导演')]/following-sibling::div/a[position()<7]/text())",
+    "dtActor":      "concat(//span[contains(text(),'主演')]/following-sibling::div/a[position()<7]/text())",
+    "dtDesc":       "//span[contains(text(),'剧情')]/following-sibling::div//a[contains(text(),'展开')]/parent::span/text()",
     
 // Video Playlist =====================================================
-    "dtFromNode":   "//div[@class='play_source']/div/div/a",
-    "dtFromName":   "/@alt",
-    "dtUrlNode":    "//div/div/div[contains(@class,'playlist')]/ul",
-    "dtUrlSubNode": "/li/a",
+    "dtFromNode":   "//div[contains(@class,'module-player-tab')]/div//div[contains(@class,'module-tab-item')]",
+    "dtFromName":   "/span/text()",
+    "dtUrlNode":    "//div[contains(@class,'module-player-list')]",
+    "dtUrlSubNode": "/div/div/a",
     "dtUrlId":      "/@href",
     "dtUrlIdR":     "/index.php/vod/play/id/(\\S+).html",
-    "dtUrlName":    "/@title",
+    "dtUrlName":    "/span/text()",
     "playUrl":      "https://hibady.com/index.php/vod/play/id/{playUrl}.html",
     "playUa":       "",
     
