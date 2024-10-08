@@ -49,6 +49,16 @@
             "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Active/DuoNYS.json"
         },
         {
+            "key": "csp_xpath_HaiTuYY",
+            "name": "海兔影院",
+            "type": 3,
+            "api": "csp_XPathMacFilter",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Active/HaiTuYY.json"
+        },
+        {
             "key": "csp_xpath_HuaLeTV",
             "name": "华乐影院",
             "type": 3,
@@ -68,21 +78,6 @@
             "filterable": 1,
             "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Active/XiaoBTV.json"
         },
-
-
-
-        {
-            "key": "csp_xpath_HaiTuYY",
-            "name": "海兔影院",
-            "type": 3,
-            "api": "csp_XPathMacFilter",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
-            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Active/HaiTuYY.json"
-        },
-
-
         {
             "key": "csp_xpath_飞兔影视",
             "name": "飞兔影视",
