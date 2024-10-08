@@ -20,7 +20,7 @@
     "homeVodNode":  "//div[@class='content']/div[contains(@class,'module')][position()<6]//div[contains(@class,'list')]/div[contains(@class,'items')]/div",
     "homeVodName":  "/div[contains(@class,'box')]/a/@title",
     "homeVodId":    "/div[contains(@class,'box')]/a/@href",
-    "homeVodIdR":   "/vod/detail/id/(\\S+).html",
+    "homeVodIdR":   "/voddetail/(\\S+).html",
     "homeVodImg":   "/div[contains(@class,'cover')]/div/img/@data-src",
     "homeVodMark":  "concat(//div[contains(@class,'caption')]/span[1]/text(),'/',/div[contains(@class,'text')]/text())",
     

@@ -11,7 +11,7 @@
     "cateId":    "/@href",
     "cateIdR":   "/index.php/vod/type/id/(\\S+).html",
     "cateManual": {
-        "电影库3": "1",
+        "电影库": "1",
         "电视剧": "2",
         "综艺库": "3",
         "动漫库": "4"
@@ -39,7 +39,7 @@
     
 // Video Details ================================================
     "dtUrl":        "https://hibady.com/index.php/vod/detail/id/{vid}.html",
-    "dtNode":       "//main[@id='main']",
+    "dtNode":       "//body[contains(@class,'view')]",
     "dtName":       "//h1/text()",
     "dtImg":        "//div[contains(@class,'view-heading')]//div[@class='video-cover']/div/div/img/@data-src",
     "dtImgR":       ".*(http\\S+)",
@@ -52,14 +52,14 @@
     "dtDesc":       "//span[contains(text(),'剧情')]/following-sibling::div//a[contains(text(),'展开')]/parent::span/text()",
     
 // Video Playlist =====================================================
-    "dtFromNode":   "",
-    "dtFromName":   "",
-    "dtUrlNode":    "",
-    "dtUrlSubNode": "",
-    "dtUrlId":      "",
-    "dtUrlIdR":     "",
-    "dtUrlName":    "",
-    "playUrl":      "",
+    "dtFromNode":   "//div[contains(@class,'module-player-tab')]/div//div[contains(@class,'module-tab-item')]",
+    "dtFromName":   "/span/text()",
+    "dtUrlNode":    "//div[contains(@class,'module-player-list')]",
+    "dtUrlSubNode": "/div/div/a",
+    "dtUrlId":      "/@href",
+    "dtUrlIdR":     "/index.php/vod/play/id/(\\S+).html",
+    "dtUrlName":    "/span/text()",
+    "playUrl":      "https://hibady.com/index.php/vod/play/id/{playUrl}.html",
     "playUa":       "",
     
 // Search Results ================================================
