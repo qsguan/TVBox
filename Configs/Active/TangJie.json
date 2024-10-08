@@ -50,14 +50,14 @@
     "dtDesc":       "//span[contains(@class,'hl-content-text')]", #用/div/span下所有文本作为剧情介绍
     
 // Video Playlist =====================================================
-    "dtFromNode":   "//div[contains(@class,'hl-play-source')]/div/div/a",
-    "dtFromName":   "/@alt",
-    "dtUrlNode":    "//div[contains(@class,'hl-play-source')]//ul[contains(@class,'hl-plays-list')]",
-    "dtUrlSubNode": "/li/a",
-    "dtUrlId":      "/@href",
-    "dtUrlIdR":     "/vodplay/(\\S+).html",
-    "dtUrlName":    "/text()",
-    "playUrl":      "https://www.chinatownfilm.com/vodplay/{playUrl}.html",
+    "dtFromNode":   "",
+    "dtFromName":   "",
+    "dtUrlNode":    "",
+    "dtUrlSubNode": "",
+    "dtUrlId":      "",
+    "dtUrlIdR":     "",
+    "dtUrlName":    "",
+    "playUrl":      "",
     "playUa":       "",
     
 // Search Results ================================================
