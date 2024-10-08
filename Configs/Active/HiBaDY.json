@@ -11,7 +11,7 @@
     "cateId":    "/@href",
     "cateIdR":   "/index.php/vod/type/id/(\\S+).html",
     "cateManual": {
-        "电影库2": "1",
+        "电影库": "1",
         "电视剧": "2",
         "综艺库": "3",
         "动漫库": "4"
@@ -39,11 +39,11 @@
     
 // Video Details ================================================
     "dtUrl":        "https://hibady.com/index.php/vod/detail/id/{vid}.html",
-    "dtNode":       "//body",
+    "dtNode":       "//main[@id='main']",
     "dtName":       "//h1/text()",
     "dtImg":        "//div[contains(@class,'view-heading')]//div[@class='video-cover']/div/div/img/@data-src",
     "dtImgR":       ".*(http\\S+)",
-    "dtCate":       "concat(//span[contains(text(),'分类')]/following-sibling::div[position()<5]/text())",
+    "dtCate":       "//div[contains(@class,'video-info-aux')]/a/@title",
     "dtYear":       "//span[contains(text(),'年代')]/following-sibling::div/text()",
     "dtArea":       "//span[contains(text(),'地区')]/following-sibling::div/text()",
     "dtMark":       "//span[contains(text(),'备注')]/following-sibling::div/text()",
