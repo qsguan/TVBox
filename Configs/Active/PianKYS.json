@@ -1,8 +1,8 @@
 {
     "author": "Jimmy_Bytheway",
     "ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1",
-    "homeUrl":   "http://www.5le.cc/",
-    "pCfgJs":    "http://www.5le.cc/static/js/playerconfig.js",
+    "homeUrl":   "https://www.5le.cc/",
+    "pCfgJs":    "https://www.5le.cc/static/js/playerconfig.js",
     "pCfgJsR":   "[\\W|\\S|.]*?MacPlayerConfig.player_list[\\W|\\S|.]*?=([\\W|\\S|.]*?),MacPlayerConfig.downer_list",
     "dcPlayUrl": "true",
     "dcVipFlag": "true",
@@ -28,8 +28,8 @@
     "homeVodMarkR": "\\S+:(\\S+)",
     
 // Category Summary ================================================
-                   //http://www.5le.cc/vod/show/area/美国/by/score/class/剧情/douban/8/id/Series/page/1/year/2022.html
-    "cateUrl":      "http://www.5le.cc/vod/show{area}{by}{class}{douban}/id/{cateId}/page/{catePg}{year}.html",
+                   //https://www.5le.cc/vod/show/area/美国/by/score/class/剧情/douban/8/id/Series/page/1/year/2022.html
+    "cateUrl":      "https://www.5le.cc/vod/show{area}{by}{class}{douban}/id/{cateId}/page/{catePg}{year}.html",
     "cateVodNode":  "//main/div/div[contains(@class,'module')]//div[@class='module-item']",
     "cateVodName":  "/div[@class='module-item-titlebox']/a/@title",
     "cateVodId":    "/div[@class='module-item-titlebox']/a/@href",
@@ -39,7 +39,7 @@
     "cateVodMark":  "concat(//div[contains(@class,'douban')]/text(),'/',/div[@class='module-item-text']/text())",
     
 // Video Details ================================================
-    "dtUrl":        "http://www.5le.cc/detail/{vid}.html",
+    "dtUrl":        "https://www.5le.cc/detail/{vid}.html",
     "dtNode":       "//main/div/div[@class='box view-heading'][1]",
     "dtName":       "//h1[@class='page-title']/text()",
     "dtImg":        "//div[@class='video-cover']/div/div/img/@data-original",
@@ -60,18 +60,18 @@
     "dtUrlId":      "/@href",
     "dtUrlIdR":     "/play/(\\S+).html",
     "dtUrlName":    "/span/text()",
-    "playUrl":      "http://www.5le.cc/play/{playUrl}.html",
+    "playUrl":      "https://www.5le.cc/play/{playUrl}.html",
     "playUa":       "",
     
 // Search Results ================================================
-    "searchUrl":    "http://www.5le.cc/vod/search.html?wd={wd}",
+    "searchUrl":    "https://www.5le.cc/vod/search.html?wd={wd}",
     "scVodNode":    "//main/div/div[contains(@class,'module')]//div[@class='module-search-item']",
     "scVodName":    "//div[@class='video-info-header']/a/@title",
     "scVodId":      "//div[@class='video-info-header']/a/@href",
     "scVodIdR":     "/detail/(\\S+).html",
     "scVodImg":     "//div[@class='module-item-cover']/div/img/@data-original",
     "scVodImgR":    ".*(http\\S+)",
-    "scVodMark":    "concat(//div[@class='video-info-aux']/div[1]/a/text(),'/',//div[@class='video-info-header']/a/text())",
+    "scVodMark":    "concat(//div[@class='video-info-aux']/a/@title,'/',//div[@class='video-info-header']/a/text())",
     
 // Filters =======================================================
     "filter": {
