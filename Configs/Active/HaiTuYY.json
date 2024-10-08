@@ -9,7 +9,7 @@
     "cateId":    "/@href",
     "cateIdR":   "/vod/type/id/(\\S+).html",
     "cateManual": {
-        "电影库": "1",
+        "电影库1": "1",
         "电视剧": "2",
         "综艺库": "3",
         "动漫库": "4",
@@ -22,7 +22,7 @@
     "homeVodId":    "/div[contains(@class,'box')]/a/@href",
     "homeVodIdR":   "/voddetail/(\\S+).html",
     "homeVodImg":   "/div[contains(@class,'cover')]/div/img/@data-src",
-    "homeVodMark":  "concat(//div[contains(@class,'caption')]/span[1]/text(),'/',/div[contains(@class,'text')]/text())",
+    "homeVodMark":  "concat(//span[contains(@class,'video-class')]/text(),'/',/div[contains(@class,'text')]/text())",
     
 // Category Summary ================================================
                    //https://haituu.tv/vod/show/area/大陆/by/score/class/剧情/id/11/lang/国语/page/2/year/2022.html
@@ -32,7 +32,7 @@
     "cateVodId":    "/div[contains(@class,'box')]/a/@href",
     "cateVodIdR":   "/vod/detail/id/(\\S+).html",
     "cateVodImg":   "/div[contains(@class,'cover')]/div/img/@data-src",
-    "cateVodMark":  "concat(//div[contains(@class,'caption')]/span[1]/text(),'/',/div[contains(@class,'text')]/text())",
+    "cateVodMark":  "concat(//span[contains(@class,'video-class')]/text(),'/',/div[contains(@class,'text')]/text())",
     
 // Video Details ================================================
     "dtUrl":        "https://haituu.tv/vod/detail/id/{vid}.html",
