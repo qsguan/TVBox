@@ -9,7 +9,7 @@
     "cateId":    "/@href",
     "cateIdR":   "/vod/type/id/(\\S+).html",
     "cateManual": {
-        "电影库2": "1",
+        "电影库3": "1",
         "电视剧": "2",
         "综艺库": "3",
         "动漫库": "4",
@@ -35,11 +35,11 @@
     "cateVodMark":  "concat(//span[contains(@class,'video-class')]/text(),'/',/div[contains(@class,'text')]/text())",
     
 // Video Details ================================================
-    "dtUrl":        "https://haituu.tv/vod/detail/id/{vid}.html",
+    "dtUrl":        "https://www.haituu.tv/voddetail/{vid}.html",
     "dtNode":       "//div[@class='box view-heading']",
     "dtName":       "//h1[@class='page-title']/text()",
     "dtImg":        "//div[@class='video-cover']/div/div/img/@data-src",
-    "dtCate":       "concat(//div[contains(@class,'video-info-aux')]/div/a/text())",
+    "dtCate":       "//div[contains(@class,'video-info-aux')]/a/@title",
     "dtYear":       "//div[contains(@class,'video-info-aux')]/a[2]/text()",
     "dtArea":       "//div[contains(@class,'video-info-aux')]/a[3]/text()",
     "dtMark":       "//span[contains(text(),'集数') or contains(text(),'备注')]/following-sibling::div/text()",
@@ -54,9 +54,9 @@
     "dtUrlNode":    "//div[contains(@class,'module-player-list')]/div[contains(@class,'box')]/div",
     "dtUrlSubNode": "/a",
     "dtUrlId":      "/@href",
-    "dtUrlIdR":     "/vod/play/id/(\\S+).html",
+    "dtUrlIdR":     "/vodplay/(\\S+).html",
     "dtUrlName":    "/span/text()",
-    "playUrl":      "https://haituu.tv/vod/play/id/{playUrl}.html",
+    "playUrl":      "https://www.haituu.tv/vodplay/{playUrl}.html",
     "playUa":       "",
     
 // Search Results ================================================
