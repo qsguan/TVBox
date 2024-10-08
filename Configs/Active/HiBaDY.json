@@ -11,7 +11,7 @@
     "cateId":    "/@href",
     "cateIdR":   "/index.php/vod/type/id/(\\S+).html",
     "cateManual": {
-        "电影库": "1",
+        "电影库1": "1",
         "电视剧": "2",
         "综艺库": "3",
         "动漫库": "4"
@@ -46,7 +46,7 @@
     "dtCate":       "//div[contains(@class,'video-info-aux')]/a/@title",
     "dtYear":       "//span[contains(text(),'年代')]/following-sibling::div/text()",
     "dtArea":       "//span[contains(text(),'地区')]/following-sibling::div/text()",
-    "dtMark":       "//span[contains(text(),'备注')]/following-sibling::div/text()",
+    "dtMark":       "//span[contains(text(),'备注') or contains(text(),'集数')]/following-sibling::div/text()",
     "dtDirector":   "concat(//span[contains(text(),'导演')]/following-sibling::div/a[position()<7]/text())",
     "dtActor":      "concat(//span[contains(text(),'主演')]/following-sibling::div/a[position()<7]/text())",
     "dtDesc":       "//span[contains(text(),'剧情')]/following-sibling::div//a[contains(text(),'展开')]/parent::span/text()",
