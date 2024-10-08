@@ -1,7 +1,7 @@
 {
     "author": "Jimmy_Bytheway",
     "ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1",
-    "homeUrl":   "https://haituu.tv/",
+    "homeUrl":   "https://www.haituu.tv/",
     "dcPlayUrl": "true",
     "dcVipFlag": "true",
     "cateNode":  "//div[@class='nav']/ul[@class='nav-menu-items']/li/a[contains(@href,'type')]",
@@ -9,7 +9,7 @@
     "cateId":    "/@href",
     "cateIdR":   "/vod/type/id/(\\S+).html",
     "cateManual": {
-        "电影库1": "1",
+        "电影库2": "1",
         "电视剧": "2",
         "综艺库": "3",
         "动漫库": "4",
@@ -25,12 +25,12 @@
     "homeVodMark":  "concat(//span[contains(@class,'video-class')]/text(),'/',/div[contains(@class,'text')]/text())",
     
 // Category Summary ================================================
-                   //https://haituu.tv/vod/show/area/大陆/by/score/class/剧情/id/11/lang/国语/page/2/year/2022.html
-    "cateUrl":      "https://haituu.tv/vod/show/area/{area}/by/{by}/class/{class}/id/{cateId}/lang/{lang}/page/{catePg}/year/{year}.html",
+                   //https://www.haituu.tv/vodshow/11-美国-hits-剧情-英语----2---2023.html
+    "cateUrl":      "https://www.haituu.tv/vodshow/{cateId}-{area}-{by}-{class}-{lang}----{catePg}---{year}.html",
     "cateVodNode":  "//div[@class='content']/div[@class='module']/div/div/div[@class='module-item']",
     "cateVodName":  "/div[contains(@class,'box')]/a/@title",
     "cateVodId":    "/div[contains(@class,'box')]/a/@href",
-    "cateVodIdR":   "/vod/detail/id/(\\S+).html",
+    "cateVodIdR":   "/voddetail/(\\S+).html",
     "cateVodImg":   "/div[contains(@class,'cover')]/div/img/@data-src",
     "cateVodMark":  "concat(//span[contains(@class,'video-class')]/text(),'/',/div[contains(@class,'text')]/text())",
     
@@ -60,13 +60,13 @@
     "playUa":       "",
     
 // Search Results ================================================
-    "searchUrl":    "https://haituu.tv/vod/search.html?wd={wd}",
+    "searchUrl":    "https://www.haituu.tv/vodsearch/-------------.html?wd={wd}",
     "scVodNode":    "//div[@class='content']/div[contains(@class,'module')]//div[@class='module-search-item']",
     "scVodName":    "//h3/a/@title",
     "scVodId":      "//h3/a/@href",
-    "scVodIdR":     "/vod/detail/id/(\\S+).html",
+    "scVodIdR":     "/voddetail/(\\S+).html",
     "scVodImg":     "//div[contains(@class,'cover')]/div/img/@data-src",
-    "scVodMark":    "concat(//div[contains(@class,'video-info-aux')]/div[1]//a/text(),'/',//div[@class='video-info-header']/a/text())",
+    "scVodMark":    "concat(//div[contains(@class,'video-info-aux')]/a/@title,'/',//div[@class='video-info-header']/a/text())",
     
 // Filters =======================================================
     "filter": {
