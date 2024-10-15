@@ -9,7 +9,7 @@
     "cateId":    "/@href",
     "cateIdR":   "/index.php/vod/type/id/(\\S+).html\\?ac=detail",
     "cateManual": {
-        "电影库":   "1",
+        "电影库1":   "1",
         "电视剧":   "2",
         "综艺库":   "4",
         "动漫库":   "3",
@@ -25,14 +25,14 @@
     "homeVodMark":  "concat(/span[@class='list-type']/text(),'/',/span[@class='list-title']/a/em/text())",
     
 // Category Summary ================================================
-                   //https://kuaichezy.com/index.php/vod/type/area/美国/by/score/id/8/page/1/year/2020.html
-    "cateUrl":      "",
-    "cateVodNode":  "",
-    "cateVodName":  "",
-    "cateVodId":    "",
-    "cateVodIdR":   "",
-    "cateVodImg":   "", #无影片预览图片,随便填写
-    "cateVodMark":  "",
+                   //https://www.subozy.com/index.php/vod/type/area/中国大陆/by/score/id/14/page/3/year/2020.html?ac=detail
+    "cateUrl":      "https://www.subozy.com/index.php/vod/type{area}{by}/id/{cateId}/page/{catePg}{year}.html?ac=detail",
+    "cateVodNode":  "//div[@class='list']/div[@class='list-item']/span[@class='list-title']/parent::div",
+    "cateVodName":  "/span[@class='list-title']/a/text()[1]",
+    "cateVodId":    "/span[@class='list-title']/a/@href",
+    "cateVodIdR":   "/index.php/vod/detail/id/(\\S+).html",
+    "cateVodImg":   "/span[@class='list-title']/a/text()[1]", #无影片预览图片,随便填写
+    "cateVodMark":  "concat(/span[@class='list-type']/text(),'/',/span[@class='list-title']/a/em/text())",
     
 // Video Details ================================================
     "dtUrl":        "",
