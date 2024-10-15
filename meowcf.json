@@ -89,6 +89,16 @@
             "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Active/PianKYS.json"
         },
         {
+            "key": "csp_xpath_唐人街",
+            "name": "唐人街影视",
+            "type": 3,
+            "api": "csp_XPathMacFilter",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Active/TangJie.json"
+        },
+        {
             "key": "csp_xpath_TianKZY",
             "name": "天空资源",
             "type": 3,
