@@ -7,7 +7,7 @@
     "cateNode":  "//div[@class='naviga']/ul/li/a[contains(@href,'type')]",
     "cateName":  "/text()",
     "cateId":    "/@href",
-    "cateIdR":   "/index.php/vod/type/id/(\\S+).html\\?ac=detail",
+    "cateIdR":   "/index.php/vod/type/id/(\\S+).html\?ac=detail",
     "cateManual": {
         "电影库1":   "1",
         "电视剧":   "2",
