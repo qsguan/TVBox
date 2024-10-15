@@ -107,6 +107,16 @@
             "quickSearch": 1,
             "filterable": 1,
             "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Active/WLongZY.json"
+        },
+        {
+            "key": "csp_xpath_SuBoZY",
+            "name": "速播资源",
+            "type": 3,
+            "api": "csp_XPathMacFilter",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "ext": "https://github.com/qsguan/TVBox/raw/master/Configs/Active/SuboZY.json"
         }
     ],
 
