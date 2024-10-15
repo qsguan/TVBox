@@ -120,7 +120,7 @@
         },
         {
             "key": "csp_xpath_SuBoZY",
-            "name": "速播资源1",
+            "name": "速播资源2",
             "type": 3,
             "api": "csp_XPathMacFilter",
             "searchable": 1,
