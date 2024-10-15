@@ -7,9 +7,9 @@
     "cateNode":  "//div[@class='naviga']/ul/li/a[contains(@href,'type')]",
     "cateName":  "/text()",
     "cateId":    "/@href",
-    "cateIdR":   "/index.php/vod/type/id/(\\S+).html\\S+",
+    "cateIdR":   "/index.php/vod/type/id/(\\S+).html",
     "cateManual": {
-        "电影库1":   "1",
+        "电影库2":   "1",
         "电视剧":   "2",
         "综艺库":   "4",
         "动漫库":   "3",
@@ -17,10 +17,10 @@
     },
     
 // Home Summary ================================================
-    "homeVodNode":  "//div[@class='list']/div[@class='list-item']/span[@class='list-title']/parent::div",
+    "homeVodNode":  "//div[@class='list']/div[@class='list-item' and not(contains(@style,'background'))]",
     "homeVodName":  "/span[@class='list-title']/a/text()[1]",
     "homeVodId":    "/span[@class='list-title']/a/@href",
-    "homeVodIdR":   "/index.php/vod/detail/id/(\\S+).html\\S+",
+    "homeVodIdR":   "/index.php/vod/detail/id/(\\S+).html",
     "homeVodImg":   "/span[@class='list-title']/a/text()[1]", #无影片预览图片,随便填写
     "homeVodMark":  "concat(/span[@class='list-type']/text(),'/',/span[@class='list-title']/a/em/text())",
     
@@ -68,10 +68,10 @@
     
 // Search Results ================================================
     "searchUrl":    "https://www.subozy.com/index.php/vod/search.html?wd={wd}",
-    "scVodNode":    "//div[@class='list']/div[@class='list-item']/span[@class='list-title']/parent::div",
+    "scVodNode":    "//div[@class='list']/div[@class='list-item' and not(contains(@style,'background'))]",
     "scVodName":    "/span[@class='list-title']/a/text()[1]",
     "scVodId":      "/span[@class='list-title']/a/@href",
-    "scVodIdR":     "/index.php/vod/detail/id/(\\S+).html\\S+",
+    "scVodIdR":     "/index.php/vod/detail/id/(\\S+).html",
     "scVodImg":     "/span[@class='list-title']/a/text()[1]", #无影片预览图片,随便填写
     "scVodMark":    "concat(/span[@class='list-type']/text(),'/',/span[@class='list-title']/a/em/text())",
     
