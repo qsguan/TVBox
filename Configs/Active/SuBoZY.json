@@ -9,7 +9,7 @@
     "cateId":    "/@href",
     "cateIdR":   "/index.php/vod/type/id/(\\S+).html\\S+",
     "cateManual": {
-        "电影库":   "1",
+        "电影库1":   "1",
         "电视剧":   "2",
         "综艺库":   "4",
         "动漫库":   "3",
@@ -67,13 +67,13 @@
     "playUa":       "",
     
 // Search Results ================================================
-    "searchUrl":    "https://kuaichezy.com/index.php/vod/search.html?wd={wd}", #已失效(2024-05-23)
-    "scVodNode":    "//div[@class='container']//ul[@class='videoContent']/li",
-    "scVodName":    "/a[@class='videoName']/text()",
-    "scVodId":      "/a[@class='videoName']/@href",
-    "scVodIdR":     "/index.php/vod/detail/id/(\\S+).html",
-    "scVodImg":     "/a[@class='videoName']/text()", #无影片预览图片,随便填写
-    "scVodMark":    "concat(/span[contains(@class,'category')]/text(),'/',/a[@class='videoName']/i/text())",
+    "searchUrl":    "https://www.subozy.com/index.php/vod/search.html?wd={wd}",
+    "scVodNode":    "//div[@class='list']/div[@class='list-item']/span[@class='list-title']/parent::div",
+    "scVodName":    "/span[@class='list-title']/a/text()[1]",
+    "scVodId":      "/span[@class='list-title']/a/@href",
+    "scVodIdR":     "/index.php/vod/detail/id/(\\S+).html\\S+",
+    "scVodImg":     "/span[@class='list-title']/a/text()[1]", #无影片预览图片,随便填写
+    "scVodMark":    "concat(/span[@class='list-type']/text(),'/',/span[@class='list-title']/a/em/text())",
     
 // Filters =======================================================
     "filter": {
@@ -343,7 +343,7 @@
                     {"n": "评分","v": "/by/score"}]
             }
         ],
-        "48": [
+        "5": [
             {
                 "key": "cateId",
                 "name": "分类",
@@ -351,54 +351,6 @@
                     {"n": "全部","v": "48"},
                     {"n": "篮球","v": "49"},
                     {"n": "足球","v": "50"}]
-            },
-            {
-                "key": "by",
-                "name": "排序",
-                "value": [
-                    {"n": "全部","v": ""},
-                    {"n": "更新","v": "/by/time"},
-                    {"n": "日榜","v": "/by/hits_day"},
-                    {"n": "周榜","v": "/by/hits_week"},
-                    {"n": "月榜","v": "/by/hits_month"},
-                    {"n": "总榜","v": "/by/hits"},
-                    {"n": "评分","v": "/by/score"}]
-            }
-        ],
-        "55": [
-            {
-                "key": "cateId",
-                "name": "分类",
-                "value": [
-                    {"n": "全部","v": "55"},
-                    {"n": "韩国伦理","v": "57"},
-                    {"n": "港台三级","v": "56"},
-                    {"n": "西方伦理","v": "58"},
-                    {"n": "日本伦理","v": "59"},
-                    {"n": "两性课堂","v": "60"},
-                    {"n": "写真热舞","v": "61"}]
-            },
-            {
-                "key": "year",
-                "name": "年份",
-                "value": [
-                    {"n": "全部","v": ""},
-                    {"n": "2024","v": "/year/2024"},
-                    {"n": "2023","v": "/year/2023"},
-                    {"n": "2022","v": "/year/2022"},
-                    {"n": "2021","v": "/year/2021"},
-                    {"n": "2020","v": "/year/2020"},
-                    {"n": "2019","v": "/year/2019"},
-                    {"n": "2018","v": "/year/2018"},
-                    {"n": "2017","v": "/year/2017"},
-                    {"n": "2016","v": "/year/2016"},
-                    {"n": "2015","v": "/year/2015"},
-                    {"n": "2014","v": "/year/2014"},
-                    {"n": "2013","v": "/year/2013"},
-                    {"n": "2012","v": "/year/2012"},
-                    {"n": "2011","v": "/year/2011"},
-                    {"n": "2010","v": "/year/2010"},
-                    {"n": "2009","v": "/year/2009"}]
             },
             {
                 "key": "by",
