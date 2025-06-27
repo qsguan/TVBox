@@ -19,6 +19,3 @@ git push -u origin master
 
 git clone git@github.com:qsguan/TVBox.git  
 
-
-"dtFromName":   "concat('播放源',count(preceding::div[contains(@class,'module-tab-item')])+1)",
-"dtFromNameR":  "(\\S+).0",
