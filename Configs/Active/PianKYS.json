@@ -15,7 +15,7 @@
         "电视剧": "Series",
         "综艺库": "variety",
         "动漫库": "cartoon",
-        "短剧库2": "Duan"
+        "短剧库3": "Duan"
     },
     
 // Home Summary ================================================
@@ -39,7 +39,7 @@
     "cateVodMark":  "concat(//div[contains(@class,'douban')]/text(),'/',/div[@class='module-item-text']/text())",
     
 // Video Details ================================================
-    "dtUrl":        "https://www.5le.cc/detail/{vid}.html",
+    "dtUrl":        "https://www.5le.cc/movie/{vid}.html",
     "dtNode":       "//main/div/div[@class='box view-heading'][1]",
     "dtName":       "//h1[@class='page-title']/text()",
     "dtImg":        "//div[@class='video-cover']/div/div/img/@data-original",
@@ -58,9 +58,9 @@
     "dtUrlNode":    "//div[@class='module' and not(@id='download-list')]//div[contains(@class,'module-player-list')]/div[contains(@class,'blocklist')]",
     "dtUrlSubNode": "/div/a",
     "dtUrlId":      "/@href",
-    "dtUrlIdR":     "/play/(\\S+).html",
+    "dtUrlIdR":     "/Play/(\\S+).html",
     "dtUrlName":    "/span/text()",
-    "playUrl":      "https://www.5le.cc/play/{playUrl}.html",
+    "playUrl":      "https://www.5le.cc/Play/{playUrl}.html",
     "playUa":       "",
     
 // Search Results ================================================
