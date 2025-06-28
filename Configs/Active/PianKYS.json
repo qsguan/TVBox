@@ -15,7 +15,7 @@
         "电视剧": "Series",
         "综艺库": "variety",
         "动漫库": "cartoon",
-        "短剧库3": "Duan"
+        "短剧库4": "Duan"
     },
     
 // Home Summary ================================================
@@ -30,10 +30,10 @@
 // Category Summary ================================================
                    //https://www.5le.cc/vod/show/area/美国/by/score/class/剧情/douban/8/id/Series/page/1/year/2022.html
     "cateUrl":      "https://www.5le.cc/vod/show{area}{by}{class}{douban}/id/{cateId}/page/{catePg}{year}.html",
-    "cateVodNode":  "//main/div/div[contains(@class,'module')]//div[@class='module-item']",
+    "cateVodNode":  "//main//div[contains(@class,'module')]//div[@class='module-item']",
     "cateVodName":  "/div[@class='module-item-titlebox']/a/@title",
     "cateVodId":    "/div[@class='module-item-titlebox']/a/@href",
-    "cateVodIdR":   "/detail/(\\S+).html",
+    "cateVodIdR":   "/movie/(\\S+).html",
     "cateVodImg":   "/div[@class='module-item-cover']/div/img/@data-original",
     "cateVodImgR":  ".*(http\\S+)",
     "cateVodMark":  "concat(//div[contains(@class,'douban')]/text(),'/',/div[@class='module-item-text']/text())",
@@ -68,7 +68,7 @@
     "scVodNode":    "//main/div/div[contains(@class,'module')]//div[@class='module-search-item']",
     "scVodName":    "//div[@class='video-info-header']/a/@title",
     "scVodId":      "//div[@class='video-info-header']/a/@href",
-    "scVodIdR":     "/detail/(\\S+).html",
+    "scVodIdR":     "/movie/(\\S+).html",
     "scVodImg":     "//div[@class='module-item-cover']/div/img/@data-original",
     "scVodImgR":    ".*(http\\S+)",
     "scVodMark":    "concat(//div[@class='video-info-aux']/a/@title,'/',//div[@class='video-info-header']/a/text())",
@@ -138,6 +138,7 @@
                 "name": "年份",
                 "value": [
                     {"n": "全部","v": ""},
+                    {"n": "2025","v": "/year/2025"},
                     {"n": "2024","v": "/year/2024"},
                     {"n": "2023","v": "/year/2023"},
                     {"n": "2022","v": "/year/2022"},
@@ -249,6 +250,7 @@
                 "name": "年份",
                 "value": [
                     {"n": "全部","v": ""},
+                    {"n": "2025","v": "/year/2025"},
                     {"n": "2024","v": "/year/2024"},
                     {"n": "2023","v": "/year/2023"},
                     {"n": "2022","v": "/year/2022"},
@@ -345,6 +347,7 @@
                 "name": "年份",
                 "value": [
                     {"n": "全部","v": ""},
+                    {"n": "2025","v": "/year/2025"},
                     {"n": "2024","v": "/year/2024"},
                     {"n": "2023","v": "/year/2023"},
                     {"n": "2022","v": "/year/2022"},
@@ -421,6 +424,7 @@
                 "name": "年份",
                 "value": [
                     {"n": "全部","v": ""},
+                    {"n": "2025","v": "/year/2025"},
                     {"n": "2024","v": "/year/2024"},
                     {"n": "2023","v": "/year/2023"},
                     {"n": "2022","v": "/year/2022"},
