@@ -11,7 +11,7 @@
     "cateId":    "/a/@href",
     "cateIdR":   "/vodtype/(\\S+)/",
     "cateManual": {
-        "电影库1": "movie",
+        "电影库": "movie",
         "电视剧": "tv-series",
         "综艺库": "show",
         "动漫库": "animation",
