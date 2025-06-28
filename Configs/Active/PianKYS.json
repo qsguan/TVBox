@@ -15,7 +15,7 @@
         "电视剧": "Series",
         "综艺库": "variety",
         "动漫库": "cartoon",
-        "短剧库1": "Duan"
+        "短剧库2": "Duan"
     },
     
 // Home Summary ================================================
@@ -24,6 +24,7 @@
     "homeVodId":    "/div[@class='module-item-titlebox']/a/@href",
     "homeVodIdR":   "/movie/(\\S+).html",
     "homeVodImg":   "/div[@class='module-item-cover']/div/img/@data-original",
+    "homeVodImgR":  ".*(http\\S+)",
     "homeVodMark":  "concat(//div[contains(@class,'douban')]/text(),'/',//div[@class='module-item-text']/text())",
     
 // Category Summary ================================================
