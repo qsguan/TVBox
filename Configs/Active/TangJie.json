@@ -9,20 +9,20 @@
     "cateNode":  "//div[contains(@class,'hl-home-nano')]//li[contains(@class,'hl-smnav-item')]",
     "cateName":  "/a/span/text()",
     "cateId":    "/a/@href",
-    "cateIdR":   "/vodtype/(\\S+).html",
+    "cateIdR":   "/vodtype/(\\S+)/",
     "cateManual": {
-        "电影库": "1",
-        "电视剧": "2",
-        "综艺库": "3",
-        "动漫库": "4",
+        "电影库1": "movie",
+        "电视剧": "tv-series",
+        "综艺库": "show",
+        "动漫库": "animation",
         "纪录片": "24"
     },
     
 // Home Summary ================================================
-    "homeVodNode":  "//div[contains(@class,'hl-home-nano')]/parent::div//div[@class='container']//li[contains(@class,'hl-list-item')]",
+    "homeVodNode":  "//div[contains(@class,'hl-home-nano')]/parent::div//div[@class='container']//ul[contains(@class,'hl-vod-list')]/li[contains(@class,'hl-list-item')]",
     "homeVodName":  "/a/@title",
     "homeVodId":    "/a/@href",
-    "homeVodIdR":   "/voddetail/(\\S+).html",
+    "homeVodIdR":   "/vodhtml/(\\S+)/",
     "homeVodImg":   "/a/@data-original",
     "homeVodMark":  "concat(//span[contains(@class,'score')]/text(),'/',//span[contains(@class,'remarks')]/text())",
     
