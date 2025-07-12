@@ -17,4 +17,4 @@ git add Configs/* Spiders/* TVLive/* meowcf*.json
 git commit -m "TVBox Channels"  
 git push -u origin master  
 
-git clone git@github.com:qsguan/TVBox.git  
+git clone --depth 1 git@github.com:qsguan/TVBox.git  # git version: v2.45.2 
