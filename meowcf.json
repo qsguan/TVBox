@@ -29,10 +29,10 @@
             "jar": "https://github.com/qsguan/TVBox/raw/master/Spiders/xhdwc.tk_modified.jar"
         },
         {
-            "key": "量子资源",
-            "name": "量子资源",
-            "type": 0,
-            "api": "https://cj.lziapi.com/api.php/provide/vod/at/xml/",
+            "key": "暴风资源",
+            "name": "暴风资源",
+            "type": 1,
+            "api": "https://bfzyapi.com/api.php/provide/vod/",
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1
