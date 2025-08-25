@@ -29,6 +29,15 @@
             "jar": "https://github.com/qsguan/TVBox/raw/master/Spiders/xhdwc.tk_modified.jar"
         },
         {
+            "key": "量子资源",
+            "name": "量子资源",
+            "type": 0,
+            "api": "https://cj.lziapi.com/api.php/provide/vod/at/xml/",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1
+        },
+        {
             "key": "csp_xpath_多瑙影视",
             "name": "多瑙影视",
             "type": 3,
