@@ -19,6 +19,8 @@ git push -u origin master
 
 git clone --depth 1 git@github.com:qsguan/TVBox.git  # git version: v2.45.2  
 
+## Download apk from:
+
 * https://github.com/Archmage83/tvapk
 * https://github.com/youhunwl/TVAPP/tree/main
 ```
